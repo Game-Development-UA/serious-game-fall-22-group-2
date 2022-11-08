@@ -1,0 +1,36 @@
+:: Living Room
+Hello! You're in the living room!
+
+[[Go to the Kitchen -> Kitchen]]
+
+<<set $pockets to []>>
+
+
+:: Kitchen
+Welcome to the kitchen!
+
+[[Go to the Bedroom -> Bedroom]]
+
+
+:: Bedroom
+
+Youre in the Bedroom!
+
+You find a teddy bear.
+
+Pick it up?
+
+[[Yes -> Choice1]] [[No->]]
+
+:: Choice1
+
+You pick up the teddy bear. You can't put him down. You love him.
+
+<<set $pockets.push("Bear")>>
+
+[[Next -> Choice2]]
+
+:: Choice2 
+
+You stand in the bedroom.
+
