@@ -11,7 +11,6 @@ Welcome to the kitchen!
 
 [[Go to the Bedroom -> Bedroom]]
 
-
 :: Bedroom
 
 Youre in the Bedroom!
@@ -20,7 +19,9 @@ You find a teddy bear.
 
 Pick it up?
 
-[[Yes -> Choice1]] [[No->]]
+[[Yes -> Choice1]]
+
+ [[No-> Choice2]]
 
 :: Choice1
 
@@ -33,4 +34,3 @@ You pick up the teddy bear. You can't put him down. You love him.
 :: Choice2 
 
 You stand in the bedroom.
-
