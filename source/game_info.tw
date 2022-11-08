@@ -10,4 +10,5 @@
 Escape Room Game
 
 :: StoryInit
+Welcome to the Game!
 <<set $myVariable to 1>>
