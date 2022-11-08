@@ -1,10 +1,12 @@
+:: Start
+This is the start! 
+
+[[Go to the Living Room -> Living Room]]
+
 :: Living Room
 Hello! You're in the living room!
 
 [[Go to the Kitchen -> Kitchen]]
-
-<<set $pockets to []>>
-
 
 :: Kitchen
 Welcome to the kitchen!
@@ -26,8 +28,6 @@ Pick it up?
 :: Choice1
 
 You pick up the teddy bear. You can't put him down. You love him.
-
-<<set $pockets.push("Bear")>>
 
 [[Next -> Choice2]]
 
