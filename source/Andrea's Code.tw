@@ -1,3 +1,11 @@
 :: Bedroom
 
 You enter the Bedroom
+
+[[Go to Living Room again -> Living Room2]]
+
+:: Living Room2
+
+You are in the living Room agian
+
+[[Go to Kitchen -> Kitchen]]
