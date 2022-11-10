@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Escape Room Game" startnode="2" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Escape Room Game" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
 	background: lightpink
 }
 
@@ -146,25 +146,26 @@ config.ui.stowBarInitially = true;
 
 /* Hide the back / forward buttons
 config.history.controls = false;
-*/</script><tw-passagedata pid="1" name="New Room" tags="" position="100,100" size="100,100"></tw-passagedata><tw-passagedata pid="2" name="Starting" tags="" position="225,100" size="100,100">This is the start! 
+*/</script><tw-passagedata pid="1" name="Living Room Tutorial" tags="" position="100,100" size="100,100">[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hi! Welcome to the escape room! We&#39;re so glad to have you! Is this your first time in an escape room?
 
-[[Go to the Living Room -&gt; Living Room]]</tw-passagedata><tw-passagedata pid="3" name="Living Room" tags="" position="350,100" size="100,100">Hello! You&#39;re in the living room!
+[[Yes -&gt; Have]]
 
-[[Go to the Kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="4" name="Kitchen" tags="" position="475,100" size="100,100">Welcome to the kitchen!
+[[No-&gt; Have Not]]
 
-[[Go to the Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="5" name="Bedroom" tags="" position="600,100" size="100,100">Youre in the Bedroom!
+:Have
+Perfect! So you already know about the time limit and how each room is a puzzle! Well then, 
+I won&#39;t keep you here any longer than needed! Best of luck!
+[[Go to Tutorial -&gt; Living Room Tutorial]]
 
-You find a teddy bear.
+:Have Not
+That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, that&#39;s why we have the tutorial room!
+Even complete fools can escape from this one. Try it out and come back once you&#39;ve gotten out.</tw-passagedata><tw-passagedata pid="3" name="Bedroom" tags="" position="350,100" size="100,100">You enter the Bedroom
 
-Pick it up?
+[[Go to Living Room again -&gt; Living Room2]]</tw-passagedata><tw-passagedata pid="4" name="Living Room2" tags="" position="475,100" size="100,100">You are in the living Room agian
 
-[[Yes -&gt; Choice1]]
+[[Go to Kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="5" name="Bathroom" tags="" position="600,100" size="100,100">[[Go to Safe -&gt; Safe]]
 
-[[No-&gt; Choice2]]</tw-passagedata><tw-passagedata pid="6" name="Choice1" tags="" position="725,100" size="100,100">You pick up the teddy bear. You can&#39;t put him down. You love him.
-
-[[Next -&gt; Choice2]]</tw-passagedata><tw-passagedata pid="7" name="Choice2" tags="" position="850,100" size="100,100">You stand in the bedroom.
-
-Hi</tw-passagedata><tw-passagedata pid="8" name="Intercom" tags="" position="975,100" size="100,100">Hi! Welcome to the escape room!</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="1100,100" size="100,100">Welcome to the Game!
+You&#39;ve entered the Bathroom.</tw-passagedata><tw-passagedata pid="6" name="kitchen" tags="" position="725,100" size="100,100">You are in the kitchen</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="850,100" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
