@@ -1,5 +1,5 @@
 :: Intercom
-Hi! Welcome to the escape room! We're so gald to have you! Is this your first time in an escape room?
+Hi! Welcome to the escape room! We're so glad to have you! Is this your first time in an escape room?
 
 [[Yes -> Have]]
 
