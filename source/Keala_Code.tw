@@ -1,2 +1,13 @@
 :: Intercom
-Hi! Welcome to the escape room! 
+Hi! Welcome to the escape room! We're so gald to have you! Is this your first time in an escape room?
+
+[[Yes -> Have]]
+
+[[No-> Have Not]]
+
+:Have
+Perfect! So you already know about the time limit and how each room is a puzzle! Well then, 
+I won't keep you here any longer than needed! Best of luck!
+
+:Have Not
+That's quite alright!
