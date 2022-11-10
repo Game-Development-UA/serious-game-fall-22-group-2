@@ -1,38 +1,3 @@
-:: Starting
-This is the start! 
-
-[[Go to the Living Room -> Living Room]]
-
-:: Living Room
-Hello! You're in the living room!
-
-[[Go to the Kitchen -> Kitchen]]
-
-:: Kitchen
-Welcome to the kitchen!
-
-[[Go to the Bedroom -> Bedroom]]
-
 :: Bedroom
 
-Youre in the Bedroom!
-
-You find a teddy bear.
-
-Pick it up?
-
-[[Yes -> Choice1]]
-
-[[No-> Choice2]]
-
-:: Choice1
-
-You pick up the teddy bear. You can't put him down. You love him.
-
-[[Next -> Choice2]]
-
-:: Choice2 
-
-You stand in the bedroom.
-
-Hi
+You enter the Bedroom
