@@ -6,10 +6,15 @@ body{
 .bedroom{
 	position: absolute;
 	left: 30px;
-	top: 5px
+	top: 5px;
 	
 }
 
+.intercom {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+}
 
 /* The body is everything displayed in the main text delivery area
 body {
