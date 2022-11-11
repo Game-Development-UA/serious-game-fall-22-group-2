@@ -3,6 +3,9 @@ body{
 	font-family:  comic-sans;
 }
 
+.bedroom{
+	position: absolute;
+}
 
 
 /* The body is everything displayed in the main text delivery area
