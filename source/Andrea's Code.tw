@@ -1,7 +1,18 @@
 :: Bedroom
+/*
+
+I'm gonna make comments in case youre looking at my code to help guide you a bit. Down below I put images 
+for the bedroom, the first one being the background of the bedroom. If you're having trouble putting a background in, just
+copy the first stuff in brackets (<>) down below, replacing the url with the url of the picture that you want. You dont have
+to add a "class" to it. Or you can. Dont be afraid to mess around!!
+
+ */
 <img src="https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-4
 29c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y16
-0&width=3200&height=1801&format=pjpg&auto=webp" width="1400" height="800" class="bedroom">
+0&width=3200&height=1801&format=pjpg&auto=webp", width="1600", height="750", class="bedroom">
+
+<img src="https://product.hanwha-security.com/imgViewer.do?fileName=th_1530858171446.png&filePath=UPLOAD_MFGD_IMG_PATH",
+width="50", height="50" >
 
 You enter the Bedroom
 
