@@ -1,7 +1,8 @@
 :: Bedroom
-<img src="https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-4
-29c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y16
-0&width=3200&height=1801&format=pjpg&auto=webp" width="800" height="500">
+
+body {
+    background-image: url("https://secure.img1-fg.wfcdn.com/im/80609226/resize-h666-w500%5Ecompr-r85/1079/107931120/STL_default_name_107931120.jpg")
+}
 
 You enter the Bedroom
 
