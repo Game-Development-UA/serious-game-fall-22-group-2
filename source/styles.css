@@ -1,6 +1,11 @@
 
-.bedroom{
+.intercom{
 	position: absolute;
+	right:30px;
+	top: 10px;
+}
+
+.bedroom{
 	left: 30px;
 	top: 5px;
 	
@@ -8,7 +13,7 @@
 
 body{
 	background: lightpink;
-	font-family:  comic-sans;
+	font-family: comic-sans;
 }
 
 /* The body is everything displayed in the main text delivery area
