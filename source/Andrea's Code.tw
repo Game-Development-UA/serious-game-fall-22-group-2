@@ -8,14 +8,14 @@ to add a "class" to it. Or you can. Dont be afraid to mess around!!
 
  */
 
- You enter the Bedroom
+ <p>You enter the Bedroom</p>
 
 <img src="https://product.hanwha-security.com/imgViewer.do?fileName=th_1530858171446.png&filePath=UPLOAD_MFGD_IMG_PATH"
-width="50" height="50" class="intercom" >
+width="50" height="50" class="intercom">
 
 <img src="https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-4
 29c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y16
-0&width=3200&height=1801&format=pjpg&auto=webp" width="1600" height="750" class="bedroom">
+0&width=3200&height=1801&format=pjpg&auto=webp" width="1500" height="750" class="bedroom">
 
 
 
