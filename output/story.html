@@ -101,6 +101,15 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Escape Room Game" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
+
+/*
+Andrea's CSS: :)
+This is where we do all the fancy visual stuff for our code.
+
+*/
 .intercom{
 	height: 50%;
 	width: 50%;
@@ -133,6 +142,11 @@ body.first{
 	position:relative;
 	top:300px;
 }
+
+.void{
+	background-color: black;
+}
+
 /* The body is everything displayed in the main text delivery area
 body {
 	background: blue;
@@ -192,22 +206,29 @@ Even complete fools can escape from this one. Try it out and come back once you&
  You enter the Bedroom
 
 [[Go to Living Room again -&gt; Living Room2]]
-[[Maybe you don&#39;t want to -&gt; The Void]]
+[[Maybe you don&#39;t want to -&gt; Bedroom2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Living Room2" tags="" position="725,100" size="100,100">You are in the living Room again
 
-[[Go to Kitchen -&gt; kitchen]]</tw-passagedata><tw-passagedata pid="7" name="The Void" tags="" position="850,100" size="100,100">You have entered the void.</tw-passagedata><tw-passagedata pid="8" name="Bathroom" tags="" position="975,100" size="100,100">You&#39;ve entered the Bathroom.
+[[Go to Kitchen -&gt; kitchen]]</tw-passagedata><tw-passagedata pid="7" name="Bedroom2" tags="first" position="850,100" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+
+ &lt;div class=&quot;text1&quot;&gt;
+
+Perhaps you should rest
+
+[[Get in bed-&gt; Lay]]
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Lay" tags="" position="975,100" size="100,100">&lt;img src=&quot;media/test1.png&quot;&gt;</tw-passagedata><tw-passagedata pid="9" name="Bathroom" tags="" position="1100,100" size="100,100">You&#39;ve entered the Bathroom.
 You shouldn&#39;t have been able to make it this far. I mean, honestly, look at you. 
 You wouldn&#39;t have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you&#39;re nothing, right?
 
 [[Ignore-&gt; Mock]]
-[[Shut Up!-&gt; Rage]]</tw-passagedata><tw-passagedata pid="8" name="Mock" tags="" position="975,100" size="100,100">I&#39;m right aren&#39;t I? You know I always am. 
+[[Shut Up!-&gt; Rage]]</tw-passagedata><tw-passagedata pid="10" name="Mock" tags="" position="1225,100" size="100,100">I&#39;m right aren&#39;t I? You know I always am. 
 [[Ignore-&gt; Focus]]
-[[Cry Break-&gt; Cry]]</tw-passagedata><tw-passagedata pid="9" name="Rage" tags="" position="1100,100" size="100,100">No, you shut up! You know as well as I do that your worthless and can&#39;t do 
-anything for yourself without me!</tw-passagedata><tw-passagedata pid="10" name="Focus" tags="" position="1225,100" size="100,100">Try to tune him out. You came in here for a reason. Focus on getting what you need here.
-One step at a time.</tw-passagedata><tw-passagedata pid="11" name="Cry" tags="" position="100,225" size="100,100">Sometimes, in the heat of things, it&#39;s okay to let yourself cry. Just remember to not 
+[[Cry Break-&gt; Cry]]</tw-passagedata><tw-passagedata pid="11" name="Rage" tags="" position="100,225" size="100,100">No, you shut up! You know as well as I do that your worthless and can&#39;t do 
+anything for yourself without me!</tw-passagedata><tw-passagedata pid="12" name="Focus" tags="" position="225,225" size="100,100">Try to tune him out. You came in here for a reason. Focus on getting what you need here.
+One step at a time.</tw-passagedata><tw-passagedata pid="13" name="Cry" tags="" position="350,225" size="100,100">Sometimes, in the heat of things, it&#39;s okay to let yourself cry. Just remember to not 
 stay there for too long. 
-[[Deep Breath-&gt; Focus]]</tw-passagedata><tw-passagedata pid="12" name="kitchen" tags="" position="225,225" size="100,100">You are in the kitchen
+[[Deep Breath-&gt; Focus]]</tw-passagedata><tw-passagedata pid="14" name="kitchen" tags="" position="475,225" size="100,100">You are in the kitchen
 
 Gotta find a code for the safe...
 
@@ -218,7 +239,7 @@ Mmm... nothing here
 [[Go to the kitchen -&gt; Kitchen]]
 
 
-[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="13" name="StoryInit" tags="" position="350,225" size="100,100">Welcome to the Game!
+[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="15" name="StoryInit" tags="" position="600,225" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
