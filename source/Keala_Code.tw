@@ -3,4 +3,30 @@
 You've entered the Bathroom.
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
-By ignoring me!
+By ignoring me! You know that without me, you're nothing, right?
+
+[[Ignore-> Mock]]
+[[Shut Up!-> Rage]]
+
+:: Mock
+I'm right aren't I? You know I always am. 
+[[Ignore-> Focus]]
+[[Cry Break-> Cry]]
+
+:: Rage
+No, you shut up! You know as well as I do that your worthless and can't do 
+anything for yourself without me!
+
+:: Focus
+Try to tune him out. You came in here for a reason. Focus on getting what you need here.
+One step at a time.
+[[Look around-> First Glance]]
+
+:: Cry
+Sometimes, in the heat of things, it's okay to let yourself cry. Just remember to not 
+stay there for too long. 
+[[Deep Breath-> Focus]]
+
+:: First Glance
+Hey, what the hell do you think you're doing, snooping around? It's rude to go 
+searching through things that aren't yours. Oh wait, I'm all you have, isn't that right?
