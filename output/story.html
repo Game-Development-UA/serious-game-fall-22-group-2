@@ -102,26 +102,37 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	</div>
 	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Escape Room Game" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 .intercom{
-	z-index: 2;
-	position: absolute;
-	right:30px;
-	top: 10px;
-}
-.bedroom{
-	position: initial;
-	left: 100px;
-	top: 0px;
+	height: 50%;
+	width: 50%;
 }
 
 body{
-	z-index: 1;
 	position: static;
 	background: lightpink;
 	font-family: comic-sans;
 }
 
+body.first{
+	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
+	background-size: cover;
+}
 
-
+.box1{
+	z-index:0;
+	width: 200px;
+	height: 150px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 550px;
+	right: 20px;
+}
+.text1{
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:300px;
+}
 /* The body is everything displayed in the main text delivery area
 body {
 	background: blue;
@@ -174,32 +185,20 @@ I won&#39;t keep you here any longer than needed! Best of luck!
 [[Go to Tutorial -&gt; Living Room Tutorial]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, that&#39;s why we have the tutorial room!
 Even complete fools can escape from this one. Try it out and come back once you&#39;ve gotten out.
 
-[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="5" name="Bedroom" tags="" position="600,100" size="100,100">/*
+[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="5" name="Bedroom" tags="first" position="600,100" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 
-I&#39;m gonna make comments in case youre looking at my code to help guide you a bit. Down below I put images 
-for the bedroom, the last one being the background of the bedroom. If you&#39;re having trouble putting a background in, just
-copy the last img&lt;&gt; down below, replacing the url with the url of the picture that you want. You dont have
-to add a &quot;class&quot; to it. Or you can. Dont be afraid to mess around!!
-
- */
-
-&lt;img src=&quot;https://product.hanwha-security.com/imgViewer.do?fileName=th_1530858171446.png&amp;filePath=UPLOAD_MFGD_IMG_PATH&quot;
-width=&quot;100&quot; height=&quot;100&quot; class=&quot;intercom&quot;&gt;
-
-&lt;img src=&quot;https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-4
-29c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y16
-0&amp;width=3200&amp;height=1801&amp;format=pjpg&amp;auto=webp&quot; width=&quot;1500&quot; height=&quot;750&quot; class=&quot;bedroom&quot;&gt;
-
- &lt;p&gt;You enter the Bedroom&lt;/p&gt;
+ &lt;div class=&quot;text1&quot;&gt;
+ 
+ You enter the Bedroom
 
 [[Go to Living Room again -&gt; Living Room2]]
+[[Maybe you don&#39;t want to -&gt; The Void]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Living Room2" tags="" position="725,100" size="100,100">You are in the living Room again
 
-Maybe you don&#39;t want to</tw-passagedata><tw-passagedata pid="6" name="Living Room2" tags="" position="725,100" size="100,100">You are in the living Room agian
-
-[[Go to Kitchen -&gt; kitchen]]</tw-passagedata><tw-passagedata pid="7" name="Bathroom" tags="" position="850,100" size="100,100">You&#39;ve entered the Bathroom.
+[[Go to Kitchen -&gt; kitchen]]</tw-passagedata><tw-passagedata pid="7" name="The Void" tags="" position="850,100" size="100,100">You have entered the void.</tw-passagedata><tw-passagedata pid="8" name="Bathroom" tags="" position="975,100" size="100,100">You&#39;ve entered the Bathroom.
 You shouldn&#39;t have been able to make it this far. I mean, honestly, look at you. 
 You wouldn&#39;t have been able to make it this far without me. And how do you repay me?
-By ignoring me!</tw-passagedata><tw-passagedata pid="8" name="kitchen" tags="" position="975,100" size="100,100">You are in the kitchen
+By ignoring me!</tw-passagedata><tw-passagedata pid="9" name="kitchen" tags="" position="1100,100" size="100,100">You are in the kitchen
 
 Gotta find a code for the safe...
 
@@ -210,7 +209,7 @@ Mmm... nothing here
 [[Go to the kitchen -&gt; Kitchen]]
 
 
-[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="1100,100" size="100,100">Welcome to the Game!
+[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="10" name="StoryInit" tags="" position="1225,100" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
