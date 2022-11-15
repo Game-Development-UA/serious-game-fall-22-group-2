@@ -8,7 +8,7 @@ This is text that will always appear at the bottom of every page.
 
 :: StoryMenu
 Any links that appear in this passage will be added to the sidebar
-<<link [[Go back to Start|Start]]>><</link>>
+<<link [[Go back to Start|Starting]]>><</link>>
 
 
 :: TaggedPassage [forest]
