@@ -1,11 +1,31 @@
-:: Bedroom
+:: Bedroom[first]
 
-You enter the Bedroom
+<div class="box1"></div>
+
+ <div class="text1">
+ 
+ You enter the Bedroom
 
 [[Go to Living Room again -> Living Room2]]
-
+[[Maybe you don't want to -> Bedroom2]]
+</div>
 :: Living Room2
 
-You are in the living Room agian
+You are in the living Room again
 
 [[Go to Kitchen -> kitchen]]
+
+:: Bedroom2[first]
+
+<div class="box1"></div>
+
+ <div class="text1">
+
+Perhaps you should rest
+
+[[Get in bed-> Lay]]
+ </div>
+
+:: Lay
+
+<img src="media/test1.png" width="100" height="100">
