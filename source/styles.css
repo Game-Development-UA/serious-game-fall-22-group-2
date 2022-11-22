@@ -1,20 +1,15 @@
 
 
 
-
-
+body.first{
+	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
+	background-size: cover;
+}
 .intercom{
 	z-index: 2;
 	position: absolute;
 	right:30px;
 	top: 10px;
-}
-.bedroom{
-	position: initial;
-	left: 100px;
-	top: 0px;
-	height: 50%;
-	width: 50%;
 }
 
 body{
@@ -24,10 +19,7 @@ body{
 	font-family: comic-sans;
 }
 
-body.first{
-	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
-	background-size: cover;
-}
+
 
 
 .box1{
