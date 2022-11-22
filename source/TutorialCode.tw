@@ -3,6 +3,8 @@ Welcome to the Tutorial! Take a look around, see what you can't find!
 And if you need any help, reach out to me, that's what I'm here for. 
 [[Thank You-> Enter Room]]
 
+/*add a Tutorial inventory so players can get used to that idea */
+
 :: Enter Room
 [[Ask for a hint-> Hint]]
 [[Sofa-> Sofa]]
@@ -18,7 +20,9 @@ Looks like a nice place to sit down and relax.
 [[Look around-> Enter Room]]
 
 :: Sofa2
-Hmm...nothing here
+Why are there always things between the cushions?
+[[Pick up remote->]]
+[[Pick up coin->]]
 [[Look Around->Enter Room]]
 
 :: Mirror
