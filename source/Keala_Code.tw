@@ -30,3 +30,187 @@ stay there for too long.
 :: First Glance
 Hey, what the hell do you think you're doing, snooping around? It's rude to go 
 searching through things that aren't yours. Oh wait, I'm all you have, isn't that right?
+[[Look Around->What You See]]
+
+:: What You See
+[[Cabinets Under the Sink-> Cabinet]]
+[[Mirror-> Mirror]]
+[[Shower-> Shower]]
+[[Toilet-> Toilet]]
+
+:: Toilet
+I just cleaned the toilet yesterday. 
+[[Look Around-> What You See]]
+
+:: Shower
+Now isn't the time for a shower...
+[[Look Around-> What You See]]
+
+:: Cabinet
+There's four cabinets... a large one to my left, 
+and three small ones on my right.
+[[Left Cabinet-> Left Cabinet]]
+[[Upper Right Cabinet-> Upper Right Cabinet]]
+[[Middle Right Cabinet-> Middle Right Cabinet]]
+[[Lower Right Cabinet-> Lower Right Cabinet]]
+[[Look Around-> What You See]]
+
+:: Left Cabinet
+Locked...
+[[Look at the cabinets-> Cabinet]]
+
+:: Upper Right Cabinet
+My personal items... at least he let me have my own toothbrush...
+and a place to keep my pads. 
+[[Look at the cabinets-> Cabinet]]
+
+:: Middle Right Cabinet
+Nothing in here...
+Wait I...remember seeing him put something in here...
+[[Investigate-> Middle Right Cabinet2]]
+[[I must be mistaken-> Cabinet]]
+
+:: Middle Right Cabinet2
+That's so weird I could've sworn... Wait when I close this cabinet, 
+I can hear something rattling. There has to be something. But where? 
+[[Give up for now-> Cabinet]]
+[[Listen again-> Middle Right Cabinet3]]
+
+:: Middle Right Cabinet3
+No there's definantly something in here. I think this might be a false bottom on this 
+cabinet. But how do I lift it up? I need something thin...
+[[Look at the cabinets-> Cabinet2]]
+
+:: Middle Right Cabinet4
+There's definantly something in here. I think this might be a false bottom on this 
+cabinet. But how do I lift it up? I need something thin...
+[[Look at the cabinets-> Cabinet2]]
+
+:: Lower Right Cabinet
+Locked...
+[[Look at the cabinets-> Cabinet]]
+
+:: Lower Right Cabinet Post Key
+Oh hey, my medical history! Yeah, I'm definantly taking this with me.
+[[Look at the cabinets-> Cabinet Post Med]]
+
+:: Cabinet Post Med
+There's four cabinets... a large one to my left, 
+and three small ones on my right.
+[[Left Cabinet-> Left Cabinet]]
+[[Upper Right Cabinet-> Upper Right Cabinet]]
+[[Middle Right Cabinet-> Middle Right Cabinet]]
+[[Lower Right Cabinet-> Lower right Cabinet2]]
+[[Look Around-> What You See]]
+
+:: Cabinet2
+There's four cabinets... a large one to my left, 
+and three small ones on my right.
+[[Left Cabinet-> Left Cabinet]]
+[[Upper Right Cabinet-> Upper Right Cabinet]]
+[[Middle Right Cabinet-> Middle Right Cabinet4]]
+[[Lower Right Cabinet-> Lower right Cabinet]]
+[[Look Around-> What You See]]
+
+:: Lower Right Cabinet
+There's nothing left here...
+[[Look at the cabinets-> Cabinet Post Med]]
+
+:: Mirror
+It's me. Gosh, even now I still can't make myself look. 
+I don't like what I see. 
+[[Look Around-> What You See]]
+[[Look Again-> What's That]]
+
+:: What's That
+I guess I can make myself look again. Just to prove I can. 
+[[...-> What's That2]]
+
+:: What's That2
+Wait, no that's not quite right. There's something...off about this mirror. 
+[[It's all in my head. I should look somewhere else.-> What You See]]
+[[Look closer.-> What's That3]]
+
+:: What's That3
+This isn't a solid mirror. Maybe if I just...
+[[Press your finger into the mirror.-> What's That4]]
+
+:: What's That4
+The mirror gives way under my touch. It's one of those thin mirror sheets!
+Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
+to open it...
+[[Look Around-> What You See Post Mirror]]
+
+:: What You See Post Mirror
+[[Cabinets Under the Sink-> Cabinet]]
+[[Medicine Cabinet-> Locked Medicine]]
+[[Shower-> Shower]]
+[[Toilet-> Toilet]]
+[[Wall Hangings-> Wall Hangings]]
+
+:: Wall Hangings
+These were always so pretty...
+[[First Wall Hanging-> First Wall]]
+[[Second Wall Hanging-> Second Wall]]
+
+:: First Wall
+I wonder...
+[[Remove Wall Hanging-> First Wall2]]
+[[Nevermind-> Wall Hangings]]
+
+:: First Wall2
+Oh my god...medical records.
+[[Take Them-> First Wall 3]]
+[[Leave Them-> First Wall3]]
+
+:: First Wall 3
+I'm gonna need these when I get out.
+[[Look at the Hangings-> Wall Hangings With records]]
+
+:: First Wall3
+If I need them, I'll come back. I need to focus.
+[[Look at the Hangings-> Wall Hangings Without records]]
+
+:: First Wall4
+I already have what was here.
+[[Go back-> Wall Hangings With records]]
+
+:: Wall Hangings With records
+[[First Wall Hanging-> First Wall4]]
+[[Second Wall Hanging-> Second Wall]]
+
+:: Wall Hangings Without records
+[[First Wall Hanging-> First Wall2]]
+[[Second Wall Hanging-> Second Wall]]
+
+:: Second Wall
+I wonder...
+[[Remove Wall Hanging-> Second Wall2]]
+[[Nevermind-> Wall Hangings]]
+
+:: Second Wall2 
+[[...-> Second Wall3]]
+
+:: Second Wall3
+Oh my god.
+[[There's a Camera-> Remember]]
+
+:: Remember
+I can't stop the memory from hitting me this time. 
+[[Remember-> Memory]]
+
+:: Memory
+It's dark. I'm scared. He's
+[[coming.-> Memory2]]
+
+:: Memory2
+I messed up. His dinner was slightly cold since 
+I took it out of the oven too soon. I got scared. I
+[[hid.-> Memory3]]
+
+:: Memory3
+
+
+:: Locked Medicine
+I need a key...
+[[Look Around-> What You See Post Mirror]]
