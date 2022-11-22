@@ -157,3 +157,43 @@ These were always so pretty...
 I wonder...
 [[Remove Wall Hanging-> First Wall2]]
 [[Nevermind-> Wall Hangings]]
+
+:: First Wall2
+Oh my god...medical records.
+[[Take Them-> First Wall 3]]
+[[Leave Them-> First Wall3]]
+
+:: First Wall 3
+I'm gonna need these when I get out.
+[[Look at the Hangings-> Wall Hangings With records]]
+
+:: First Wall3
+If I need them, I'll come back. I need to focus.
+[[Look at the Hangings-> Wall Hangings Without records]]
+
+:: First Wall4
+I already have what was here.
+[[Go back-> Wall Hangings With records]]
+
+:: Wall Hangings With records
+[[First Wall Hanging-> First Wall4]]
+[[Second Wall Hanging-> Second Wall]]
+
+:: Wall Hangings Without records
+[[First Wall Hanging-> First Wall2]]
+[[Second Wall Hanging-> Second Wall]]
+
+:: Second Wall
+I wonder...
+[[Remove Wall Hanging-> Second Wall2]]
+[[Nevermind-> Wall Hangings]]
+
+:: Second Wall2 
+[[...-> Second Wall3]]
+
+:: Second Wall3
+Oh my god.
+[[There's a Camera-> Remember]]
+
+:: Remember
+I can't stop the memory from hitting me this time. 
