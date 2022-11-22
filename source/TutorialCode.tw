@@ -1,1 +1,16 @@
 :: Living Room Tutorial
+Welcome to the Tutorial! Take a look around, see what you can't find!
+And if you need any help, reach out to me, that's what I'm here for. 
+[[Thank You-> Enter Room]]
+
+:: Enter Room
+[[Ask for a hint-> Hint]]
+[[Sofa-> Sofa]]
+[[Mirror->]]
+[[Fireplace]]
+[[Shelves]]
+[[Lamp]]
+[[Plant]]
+
+:: Leave
+[[Back to Main Room->Starting]]
