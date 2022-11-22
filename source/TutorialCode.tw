@@ -6,11 +6,24 @@ And if you need any help, reach out to me, that's what I'm here for.
 :: Enter Room
 [[Ask for a hint-> Hint]]
 [[Sofa-> Sofa]]
-[[Mirror->]]
-[[Fireplace]]
-[[Shelves]]
-[[Lamp]]
-[[Plant]]
+[[Mirror-> Mirror]]
+[[Fireplace-> Fireplace]]
+[[Shelves-> Shelves]]
+[[Lamp-> Lamp]]
+[[Plant-> Plant]]
+
+:: Sofa
+Looks like a nice place to sit down and relax.
+[[Look between the cushions-> Sofa2]]
+[[Look around-> Enter Room]]
+
+:: Sofa2
+Hmm...nothing here
+[[Look Around->Enter Room]]
+
+:: Mirror
+I...don't really feel like looking at myself right now...
+[[[Look Around-> Enter Room]]]
 
 :: Leave
 [[Back to Main Room->Starting]]
