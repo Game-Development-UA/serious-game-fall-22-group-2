@@ -4,12 +4,48 @@ You are in the kitchen
 Gotta find a code for the safe...
 
 [[Go to the Drawer -> Drawer]]
-
+[[Go to Fridge -> Fridge]]
 
 :: Drawer
-Mmm... nothing here
+Mmm... nothing here but letters... 
 
 [[Go to the kitchen -> Kitchen]]
 
+:: Fridge
+
+Should I cook something up? Wait no... I need to find a combination
+
+A birthday? on November 21? That might work... Need to find the birth year
+
+[[Go to Kitchen -> Kitchen]]
+
+[[Look at the top of cabinet -> go to Shelf]]
+
+:: Shelf
+
+Memory: You hear shouting, a door slamming. You find a key... what for? Hes 35 years old? Why was he so angry at me?
+
+[[Go to Kitchen -> Kitchen]]
+
 :: Kitchen
+
+Why are you snooping around?
+
+[[Isn't that what I'm supposed to do? -> defensive]]
+[[I'm sorry, I'll stop -> Accepted]]
+
+:: defensive
+
+No youre supposed to listen to me. You're supposed to do as your told. Get back to the objective.
+
+:: Accepted
+
+Good! I love it when you do as you behave. Back to the objective
+
+[[Next -> go to next]]
+
+:: next
+
+He's 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
+
 [[Go to the bathroom -> Bathroom]]
