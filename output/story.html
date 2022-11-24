@@ -326,7 +326,27 @@ A birthday? on November 21? That might work... Need to find the birth year
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
 [[Thank You-&gt; Enter Room]]
 
-/*add a Tutorial inventory so players can get used to that idea */</tw-passagedata><tw-passagedata pid="63" name="Enter Room" tags="" position="350,850" size="100,100">[[Ask for a hint-&gt; Hint]]
+/*add a Tutorial inventory so players can get used to that idea */
+
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Inventory(object):    
+    def __init__(self):
+        self.items = {}
+
+    def add_item(self, item):
+        self.items[item.name] = item
+
+    def print_items(self):
+        print(&#39;\t&#39;.join([&#39;Name&#39;, &#39;Atk&#39;, &#39;Arm&#39;, &#39;Lb&#39;, &#39;Val&#39;]))
+        for item in self.items.values():
+            print(&#39;\t&#39;.join([str(x) for x in [item.name]]))
+
+item = Item()
+In = Inventory()</tw-passagedata><tw-passagedata pid="63" name="Enter Room" tags="" position="350,850" size="100,100">[[Ask for a hint-&gt; Hint]]
 [[Sofa-&gt; Sofa]]
 [[Mirror-&gt; Mirror]]
 [[Fireplace-&gt; Fireplace]]
@@ -335,9 +355,11 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 [[Plant-&gt; Plant]]</tw-passagedata><tw-passagedata pid="64" name="Sofa" tags="" position="475,850" size="100,100">Looks like a nice place to sit down and relax.
 [[Look between the cushions-&gt; Sofa2]]
 [[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="65" name="Sofa2" tags="" position="600,850" size="100,100">Why are there always things between the cushions?
-[[Pick up remote-&gt;]]
-[[Pick up coin-&gt;]]
-[[Look Around-&gt;Enter Room]]</tw-passagedata><tw-passagedata pid="66" name="Leave" tags="" position="725,850" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="67" name="StoryInit" tags="" position="850,850" size="100,100">Welcome to the Game!
+[[Pick up remote-&gt;remote]]
+[[Pick up coin-&gt;coin]]
+[[Look Around-&gt;Enter Room]]</tw-passagedata><tw-passagedata pid="66" name="remote" tags="" position="725,850" size="100,100">I&#39;ll take the coin.
+In.add_item(coin)
+[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="67" name="Leave" tags="" position="850,850" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="68" name="StoryInit" tags="" position="975,850" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
