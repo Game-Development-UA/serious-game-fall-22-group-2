@@ -5,6 +5,27 @@ And if you need any help, reach out to me, that's what I'm here for.
 
 /*add a Tutorial inventory so players can get used to that idea */
 
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Inventory(object):    
+    def __init__(self):
+        self.items = {}
+
+    def add_item(self, item):
+        self.items[item.name] = item
+
+    def print_items(self):
+        print('\t'.join(['Name', 'Atk', 'Arm', 'Lb', 'Val']))
+        for item in self.items.values():
+            print('\t'.join([str(x) for x in [item.name]]))
+
+item = Item()
+In = Inventory()
+
+
 :: Enter Room
 [[Ask for a hint-> Hint]]
 [[Sofa-> Sofa]]
@@ -21,9 +42,14 @@ Looks like a nice place to sit down and relax.
 
 :: Sofa2
 Why are there always things between the cushions?
-[[Pick up remote->]]
-[[Pick up coin->]]
+[[Pick up remote->remote]]
+[[Pick up coin->coin]]
 [[Look Around->Enter Room]]
+
+:: remote
+I'll take the coin.
+In.add_item(coin)
+[[Look at the Sofa-> Sofa2]]
 
 :: Mirror
 I...don't really feel like looking at myself right now...
