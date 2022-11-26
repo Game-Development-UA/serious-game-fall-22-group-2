@@ -1,0 +1,61 @@
+
+/*add a Tutorial inventory so players can get used to that idea */
+
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Inventory(object):    
+    def __init__(self):
+        self.items = {}
+
+    def add_item(self, item):
+        self.items[item.name] = item
+
+    def print_items(self):
+        print('\t'.join(['Name', 'Atk', 'Arm', 'Lb', 'Val']))
+        for item in self.items.values():
+            print('\t'.join([str(x) for x in [item.name]]))
+
+item = Item()
+In = Inventory()
+
+:: Living Room Tutorial
+Welcome to the Tutorial! Take a look around, see what you can't find!
+And if you need any help, reach out to me, that's what I'm here for. 
+[[Thank You-> Enter Room]]
+
+
+
+:: Enter Room
+[[Ask for a hint-> Hint]]
+[[Sofa-> Sofa]]
+[[Mirror-> Mirror]]
+[[Fireplace-> Fireplace]]
+[[Shelves-> Shelves]]
+[[Lamp-> Lamp]]
+[[Plant-> Plant]]
+
+:: Sofa
+Looks like a nice place to sit down and relax.
+[[Look between the cushions-> Sofa2]]
+[[Look around-> Enter Room]]
+
+:: Sofa2
+Why are there always things between the cushions?
+[[Pick up remote->remote]]
+[[Pick up coin->coin]]
+[[Look Around->Enter Room]]
+
+:: coin
+I'll take the coin.
+In.add_item(coin)
+[[Look at the Sofa-> Sofa2]]
+
+:: Mirror
+I...don't really feel like looking at myself right now...
+[[[Look Around-> Enter Room]]]
+
+:: Leave
+[[Back to Main Room->Starting]]

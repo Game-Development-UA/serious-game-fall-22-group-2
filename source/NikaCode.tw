@@ -15,11 +15,22 @@ Should I cook something up? Wait no... I need to find a combination
 
 A birthday? on November 21? That might work... Need to find the birth year
 
-[[Look at the top of cabinet -> go to Shelf]]
+[[Look at the top of cabinet -> Shelf]]
+[[Go to the Drawer -> Drawer]]
 
 :: Shelf
 
-Memory: You hear shouting, a door slamming. You find a key... what for? Hes 35 years old? Why was he so angry at me?
+You reach at the top, you feel something...
+
+[[ Inspect further -> Inspect further]]
+[[Go to the Drawer -> Drawer]]
+
+:: Inspect further
+
+you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID AS YOU! WHY WOULD YOU LEAVE? IM ALL YOU HAVE". The back door slams shut and is locked. You remember that the key was hidden at the top of the shelf
+
+:: Drawer
+Mmm... nothing here but letters...
 
 [[Go to Kitchen -> Kitchen]]
 
@@ -40,7 +51,7 @@ Good! I love it when you do as you behave. Back to the objective
 
 [[Next -> go to next]]
 
-:: next
+:: go to next
 
 He's 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
 
