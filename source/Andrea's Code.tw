@@ -1,57 +1,49 @@
 :: Bedroom[first]
-
-
 <div class="box1"></div>
-
 <div class = "text1">
-
 You enter the Bedroom
 <<set $inventory to []>>
 [[Go to Living Room again -> Living Room2]]
 [[Maybe you don't want to -> Bedroom2]]
-
 </div>
 
 :: Living Room2
-
 You are in the living Room again
-
 [[Go to Kitchen -> kitchen]]
 
 :: Bedroom2[first]
-
 <div class="box1"></div>
-
  <div class="text1">
-
 What will you do?
 [[Get in bed->Lay]]
 [[Look Under Bed->Under Bed]]
 [[Search through messy clothes->Clothes]]
-[[Look on Shelf->Shelf]]
+[[Look on Shelf->InspectShelf]]
  </div>
+
 :: InspectShelf[first]
-
-<div class="box1"></div>
-
+<div class="box2"></div>
 <div class="text1">
 You take a peek on the shelf and see your jewelry box. 
 Look inside?
- </div>
+
 [[Look->LookBox]]
+ </div>
 
 :: LookBox
-
+<div class="box3"></div>
+<div class="text2">
 You take a look inside the jewelry box. You instantly notice a ring.
 
 It’s your favorite ring.
 
 Inspect further?
+[[Yes->YesYellow]]
+</div>
 
-[[Yes]]
-
-:: Yes
-
+:: YesYellow
+<div class="box4"></div>
+<div class="text3">
 You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
 He made you feel so special that day, putting his arms around you, opening doors for you. 
 He proposed to you with this ring that night, a 24-karrot pure gold ring with an oval diamond gem, 
@@ -59,31 +51,41 @@ your most prized possession. You were so grateful and excited, you said yes on t
 done anything like that before. 
 <<if not $inventory.includes("yellow key")>>
 You take another look at the jewelry box and find a yellow key. 
-
 [[Take Yellow Key-> YellowKey]]
 <</if>>
 [[Go Back->Go Back1]]
+</div>
+
 :: YellowKey
+<div class="box1"></div>
+<div class="text1">
 <<run $inventory.push("yellow key")>>
 You equipped the key.
 [[Go Back->Go Back1]]
+</div>
 
 :: Lay
-
-You get on your side of the bed and you turn to the bedside table. There’s a framed picture sitting on it. 
-
+<div class="box2"></div>
+<div class="text1">
+You get on your side of the bed and you turn to the bedside table. 
+There’s a framed picture sitting on it. 
 Take a look?
 
 [[Look at the picture->Look at picture]]
+</div>
 
 :: Look at picture
-
-It seems like a happy couple on a hiking trip, smiling at the camera. They look pretty happy as far as you can tell. The woman looks like she’s pregnant too.
-
+<div class="box2"></div>
+<div class="text1">
+It seems like a happy couple on a hiking trip, smiling at the camera. 
+They look pretty happy as far as you can tell. 
+The woman looks like she’s pregnant too.
 [[Inspect further->Inspect]]
+</div>
 
 :: Inspect
-
+<div class="box5"></div>
+<div class="text4">
 You take a closer look at the photo.
 
 Our Grand Canyon trip, I remember that. We wanted to take a break from the stress of your work and I suggested a vacation. 
@@ -91,28 +93,26 @@ I thought we were gonna have a relaxing time, we needed it especially with the b
 Trips always get you in a bad mood though. After a while on the road he got snappy, and keeping him happy would get more difficult.
 I remember having to hold in my pee on the roadtrip over because you already got angry that we had to stop for that once. 
 
-
-I remember having to starve on the way there because you didnt want to stop for food. I remember hiking in the hot sun, even when I said I couldn’t handle it, and I remember taking that picture.
+I remember having to starve on the way there because you didnt want to stop for food. 
+I remember hiking in the hot sun, even when I said I couldn’t handle it, and I remember taking that picture.
 I remember having to hold in my tears as my feet felt like they were standing on spikes, and I remember chuckling nervously as you pretended to push me down the cliff.
 <<if not $inventory.includes("blue key")>>
 [[>>>->Blue Key]]
 <<else>>
 [[Go back->Go Back1]]
 <</if>>
+</div>
+
 :: Blue Key
-
 Enough goofing around, lets get moving.
-
+<div class="box2"></div>
+<div class="text1">
 You grip the photo a little harder than one should. 
-
 You feel something that’s been taped to the back of the frame.
-
-
 You got a Blue Key
-
-<<run $inventory.push("blue key")>>
-
 [[Go Back->Go Back1]]
+<<run $inventory.push("blue key")>>
+</div>
 
 :: Under Bed
 
@@ -139,7 +139,7 @@ You look at the clothes on the floor and hesitate to go towards it.
 You look through them. Some blood spots.
 <<if not $inventory.includes("red key")>>
 You stick your hands in the pockets and find a Red Key.
-[[Grab It?->Red Key]]
+[[Grab It->Red Key]]
 <</if>>
 [[Go Back->Go Back1]]
 
@@ -155,9 +155,12 @@ You equipped the red key.
 
 [[Inspect Chest->Pull it out]]
 
-:: Go Back1
-
+:: Go Back1[first]
+<div class="box1"></div>
+<div class = "text1">
+What will you do?
 [[Get in bed->Lay]]
 [[Search through messy clothes->Clothes]]
-[[Look on Shelf->Shelf]]
+[[Look on Shelf->InspectShelf]]
 [[Look Under Bed->Under Bed]]
+</div>

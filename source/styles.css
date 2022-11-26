@@ -1,7 +1,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Andrea's stuff,,, sorry its a mess ;-; 
+
+*/
+
 body.first{
+	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body.lay{
 	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
 	background-size: cover;
 }
@@ -19,12 +42,9 @@ body{
 	font-family: comic-sans;
 }
 
-
-
-
 .box1{
 	z-index:0;
-	width: 200px;
+	width: 220px;
 	height: 150px;
 	border: 2px solid black;
 	background: white;
@@ -32,13 +52,73 @@ body{
 	top: 550px;
 	right: 20px;
 }
+
+.box2{
+	z-index:0;
+	width: 460px;
+	height: 150px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 550px;
+	right: 20px;
+}
+
+.box3{
+	z-index:0;
+	width: 500px;
+	height: 200px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 500px;
+	right: 20px;
+}
+.box4{
+	z-index:0;
+	width: 750px;
+	height: 300px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 400px;
+	right: 20px;
+}
+.box5{
+	z-index:0;
+	width: 1000px;
+	height: 400px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 300px;
+	right: 20px;
+}
+
 .text1{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:300px;
+	top:355px;
 }
-
+.text2{
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:250px;
+}
+.text3{
+	z-index: 1;
+	color: black;
+	position:relative;
+	top: 50px;
+}
+.text4{
+	z-index: 1;
+	color: black;
+	position:relative;
+	bottom: 140px;
+}
 
 
 /* The body is everything displayed in the main text delivery area
