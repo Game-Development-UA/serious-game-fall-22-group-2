@@ -120,7 +120,6 @@ I can hear something rattling. There has to be something. But where?
 <<if not $inventory.includes("HiddenBedKey")>>
 No there's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-> Middle Right CabinetB2]]
 <</if>>
 <<if $inventory.includes("HiddenBedKey")>>
 The cabinet has a fake floor!
@@ -140,7 +139,9 @@ There's a key in here!
 Locked...
 [[Look at the cabinets-> CabinetB]]
 <</if>>
+<<if $inventory.includes("YourMedKey")>>
 [[Unlock the cabinet-> Lower Right CabinetB2]]
+<</if>>
 
 :: Lower Right CabinetB2
 <<run $inventory.push("YourRecords")>>
@@ -159,7 +160,7 @@ I guess I can make myself look again. Just to prove I can.
 
 :: What's That2B
 Wait, no that's not quite right. There's something...off about this mirror. 
-[[It's all in my head. I should look somewhere else.-> What You See]]
+[[It's all in my head. I should look somewhere else.-> What You SeeB]]
 [[Look closer.-> What's That3B]]
 
 :: What's That3B
