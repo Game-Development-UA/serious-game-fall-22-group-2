@@ -704,10 +704,12 @@ No there&#39;s definantly something in here. I think this might be a false botto
 cabinet. But how do I lift it up? I need something thin...
 [[Look at the cabinets-&gt; Middle Right CabinetB2]]
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;HiddenBedKey&quot;)&gt;&gt;
 The cabinet has a fake floor!
 *You find a tiny hole in the floor* 
 [[Unlock?-&gt; Middle Right CabinetB4]]
-[[Look at the cabinets-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="71" name="Middle right CabinetB4" tags="" position="100,975" size="100,100">There&#39;s a key in here!
+&lt;&lt;/if&gt;&gt;
+[[Look at the cabinets-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="71" name="Middle Right CabinetB4" tags="" position="100,975" size="100,100">There&#39;s a key in here!
 &lt;&lt;run $inventory.push(&quot;Medkey&quot;)&gt;&gt;
 [[Look around-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="72" name="Lower Right CabinetB" tags="" position="225,975" size="100,100">&lt;&lt;if not $inventory.includes(&quot;YourMedKey&quot;)&gt;&gt;
 Locked...

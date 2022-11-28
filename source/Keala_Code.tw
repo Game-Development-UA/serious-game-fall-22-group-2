@@ -1,7 +1,7 @@
 :: Bathroom[bathroom]
+<<set $inventory to []>>
 <div class="intercombox3"></div>\
 <div class="intercomtext4">\
-<<set $inventory to []>>
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
