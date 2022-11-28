@@ -64,6 +64,14 @@ body.tutorial{
 
 }
 
+.text6{
+	position: fixed;
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:305px;
+}
+
 .box6{
 	position: fixed;
 	z-index:0;
