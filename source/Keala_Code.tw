@@ -172,10 +172,10 @@ This isn't a solid mirror. Maybe if I just...
 The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
 to open it...
-[[Go back-> What You See]]
+[[Go back-> What You SeeB]]
 <</if>>
 I think I have the key for this Medicine Cabinet...
-[[Go back-> What You See]]
+[[Go back-> What You SeeB]]
 [[Try to open it-> MedicineB]]
 
 :: Wall HangingsB
@@ -277,4 +277,4 @@ I should look at the everything again...
 Inside is some medicine. 
 This might be useful when you get out of here!
 <<run $inventory.push("Medicine")>>
-[[Go back-> What You See]]
+[[Go back-> What You SeeB]]

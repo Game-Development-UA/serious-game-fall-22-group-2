@@ -702,7 +702,6 @@ I can hear something rattling. There has to be something. But where?
 [[Listen again-&gt; Middle Right CabinetB3]]</tw-passagedata><tw-passagedata pid="70" name="Middle Right CabinetB3" tags="" position="1225,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;HiddenBedKey&quot;)&gt;&gt;
 No there&#39;s definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-&gt; Middle Right CabinetB2]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;HiddenBedKey&quot;)&gt;&gt;
 The cabinet has a fake floor!
@@ -715,14 +714,16 @@ The cabinet has a fake floor!
 Locked...
 [[Look at the cabinets-&gt; CabinetB]]
 &lt;&lt;/if&gt;&gt;
-[[Unlock the cabinet-&gt; Lower Right CabinetB2]]</tw-passagedata><tw-passagedata pid="73" name="Lower Right CabinetB2" tags="" position="350,975" size="100,100">&lt;&lt;run $inventory.push(&quot;YourRecords&quot;)&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;YourMedKey&quot;)&gt;&gt;
+[[Unlock the cabinet-&gt; Lower Right CabinetB2]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Lower Right CabinetB2" tags="" position="350,975" size="100,100">&lt;&lt;run $inventory.push(&quot;YourRecords&quot;)&gt;&gt;
 I found my medical records!
 [[Look around-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="74" name="MirrorB" tags="" position="475,975" size="100,100">It&#39;s me. Gosh, even now I still can&#39;t make myself look. 
 I don&#39;t like what I see. 
 [[Look Around-&gt; What You SeeB]]
 [[Look Again-&gt; What&#39;s ThatB]]</tw-passagedata><tw-passagedata pid="75" name="What&#39;s ThatB" tags="" position="600,975" size="100,100">I guess I can make myself look again. Just to prove I can. 
 [[...-&gt; What&#39;s That2B]]</tw-passagedata><tw-passagedata pid="76" name="What&#39;s That2B" tags="" position="725,975" size="100,100">Wait, no that&#39;s not quite right. There&#39;s something...off about this mirror. 
-[[It&#39;s all in my head. I should look somewhere else.-&gt; What You See]]
+[[It&#39;s all in my head. I should look somewhere else.-&gt; What You SeeB]]
 [[Look closer.-&gt; What&#39;s That3B]]</tw-passagedata><tw-passagedata pid="77" name="What&#39;s That3B" tags="" position="850,975" size="100,100">This isn&#39;t a solid mirror. Maybe if I just...
 [[Press your finger into the mirror.-&gt; What&#39;s That4B]]</tw-passagedata><tw-passagedata pid="78" name="What&#39;s That4B" tags="" position="975,975" size="100,100">&lt;&lt;if not $inventory.includes(&quot;Medkey&quot;)&gt;&gt;
 The mirror gives way under my touch. It&#39;s one of those thin mirror sheets!
