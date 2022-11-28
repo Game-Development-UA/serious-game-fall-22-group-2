@@ -35,11 +35,11 @@ Looks like a nice place to sit down and relax.
 Why are there always things between the cushions?
 <<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
-<</if>>
-</div>
+<</if>>\
+</div>\
 <<if not $inventory.includes("remote")>>
 [[Pick up remote->remoteT]]
-<</if>>
+<</if>>\
 [[Go Back->SofaT2]]
 </div>
 
