@@ -8,6 +8,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 :: Enter Room[tutorial]
 <div class="box1"></div>
 <div class="intercombox"></div>\
+<div class="intercomtext">\
 [[Ask for a hint-> HintT]]
 </div>\
 <div class="text1">
@@ -66,14 +67,16 @@ I'll take the remote.
 I...don't really feel like looking at myself right now...
 </div>
 <div class="intercombox"></div>\
+<div class="intercomtext">\
 [[If I may--> Mirror2T]]
-</div>
+</div>\
 
 :: Mirror2T
 <div class="intercombox"></div>\
+<div class="intercomtext">\
 I think you look wonderful. 
 But I won't pressure you if you're uncomftable. 
-</div>
+</div>\
 [[Thank You-> Enter Room]]
 
 :: ShelvesT
@@ -106,6 +109,7 @@ I should focus on getting out.
 :: HintT
 <div class="box1"></div>
 <div class="intercombox"></div>\
+<div class="intercomtext">\
 You need a hint? You have to pay to 
 escape this room.
 </div>\
