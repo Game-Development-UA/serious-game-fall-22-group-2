@@ -17,10 +17,12 @@
 Andrea's stuff,,, sorry its a mess ;-; 
 
 */
-.intercom{
-	background-image: url(https://www.security.org/app/uploads/2019/09/Lorex-Camera.png) scaleX(-1);
-	background-size: 25%;
+body.intercom{
+	z-index: 2;
+	background-image: url("/media/Intercom.png");
+	background-size: 40%;
 	background-repeat: no-repeat;
+	position: absolute;
 }
 .intercomtext{
 	position: fixed;
