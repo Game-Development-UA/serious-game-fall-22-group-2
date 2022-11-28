@@ -64,9 +64,11 @@ Dangling from a chain in the toilet is a key!
 <<if not $inventory.includes("memoryB")>>
 Now isn't the time for a shower...
 [[Look Around-> What You SeeB]]
-</if>
+<</if>>
+<<if $inventory.includes("memoryB")>>
 [[Look at the shower curtain-> CurtainB]]
 [[Look Around-> What You SeeB]]
+<</if>>
 
 :: CurtainB
 * You quietly take off the shower curtain rungs*
@@ -174,9 +176,11 @@ Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way
 to open it...
 [[Go back-> What You SeeB]]
 <</if>>
+<<if $inventory.includes("Medkey")>>
 I think I have the key for this Medicine Cabinet...
 [[Go back-> What You SeeB]]
 [[Try to open it-> MedicineB]]
+<</if>>
 
 :: Wall HangingsB
 These were always so pretty...
