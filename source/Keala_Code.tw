@@ -122,12 +122,14 @@ No there's definantly something in here. I think this might be a false bottom on
 cabinet. But how do I lift it up? I need something thin...
 [[Look at the cabinets-> Middle Right CabinetB2]]
 <</if>>
+<<if $inventory.includes("HiddenBedKey")>>
 The cabinet has a fake floor!
 *You find a tiny hole in the floor* 
 [[Unlock?-> Middle Right CabinetB4]]
+<</if>>
 [[Look at the cabinets-> CabinetB]]
 
-:: Middle right CabinetB4
+:: Middle Right CabinetB4
 There's a key in here!
 <<run $inventory.push("Medkey")>>
 [[Look around-> CabinetB]]
