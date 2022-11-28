@@ -829,14 +829,13 @@ But I won&#39;t pressure you if you&#39;re uncomftable.
 &lt;/div&gt;\
 [[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="115" name="ShelvesT" tags="" position="600,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
-&lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;\
+&lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
 [[Nothing Here...-&gt;Enter Room]]\
 &lt;&lt;/if&gt;&gt;\
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="116" name="SecretT" tags="" position="725,1475" size="100,100">*You place the coin on a shelf*
 You got a Key!
-&lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
 &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 [[Leave-&gt;LeaveT]]
