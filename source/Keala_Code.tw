@@ -44,9 +44,29 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 [[Toilet-> ToiletB]]
 </div>
 
+:: What You See2B[bathroom]
+<div class="box2"></div>
+<div class="text1">
+[[Cabinets Under the Sink-> CabinetB]]
+[[Medicine Cabinet-> MedicineB]]
+[[Shower-> ShowerB]]
+[[Toilet-> ToiletB]]
+</div>
+
 :: ToiletB
+<<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
-[[Look Around-> What You See]]
+</if>
+<<if $inventory.includes("memoryB")>>
+There's something here...
+[[Look Closer-> Toilet2B]]
+[[Look Around-> What You SeeB]]
+
+:: Toilet2B
+* You lift off the top of the toilet *
+Dangling from a chain in the toilet is a key!
+<<run $inventory.push("SafeKey")>>
+[[Run to the safe-> Safe]]
 
 :: ShowerB
 Now isn't the time for a shower...
@@ -181,6 +201,3 @@ You need to learn that actions have consequences!
 :: Locked MedicineB
 I need a key...
 
-
-:: EscapeB
-[[Escape-> Safe]]
