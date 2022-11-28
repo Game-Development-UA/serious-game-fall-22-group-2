@@ -64,6 +64,13 @@ body.tutorial{
 
 }
 
+.intercomtext3{
+	position: fixed;
+	color: white;
+	right: 150px;
+
+}
+
 .text6{
 	position: fixed;
 	z-index: 1;

@@ -26,8 +26,8 @@ And if you need any help, reach out to me, that's what I'm here for.
 <div class="text1">
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> SofaT2]]
-</div>
 [[Look around-> Enter Room]]
+</div>
 
 :: SofaT2
 <div class="box7"></div>
@@ -106,7 +106,7 @@ I should focus on getting out.
 
 :: HintT[tutorial]
 <div class="intercombox"></div>\
-<div class="intercomtext2">\
+<div class="intercomtext3">\
 You need a hint? You have to pay to 
 escape this room.
 </div>\

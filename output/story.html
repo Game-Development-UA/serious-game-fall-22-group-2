@@ -171,7 +171,7 @@ body.tutorial{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:305px;
+	top:310px;
 }
 
 .box6{
@@ -356,7 +356,6 @@ config.ui.stowBarInitially = true;
 /* Hide the back / forward buttons
 config.history.controls = false;
 */</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Intercom-&gt;Intercom]]
-[[Go to the Bedroom-&gt; Bedroom]]
 /* DELETE THIS BEFORE TURNING IN*/
 [[Go to Tutorial-&gt; Living Room Tutorial]]
 [[Go to Kitchen-&gt;kitchen]]
@@ -370,6 +369,7 @@ config.history.controls = false;
 
 [[No-&gt; Have Not]]</tw-passagedata><tw-passagedata pid="3" name="Have" tags="" position="350,100" size="100,100">Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won&#39;t keep you here any longer than needed! Best of luck!
 [[Go to Living Room -&gt; Living Room]]
+[[Go to the Bedroom-&gt; Bedroom]]
 [[Go to Couch Cushions -&gt; Couch]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
 
 So I need to find a way to unlock the bedroom door.
@@ -787,7 +787,7 @@ Why are there always things between the cushions?
 &lt;&lt;if not $inventory.includes(&quot;remote&quot;)&gt;&gt;
 [[Pick up remote-&gt;remoteT]]
 &lt;&lt;/if&gt;&gt;\
-[[Go Back-&gt;SofaT2]]
+[[Go Back-&gt;SofaT]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="111" name="coinT" tags="" position="100,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
@@ -829,7 +829,7 @@ I&#39;m not warm or anything...
 I should focus on getting out.
 [[Go Back-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="HintT" tags="tutorial" position="975,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
-&lt;div class=&quot;intercomtext&quot;&gt;\
+&lt;div class=&quot;intercomtext2&quot;&gt;\
 You need a hint? You have to pay to 
 escape this room.
 &lt;/div&gt;\
