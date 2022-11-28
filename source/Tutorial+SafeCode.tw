@@ -31,7 +31,7 @@ Looks like a nice place to sit down and relax.
 
 :: SofaT2
 <div class="box2"></div>
-<div class="text1">
+<div class="text2">
 Why are there always things between the cushions?
 <<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
