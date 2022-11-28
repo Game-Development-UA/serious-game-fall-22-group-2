@@ -179,7 +179,7 @@ body.tutorial{
 	position: fixed;
 	border: 2px solid black;
 	background-color: red;
-	width: 750px;
+	width: 650px;
 	height: 100px;
 	right: 100px;
 }
@@ -660,8 +660,7 @@ searching through things that aren&#39;t yours. Oh wait, I&#39;m all you have, i
 [[Toilet-&gt; ToiletB]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ToiletB" tags="" position="1225,725" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 I just cleaned the toilet yesterday. 
-&lt;/if&gt;
-&lt;&lt;if $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;
 There&#39;s something here...
 [[Look Closer-&gt; Toilet2B]]
 [[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="" position="100,850" size="100,100">* You lift off the top of the toilet *
@@ -687,10 +686,10 @@ and three small ones on my right.
 [[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="65" name="Left CabinetB" tags="" position="600,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;largekey&quot;)&gt;&gt;
 Locked...
 [[Look at the cabinets-&gt; CabinetB]]
-&lt;/if&gt;
+&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;largekey&quot;)&gt;&gt;
 [[Unlock-&gt; Left Cabinet2B]]
-&lt;/if&gt;</tw-passagedata><tw-passagedata pid="66" name="Left Cabinet2B" tags="" position="725,850" size="100,100">...There&#39;s nothing in here...
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="Left Cabinet2B" tags="" position="725,850" size="100,100">...There&#39;s nothing in here...
 [[Go back-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="67" name="Upper Right CabinetB" tags="" position="850,850" size="100,100">My personal items... at least he let me have my own toothbrush...
 and a place to keep my pads. 
 [[Look at the cabinets-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="68" name="Middle Right CabinetB" tags="" position="975,850" size="100,100">Nothing in here...
@@ -703,7 +702,7 @@ I can hear something rattling. There has to be something. But where?
 No there&#39;s definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
 [[Look at the cabinets-&gt; Middle Right CabinetB2]]
-&lt;/if&gt;
+&lt;&lt;/if&gt;&gt;
 The cabinet has a fake floor!
 *You find a tiny hole in the floor* 
 [[Unlock?-&gt; Middle Right CabinetB4]]
@@ -712,7 +711,7 @@ The cabinet has a fake floor!
 [[Look around-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="72" name="Lower Right CabinetB" tags="" position="225,975" size="100,100">&lt;&lt;if not $inventory.includes(&quot;YourMedKey&quot;)&gt;&gt;
 Locked...
 [[Look at the cabinets-&gt; CabinetB]]
-&lt;/if&gt;
+&lt;&lt;/if&gt;&gt;
 [[Unlock the cabinet-&gt; Lower Right CabinetB2]]</tw-passagedata><tw-passagedata pid="73" name="Lower Right CabinetB2" tags="" position="350,975" size="100,100">&lt;&lt;run $inventory.push(&quot;YourRecords&quot;)&gt;&gt;
 I found my medical records!
 [[Look around-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="74" name="MirrorB" tags="" position="475,975" size="100,100">It&#39;s me. Gosh, even now I still can&#39;t make myself look. 
@@ -727,7 +726,7 @@ The mirror gives way under my touch. It&#39;s one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it&#39;s locked. There has to be some way 
 to open it...
 [[Go back-&gt; What You See]]
-&lt;/if&gt;
+&lt;&lt;/if&gt;&gt;
 I think I have the key for this Medicine Cabinet...
 [[Go back-&gt; What You See]]
 [[Try to open it-&gt; MedicineB]]</tw-passagedata><tw-passagedata pid="79" name="Wall HangingsB" tags="" position="1100,975" size="100,100">These were always so pretty...
