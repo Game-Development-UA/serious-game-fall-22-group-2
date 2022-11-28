@@ -18,8 +18,9 @@ Andrea's stuff,,, sorry its a mess ;-;
 
 */
 .intercom{
-	background-image: url(https://www.security.org/app/uploads/2019/09/Lorex-Camera.png);
-	position: fixed;
+	background-image: url(https://www.security.org/app/uploads/2019/09/Lorex-Camera.png) scaleX(-1);
+	background-size: 25%;
+	background-repeat: no-repeat;
 }
 .intercomtext{
 	position: fixed;
