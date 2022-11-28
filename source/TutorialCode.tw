@@ -1,52 +1,16 @@
+:: Living Room Tutorial[tutorial]
 
-/*add a Tutorial inventory so players can get used to that idea */
-<script>
-function setCookie(c_name, value, exdays) {
-    var exdate = new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-    document.cookie = c_name + "=" + c_value;
-}
-
-function getCookie(c_name) {
-    var i, x, y, ARRcookies = document.cookie.split(";");
-    for (i = 0; i < ARRcookies.length; i++) {
-        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-        x = x.replace(/^\s+|\s+$/g, "");
-        if (x == c_name) {
-            return unescape(y);
-        }
-    }
-}
-
-function cssSelected() {
-    var cssSelected = $('#myList')[0].value;
-    if (cssSelected !== "select") {
-        setCookie("selectedCSS", cssSelected, 3);
-    }
-}
-
-$(document).ready(function() {
-    $('#myList')[0].value = getCookie("selectedCSS");
-})
-</script>
-<select id="myList" onchange="cssSelected();">
-    <option value="select">--Select--</option>
-    <option value="style-1.css">CSS1</option>
-    <option value="style-2.css">CSS2</option>
-    <option value="style-3.css">CSS3</option>
-    <option value="style-4.css">CSS4</option>
-</select>
-
-:: Living Room Tutorial
 Welcome to the Tutorial! Take a look around, see what you can't find!
 And if you need any help, reach out to me, that's what I'm here for. 
 [[Thank You-> Enter Room]]
 
 
-
-:: Enter Room
+:: Enter Room[tutorial]
+<div class="box1"></div>
+<div class="intercombox"></div>\
+</div>\
+<div class="text1">
+<<set $inventory to []>>
 [[Ask for a hint-> Hint]]
 [[Sofa-> Sofa]]
 [[Mirror-> Mirror]]
@@ -54,10 +18,14 @@ And if you need any help, reach out to me, that's what I'm here for.
 [[Shelves-> Shelves]]
 [[Lamp-> Lamp]]
 [[Plant-> Plant]]
+</div>
 
-:: Sofa
+:: Sofa[first]
+<div class="box2"></div>
+<div class="text1">
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> Sofa2]]
+</div>
 [[Look around-> Enter Room]]
 
 :: Sofa2

@@ -43,6 +43,18 @@ body.first{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+/*
+
+Keala's Stuff. Just the .tutorial and .bathroom
+
+*/
+body.tutorial{
+	background-image: url('https://www.thespruce.com/thmb/xygNXUvHrZP-4cqd4nJoJNZYvsU=/2118x1419/filters:fill(auto,1)/105471078-58a7239e3df78c345b927c24.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 body.lay{
 	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
 	background-repeat: no-repeat;
@@ -53,7 +65,7 @@ body.lay{
 body{
 	z-index: 1;
 	position: static;
-	background: lightpink;
+	background: rgb(65, 5, 14);
 	font-family: helvetica;
 }
 
