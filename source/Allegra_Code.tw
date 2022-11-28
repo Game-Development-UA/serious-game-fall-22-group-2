@@ -1,24 +1,61 @@
 :: Starting
-
-You are in the living room.
-
-[[What am I doing here?-> Intercom]]
 [[Go to the Bedroom-> Bedroom]]
 
 :: Intercom
-Hi! Welcome to the escape room! We're so glad to have you! Is this your first time in an escape room?
+Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
 
 [[Yes -> Have]]
 
 [[No-> Have Not]]
 
 :: Have
-Perfect! So you already know about the time limit and how each room is a puzzle! Well then, 
-I won't keep you here any longer than needed! Best of luck!
-[[Go to Tutorial -> Living Room Tutorial]]
+Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
+[[Go to Living Room -> Living Room]]
 
 :: Have Not
-That's quite alright! We all have to start somewhere, right? I kid I kid, that's why we have the tutorial room!
-Even complete fools can escape from this one. Try it out and come back once you've gotten out.
+That's quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
 
+So I need to find a way to unlock the bedroom door.
+
+[[Go to Couch Cushions -> Couch]]
+
+:: Couch
+This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
+
+[[Look at Framed Pictures -> Pictures]]
+[[ Go to Bookshelf -> Shelf]]
+
+:: Pictures
+They all seem to be pointing to the bookshelf.
+
+:: Shelf
+Huh… There's a book that stands out more than the rest, but it seems a little obvious.
+
+[[Inspect Book -> Inspect Book]]
+
+:: Inspect Book
+Its hollow… a key fell out.
+
+[[Go to Bedroom Door -> Bedroom Door]]
+[[Go to Storage Ottoman -> Ottoman]]
+
+:: Bedroom Door
+The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?
+
+:: Ottoman
+Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
+
+[[Go to Bookshelf -> Shelf]]
+[[Inspect Clothes -> Inspect]]
+
+:: Shelf
+ :: Intercom
+Are you interested in the collection of my novels? I know its very impressive.
+
+:: Inspect Clothes
+Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+
+[[ Go to Bedroom Door -> Bedroom Door]]
+Okay, lets try the bobby pin. It worked!
+ 
 [[Go to Bedroom -> Bedroom]]
