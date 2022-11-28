@@ -17,12 +17,23 @@
 Andrea's stuff,,, sorry its a mess ;-; 
 
 */
+.intercom{
+	background-image: url(https://www.security.org/app/uploads/2019/09/Lorex-Camera.png);
+	position: fixed;
+}
+.intercomtext{
+	position: fixed;
+	color: white;
+	right: 130px;
 
+}
 .intercombox{
+	position: fixed;
 	border: 2px solid black;
 	background-color: red;
-	color: white;
-	
+	width: 300px;
+	height: 80px;
+	right: 100px;
 }
 
 body.first{
@@ -46,6 +57,7 @@ body{
 }
 
 .box1{
+	position: fixed;
 	z-index:0;
 	width: 250px;
 	height: 150px;
@@ -57,6 +69,7 @@ body{
 }
 
 .box2{
+	position: fixed;
 	z-index:0;
 	width: 500px;
 	height: 150px;
@@ -68,6 +81,7 @@ body{
 }
 
 .box3{
+	position: fixed;
 	z-index:0;
 	width: 500px;
 	height: 200px;
@@ -78,6 +92,7 @@ body{
 	right: 20px;
 }
 .box4{
+	position: fixed;
 	z-index:0;
 	width: 750px;
 	height: 300px;
@@ -88,6 +103,7 @@ body{
 	right: 20px;
 }
 .box5{
+	position: fixed;
 	z-index:0;
 	width: 1000px;
 	height: 400px;
@@ -99,24 +115,28 @@ body{
 }
 
 .text1{
+	position: fixed;
 	z-index: 1;
 	color: black;
 	position:relative;
 	top:355px;
 }
 .text2{
+	position: fixed;
 	z-index: 1;
 	color: black;
 	position:relative;
 	top:250px;
 }
 .text3{
+	position: fixed;
 	z-index: 1;
 	color: black;
 	position:relative;
 	top: 50px;
 }
 .text4{
+	position: fixed;
 	z-index: 1;
 	color: black;
 	position:relative;

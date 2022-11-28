@@ -1,5 +1,9 @@
-:: Bedroom[first]
+:: Bedroom[first, intercom]
 <div class="box1"></div>
+<div class="intercombox"></div>\
+<div class="intercomtext">\
+YOUR MOM!!!! AHAHHAHAHAH
+</div>\
 <div class = "text1">
 You enter the Bedroom
 <<set $inventory to []>>
@@ -19,7 +23,6 @@ What will you do?
 
 :: InspectShelf[first]
 <div class="box2"></div>
-<div class="intercombox">uhhh</div>\
 <div class="text1">
 You take a peek on the shelf and see your jewelry box. 
 Look inside?
@@ -260,4 +263,21 @@ You are in the living Room again
 [[Go to Kitchen -> kitchen]]
 
 :: Couch
-You look at the black leather couch.
+You go over to the black leather couch.
+What will you do?
+[[Look between the seats->Couch2]]
+[[Sit->SitCouch1]]
+
+:: Couch2
+You stick your hand and start searching between the seats. You feel something hard and pull
+it out. It's a remote. 
+[[Enter favorite channel->turn on tv]]
+
+:: turn on tv
+You enter his favorite channel, 63782011
+
+Draft
+
+:: Display Case
+
+You look at the display case and see 
