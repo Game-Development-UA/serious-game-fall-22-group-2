@@ -659,11 +659,14 @@ searching through things that aren&#39;t yours. Oh wait, I&#39;m all you have, i
 [[Mirror-&gt; MirrorB]]
 [[Shower-&gt; ShowerB]]
 [[Toilet-&gt; ToiletB]]
+[[Wall Hangings-&gt; Wall HangingsB]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ToiletB" tags="" position="1225,725" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 I just cleaned the toilet yesterday. 
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 There&#39;s something here...
 [[Look Closer-&gt; Toilet2B]]
+&lt;&lt;/if&gt;&gt;
 [[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="" position="100,850" size="100,100">* You lift off the top of the toilet *
 Dangling from a chain in the toilet is a key!
 &lt;&lt;run $inventory.push(&quot;SafeKey&quot;)&gt;&gt;
