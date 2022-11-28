@@ -24,7 +24,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 <div class="box2"></div>
 <div class="text1">
 Looks like a nice place to sit down and relax.
-[[Look between the cushions-> Sofa2]]
+[[Look between the cushions-> SofaT2]]
 </div>
 [[Look around-> Enter Room]]
 
@@ -35,13 +35,13 @@ Why are there always things between the cushions?
 <<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
 <</if>>
-[[Go Back->Go Back1]]
+[[Go Back-> SofaT]]
 </div>
 <<if not $inventory.includes("remote")>>
 [[Pick up remote->remoteT]]
 <</if>>
 [[Pick up remote->remoteT]]
-[[Look Around->Enter Room]]
+[[Go Back->Sofa2]]
 </div>
 
 :: coinT
