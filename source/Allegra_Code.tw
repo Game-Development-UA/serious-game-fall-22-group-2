@@ -1,6 +1,5 @@
 :: Starting
 [[Intercom->Intercom]]
-[[Go to the Bedroom-> Bedroom]]
 /* DELETE THIS BEFORE TURNING IN*/
 [[Go to Tutorial-> Living Room Tutorial]]
 [[Go to Kitchen->kitchen]]
@@ -21,6 +20,7 @@ Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
+[[Go to the Bedroom-> Bedroom]]
 [[Go to Couch Cushions -> Couch]]
 
 :: Have Not

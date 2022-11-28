@@ -39,7 +39,7 @@ Why are there always things between the cushions?
 <<if not $inventory.includes("remote")>>
 [[Pick up remote->remoteT]]
 <</if>>\
-[[Go Back->SofaT2]]
+[[Go Back->SofaT]]
 </div>
 
 :: coinT
@@ -106,7 +106,7 @@ I should focus on getting out.
 
 :: HintT[tutorial]
 <div class="intercombox"></div>\
-<div class="intercomtext">\
+<div class="intercomtext2">\
 You need a hint? You have to pay to 
 escape this room.
 </div>\
