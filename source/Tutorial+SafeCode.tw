@@ -10,7 +10,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 <div class="intercomtext">\
 [[Ask for a hint-> HintT]]
 </div>\
-<div class="box1"></div>
+<div class="box6"></div>
 <div class="text5">
 <<set $inventory to []>>
 [[Sofa-> SofaT]]

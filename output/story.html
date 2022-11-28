@@ -162,8 +162,28 @@ body.tutorial{
 .intercomtext{
 	position: fixed;
 	color: white;
-	right: 250px;
+	right: 150px;
 
+}
+
+.box1{
+	position: fixed;
+	z-index:0;
+	width: 250px;
+	height: 150px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 550px;
+	right: 20px;
+}
+
+.text5{
+	position: fixed;
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:305px;
 }
 
 body.bathroom{
@@ -720,12 +740,12 @@ A birthday? on November 21? That might work... Need to find the birth year
 
 [[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="107" name="Living Room Tutorial" tags="tutorial" position="850,1350" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="Enter Room" tags="tutorial" position="975,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="Enter Room" tags="tutorial" position="975,1350" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext&quot;&gt;\
 [[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text5&quot;&gt;
 &lt;&lt;set $inventory to []&gt;&gt;
 [[Sofa-&gt; SofaT]]
 [[Mirror-&gt; MirrorT]]
