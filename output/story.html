@@ -127,7 +127,7 @@ Andrea's stuff,,, sorry its a mess ;-;
 .intercomtext{
 	position: fixed;
 	color: white;
-	right: 130px;
+	right: 200px;
 
 }
 .intercombox{
@@ -300,7 +300,15 @@ config.ui.stowBarInitially = true;
 /* Hide the back / forward buttons
 config.history.controls = false;
 */</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Intercom-&gt;Intercom]]
-[[Go to the Bedroom-&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
+[[Go to the Bedroom-&gt; Bedroom]]
+/* DELETE THIS BEFORE TURNING IN*/
+[[Go to Tutorial-&gt; Tutorial]]
+[[Go to Kitchen-&gt;kitchen]]
+[[Go to bathroom-&gt; Bathroom]]
+[[Go to safe-&gt; Safe]]
+[[Go to living room-&gt; Living Room]]
+[[Go to living room2-&gt; Living Room2]]
+/* DELETE THIS BEFORE TURNING IN*/</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
 
 [[Yes -&gt; Have]]
 
@@ -589,8 +597,10 @@ and three small ones on my right.
 [[Upper Right Cabinet-&gt; Upper Right Cabinet]]
 [[Middle Right Cabinet-&gt; Middle Right Cabinet4]]
 [[Lower Right Cabinet-&gt; Lower Right Cabinet]]
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="73" name="Mirror" tags="" position="350,975" size="100,100">I...don&#39;t really feel like looking at myself right now...
-[[[Look Around-&gt; Enter Room]]]</tw-passagedata><tw-passagedata pid="74" name="What&#39;s That" tags="" position="475,975" size="100,100">I guess I can make myself look again. Just to prove I can. 
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="73" name="Mirror" tags="" position="350,975" size="100,100">It&#39;s me. Gosh, even now I still can&#39;t make myself look. 
+I don&#39;t like what I see. 
+[[Look Around-&gt; What You See]]
+[[Look Again-&gt; What&#39;s That]]</tw-passagedata><tw-passagedata pid="74" name="What&#39;s That" tags="" position="475,975" size="100,100">I guess I can make myself look again. Just to prove I can. 
 [[...-&gt; What&#39;s That2]]</tw-passagedata><tw-passagedata pid="75" name="What&#39;s That2" tags="" position="600,975" size="100,100">Wait, no that&#39;s not quite right. There&#39;s something...off about this mirror. 
 [[It&#39;s all in my head. I should look somewhere else.-&gt; What You See]]
 [[Look closer.-&gt; What&#39;s That3]]</tw-passagedata><tw-passagedata pid="76" name="What&#39;s That3" tags="" position="725,975" size="100,100">This isn&#39;t a solid mirror. Maybe if I just...
@@ -646,27 +656,93 @@ A birthday? on November 21? That might work... Need to find the birth year
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
 [[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="106" name="Enter Room" tags="tutorial" position="725,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+[[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;set $inventory to []&gt;&gt;
-[[Ask for a hint-&gt; Hint]]
-[[Sofa-&gt; Sofa]]
-[[Mirror-&gt; Mirror]]
-[[Fireplace-&gt; Fireplace]]
-[[Shelves-&gt; Shelves]]
-[[Lamp-&gt; Lamp]]
-[[Plant-&gt; Plant]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="107" name="Sofa" tags="first" position="850,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+[[Sofa-&gt; SofaT]]
+[[Mirror-&gt; MirrorT]]
+[[Fireplace-&gt; FireplaceT]]
+[[Shelves-&gt; ShelvesT]]
+[[Lamp-&gt; LampT]]
+[[Plant-&gt; PlantT]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="107" name="SofaT" tags="tutorial" position="850,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-&gt; Sofa2]]
 &lt;/div&gt;
-[[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="Sofa2" tags="" position="975,1350" size="100,100">Why are there always things between the cushions?
-[[Pick up remote-&gt;remote]]
-[[Pick up coin-&gt;coin]]
-[[Look Around-&gt;Enter Room]]</tw-passagedata><tw-passagedata pid="109" name="coin" tags="" position="1100,1350" size="100,100">I&#39;ll take the coin.
-In.add_item(coin)
-[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="110" name="Leave" tags="" position="1225,1350" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="111" name="StoryInit" tags="" position="100,1475" size="100,100">Welcome to the Game!
+[[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="SofaT2" tags="" position="975,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+Why are there always things between the cushions?
+&lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;
+[[Pick up coin-&gt;coinT]]
+&lt;&lt;/if&gt;&gt;
+[[Go Back-&gt;Go Back1]]
+&lt;/div&gt;
+&lt;&lt;if not $inventory.includes(&quot;remote&quot;)&gt;&gt;
+[[Pick up remote-&gt;remoteT]]
+&lt;&lt;/if&gt;&gt;
+[[Pick up remote-&gt;remoteT]]
+[[Look Around-&gt;Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="coinT" tags="" position="1100,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+&lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
+I&#39;ll take the coin.
+[[Go Back-&gt; Sofa2]]
+&lt;/div&gt;
+[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="110" name="remoteT" tags="" position="1225,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+&lt;&lt;run $inventory.push(&quot;remote&quot;)&gt;&gt;
+I&#39;ll take the remote.
+[[Go Back-&gt; Sofa2]]
+&lt;/div&gt;
+[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="111" name="MirrorT" tags="" position="100,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+I...don&#39;t really feel like looking at myself right now...
+&lt;/div&gt;
+&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+[[If I may--&gt; Mirror2T]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="Mirror2T" tags="" position="225,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+I think you look wonderful. 
+But I won&#39;t pressure you if you&#39;re uncomftable. 
+&lt;/div&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="113" name="ShelvesT" tags="" position="350,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+&lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;\
+[[&gt;&gt;&gt;-&gt;SecretT]]
+&lt;&lt;else&gt;&gt;\
+[[Nothing Here...-&gt;Enter Room]]\
+&lt;&lt;/if&gt;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="114" name="SecretT" tags="" position="475,1475" size="100,100">*You place the coin on a shelf*
+You got a Key!
+&lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
+&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+[[Leave-&gt;LeaveT]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="115" name="FireplaceT" tags="" position="600,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+I&#39;m not warm or anything...
+I should focus on getting out.
+[[Go Back-&gt; Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="116" name="HintT" tags="" position="725,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+You need a hint? You have to pay to 
+escape this room.
+&lt;/div&gt;\
+&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+[[?-&gt; Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="LampT" tags="" position="850,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+This lamp looks like the one my 
+mom got me for my wedding gift.
+[[Go Back-&gt; Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="PlantT" tags="" position="975,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+It looks like it needs to be 
+watered...poot thing.
+[[Go Back-&gt; Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="LeaveT" tags="" position="1100,1475" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="120" name="StoryInit" tags="" position="1225,1475" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
