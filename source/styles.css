@@ -68,7 +68,7 @@ body.tutorial{
 	position: fixed;
 	z-index:0;
 	width: 250px;
-	height: 170px;
+	height: 190px;
 	border: 2px solid black;
 	background: white;
 	position: relative;
@@ -81,7 +81,7 @@ body.tutorial{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:305px;
+	top:315px;
 }
 
 body.bathroom{
