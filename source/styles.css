@@ -47,7 +47,7 @@ body.first{
 }
 /*
 
-Keala's Stuff. Just the .tutorial and .bathroom
+Keala's Stuff. Just the .tutorial, .intercom2, .bathroom
 
 */
 body.tutorial{
@@ -55,6 +55,13 @@ body.tutorial{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.intercomtext{
+	position: fixed;
+	color: white;
+	right: 250px;
+
 }
 
 body.bathroom{
