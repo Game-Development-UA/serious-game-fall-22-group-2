@@ -31,12 +31,11 @@ Looks like a nice place to sit down and relax.
 
 :: SofaT2
 <div class="box2"></div>
-<div class="text2">
+<div class="text1">
 Why are there always things between the cushions?
 <<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
 <</if>>\
-</div>\
 <<if not $inventory.includes("remote")>>
 [[Pick up remote->remoteT]]
 <</if>>\
@@ -48,18 +47,17 @@ Why are there always things between the cushions?
 <div class="text1">
 <<run $inventory.push("coin")>>
 I'll take the coin.
-[[Go Back-> SofaT2]]
-</div>
 [[Look at the Sofa-> SofaT2]]
+</div>
+
 
 :: remoteT
 <div class="box1"></div>
 <div class="text1">
 <<run $inventory.push("remote")>>
 I'll take the remote.
-[[Go Back-> SofaT2]]
-</div>
 [[Look at the Sofa-> SofaT2]]
+</div>
 
 :: MirrorT
 <div class="box1"></div>
