@@ -48,8 +48,7 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 :: ToiletB
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
-</if>
-<<if $inventory.includes("memoryB")>>
+<</if>>
 There's something here...
 [[Look Closer-> Toilet2B]]
 [[Look Around-> What You SeeB]]
@@ -90,10 +89,10 @@ and three small ones on my right.
 <<if not $inventory.includes("largekey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
-</if>
+<</if>>
 <<if $inventory.includes("largekey")>>
 [[Unlock-> Left Cabinet2B]]
-</if>
+<</if>>
 
 :: Left Cabinet2B
 ...There's nothing in here...
@@ -121,7 +120,7 @@ I can hear something rattling. There has to be something. But where?
 No there's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
 [[Look at the cabinets-> Middle Right CabinetB2]]
-</if>
+<</if>>
 The cabinet has a fake floor!
 *You find a tiny hole in the floor* 
 [[Unlock?-> Middle Right CabinetB4]]
@@ -137,7 +136,7 @@ There's a key in here!
 <<if not $inventory.includes("YourMedKey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
-</if>
+<</if>>
 [[Unlock the cabinet-> Lower Right CabinetB2]]
 
 :: Lower Right CabinetB2
@@ -170,7 +169,7 @@ The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
 to open it...
 [[Go back-> What You See]]
-</if>
+<</if>>
 I think I have the key for this Medicine Cabinet...
 [[Go back-> What You See]]
 [[Try to open it-> MedicineB]]
