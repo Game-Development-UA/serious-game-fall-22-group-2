@@ -1,4 +1,5 @@
 :: Starting
+[[Intercom->Intercom]]
 [[Go to the Bedroom-> Bedroom]]
 
 :: Intercom
@@ -11,13 +12,14 @@ Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
+[[Go to Couch Cushions -> Couch]]
 
 :: Have Not
 That's quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
 
 So I need to find a way to unlock the bedroom door.
 
-[[Go to Couch Cushions -> Couch]]
+[[Go to Tutorial-> Tutorial]]
 
 :: Couch
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
