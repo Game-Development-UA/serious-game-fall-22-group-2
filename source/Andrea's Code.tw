@@ -163,6 +163,7 @@ You insert each key into its respective lock.
 You hear a loud click and you lift the chest open.
 Inside, you find a single, stuffed teddy bear. It's dirty and has ripped clothes.
 It also seems to have stitches and burnmarks.
+<<run $inventory.push("bear")>>
 [[>>>->Unlock Chest2]]
 
 :: Unlock Chest2
@@ -249,18 +250,21 @@ WHAT DO YOU THINK IT IS SWEETHEART?
 
 :: GoBackFinal
 AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.
-[[Go Back to Living Room->LivingRoom2]]
+[[Go Back to Living Room->Living Room2]]
 [[Get in bed->Lay]]
 [[Search through messy clothes->Clothes]]
 [[Look on Shelf->InspectShelf]]
 
 :: Living Room2
-You are in the living Room again
+You are in the living Room again.
 [[Couch-> Couch]]
 [[TV-> TV]]
 [[Display Case-> Display Case]]
 [[Go to Bedroom->Bedroom2]]
+<<if $inventory.includes("kitchen key")>>
 [[Go to Kitchen -> kitchen]]
+<</if>>
+
 
 :: Couch
 You go over to the black leather couch.
@@ -277,7 +281,60 @@ it out. It's a remote.
 You enter his favorite channel, 63782011
 
 Draft
+[[Watch tv->What tv]]
+
+:: Watch tv
+You sit down on the couch as you start hearing the screams and cheer or the people on
+the tv. The sports channel. You hate it--it's loud, annoying, it's always the same, 
+and it triggers your fight or flight. You'd rather change the channel but then the announcer
+starts saying something out of the ordinary.
+[[>>>->Watch tv2]]
+
+:: Watch tv2
+<em>We're tuning live from the deepest parts of your subconscious, you are watching 
+NFJ football. 
+Wanna get out of this place? Too bad!! You're here forever- ever-ever-ever...</em>
+You quickly turn the tv off. You don't like this. 
+
+<<if $inventory.includes("bear")>>
+[[Don't Panic->Don't Panic]]\
+<</if>>
+[[Go Back->Living Room2]]
+
+:: Don't Panic
+
+You feel the bear shaking in your hands.
+You hold on to the teddy bear gently, petting its furr and holding it close. 
+
+It'll all be alright.
+[[Regain Strength->Don't Panic2]]
+
+:: Don't Panic2
+You take a deep breath and try and think of a way out of this living room. 
+You know the kitchen is locked. What do you do?
+<<if $inventory.includes("kitchen key")>>\
+[[Try again->kitchen]]
+<else>\
+[[Try again->kitchenlocked]]
+<</if>>\
+[[Look through display case->Display Case]]
+[[Go Back->Living Room2]]
+
+:: kitchenlocked
+You try and open the door but it's locked. I always thought it was stupid that
+the kitchen had a door and lock, until I used it a couple of times.
+
+The key must be around here somewhere.
+
+[[Go Back-> Don't Panic2]]
 
 :: Display Case
+You go over to the glass display case next to the TV. There are a lot of different 
+nick-nacks from travels, memories, and achievments. Just as any family should have up
+for display.
+Huh.. What's the key to the kitchen doing in here?
+<<run $inventory.push("kitchen key")>>
+[[Grab key->Kitchen Key]]
 
-You look at the display case and see 
+:: Kitchen Key
+You equipped the kitchen key.
