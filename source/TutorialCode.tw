@@ -8,10 +8,10 @@ And if you need any help, reach out to me, that's what I'm here for.
 :: Enter Room[tutorial]
 <div class="box1"></div>
 <div class="intercombox"></div>\
+[[Ask for a hin-> Hint]]
 </div>\
 <div class="text1">
 <<set $inventory to []>>
-[[Ask for a hint-> Hint]]
 [[Sofa-> Sofa]]
 [[Mirror-> Mirror]]
 [[Fireplace-> Fireplace]]
@@ -20,7 +20,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 [[Plant-> Plant]]
 </div>
 
-:: Sofa[first]
+:: SofaT[tutorial]
 <div class="box2"></div>
 <div class="text1">
 Looks like a nice place to sit down and relax.
@@ -28,20 +28,34 @@ Looks like a nice place to sit down and relax.
 </div>
 [[Look around-> Enter Room]]
 
-:: Sofa2
+:: SofaT2
+<div class="box2"></div>
+<div class="text1">
 Why are there always things between the cushions?
-[[Pick up remote->remote]]
-[[Pick up coin->coin]]
+<<if not $inventory.includes("coin")>>
+[[Pick up coin->coinT]]
+<</if>>
+[[Go Back->Go Back1]]
+</div>
+<<if not $inventory.includes("remote")>>
+[[Pick up remote->remoteT]]
+<</if>>
+[[Pick up remote->remoteT]]
 [[Look Around->Enter Room]]
+</div>
 
-:: coin
+:: coinT
+<div class="box1"></div>
+<div class="text1">
+<<run $inventory.push("yellow key")>>
 I'll take the coin.
-In.add_item(coin)
+[[Go Back-> Sofa2]]
+</div>
 [[Look at the Sofa-> Sofa2]]
 
-:: Mirror
+:: MirrorT
 I...don't really feel like looking at myself right now...
 [[[Look Around-> Enter Room]]]
 
-:: Leave
+:: LeaveT
 [[Back to Main Room->Starting]]

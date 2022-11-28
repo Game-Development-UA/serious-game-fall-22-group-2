@@ -1,6 +1,15 @@
 :: Starting
 [[Intercom->Intercom]]
 [[Go to the Bedroom-> Bedroom]]
+/* DELETE THIS BEFORE TURNING IN*/
+[[Go to Tutorial-> Tutorial]]
+[[Go to Kitchen->kitchen]]
+[[Go to bathroom-> Bathroom]]
+[[Go to safe-> Safe]]
+[[Go to living room-> Living Room]]
+[[Go to living room2-> Living Room2]]
+/* DELETE THIS BEFORE TURNING IN*/
+
 
 :: Intercom
 Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?

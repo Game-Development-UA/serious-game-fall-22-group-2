@@ -299,16 +299,18 @@ config.ui.stowBarInitially = true;
 
 /* Hide the back / forward buttons
 config.history.controls = false;
-*/</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Go to the Bedroom-&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
+*/</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Intercom-&gt;Intercom]]
+[[Go to the Bedroom-&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
 
 [[Yes -&gt; Have]]
 
 [[No-&gt; Have Not]]</tw-passagedata><tw-passagedata pid="3" name="Have" tags="" position="350,100" size="100,100">Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won&#39;t keep you here any longer than needed! Best of luck!
-[[Go to Living Room -&gt; Living Room]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
+[[Go to Living Room -&gt; Living Room]]
+[[Go to Couch Cushions -&gt; Couch]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
 
 So I need to find a way to unlock the bedroom door.
 
-[[Go to Couch Cushions -&gt; Couch]]</tw-passagedata><tw-passagedata pid="5" name="Couch" tags="" position="600,100" size="100,100">You go over to the black leather couch.
+[[Go to Tutorial-&gt; Living Room Tutorial]]</tw-passagedata><tw-passagedata pid="5" name="Couch" tags="" position="600,100" size="100,100">You go over to the black leather couch.
 What will you do?
 [[Look between the seats-&gt;Couch2]]
 [[Sit-&gt;SitCouch1]]</tw-passagedata><tw-passagedata pid="6" name="Pictures" tags="" position="725,100" size="100,100">They all seem to be pointing to the bookshelf.</tw-passagedata><tw-passagedata pid="7" name="Shelf" tags="" position="850,100" size="100,100">You reach at the top, you feel something...
@@ -457,8 +459,7 @@ You start petting it slowly and it&#39;s shaking seems to calm down a bit.
 You can&#39;t give up yet.
 [[Go Back-&gt;GotoSafe1.5]]</tw-passagedata><tw-passagedata pid="33" name="GotoSafe2" tags="" position="350,475" size="100,100">What will you do?
 [[Look in Drawer-&gt;Tool1]]
-[[Push Table Aside-&gt;GotoSafe3]]
-[[Go Back-&gt;GotOSafe]]</tw-passagedata><tw-passagedata pid="34" name="Tool1" tags="" position="475,475" size="100,100">You look inside the drawer of the bedside table.
+[[Push Table Aside-&gt;GotoSafe3]]</tw-passagedata><tw-passagedata pid="34" name="Tool1" tags="" position="475,475" size="100,100">You look inside the drawer of the bedside table.
 &lt;&lt;if not $inventory.includes(&quot;fork&quot;)&gt;&gt;
 You find a couple things--a bottle of pills, a broken pencil, a couple of coins, and a fork.
 [[Grab Fork-&gt;Equip Fork]]
@@ -490,21 +491,22 @@ WHAT DO YOU THINK IT IS SWEETHEART?
 [[Search through messy clothes-&gt;Clothes]]
 [[Look on Shelf-&gt;InspectShelf]]</tw-passagedata><tw-passagedata pid="42" name="Living Room2" tags="" position="225,600" size="100,100">You are in the living Room again.
 [[Couch-&gt; Couch]]
-[[TV-&gt; TV]]
 [[Display Case-&gt; Display Case]]
 [[Go to Bedroom-&gt;Bedroom2]]
 &lt;&lt;if $inventory.includes(&quot;kitchen key&quot;)&gt;&gt;
 [[Go to Kitchen -&gt; kitchen]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Couch2" tags="" position="350,600" size="100,100">You stick your hand and start searching between the seats. You feel something hard and pull
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="SitCouch1" tags="" position="350,600" size="100,100">You sit on the couch. You start to feel sleepy, you should
+go back and escape before that could happen, it could end badly.
+[[Go Back-&gt;Couch]]</tw-passagedata><tw-passagedata pid="44" name="Couch2" tags="" position="475,600" size="100,100">You stick your hand and start searching between the seats. You feel something hard and pull
 it out. It&#39;s a remote. 
-[[Enter favorite channel-&gt;turn on tv]]</tw-passagedata><tw-passagedata pid="44" name="turn on tv" tags="" position="475,600" size="100,100">You enter his favorite channel, 63782011
+[[Enter favorite channel-&gt;turn on tv]]</tw-passagedata><tw-passagedata pid="45" name="turn on tv" tags="" position="600,600" size="100,100">You enter his favorite channel, 63782011
 
 Draft
-[[Watch tv-&gt;What tv]]</tw-passagedata><tw-passagedata pid="45" name="Watch tv" tags="" position="600,600" size="100,100">You sit down on the couch as you start hearing the screams and cheer or the people on
+[[Watch tv-&gt;Watch tv]]</tw-passagedata><tw-passagedata pid="46" name="Watch tv" tags="" position="725,600" size="100,100">You sit down on the couch as you start hearing the screams and cheer or the people on
 the tv. The sports channel. You hate it--it&#39;s loud, annoying, it&#39;s always the same, 
 and it triggers your fight or flight. You&#39;d rather change the channel but then the announcer
 starts saying something out of the ordinary.
-[[&gt;&gt;&gt;-&gt;Watch tv2]]</tw-passagedata><tw-passagedata pid="46" name="Watch tv2" tags="" position="725,600" size="100,100">&lt;em&gt;We&#39;re tuning live from the deepest parts of your subconscious, you are watching 
+[[&gt;&gt;&gt;-&gt;Watch tv2]]</tw-passagedata><tw-passagedata pid="47" name="Watch tv2" tags="" position="850,600" size="100,100">&lt;em&gt;We&#39;re tuning live from the deepest parts of your subconscious, you are watching 
 NFJ football. 
 Wanna get out of this place? Too bad!! You&#39;re here forever- ever-ever-ever...&lt;/em&gt;
 You quickly turn the tv off. You don&#39;t like this. 
@@ -512,11 +514,11 @@ You quickly turn the tv off. You don&#39;t like this.
 &lt;&lt;if $inventory.includes(&quot;bear&quot;)&gt;&gt;
 [[Don&#39;t Panic-&gt;Don&#39;t Panic]]\
 &lt;&lt;/if&gt;&gt;
-[[Go Back-&gt;Living Room2]]</tw-passagedata><tw-passagedata pid="47" name="Don&#39;t Panic" tags="" position="850,600" size="100,100">You feel the bear shaking in your hands.
+[[Go Back-&gt;Living Room2]]</tw-passagedata><tw-passagedata pid="48" name="Don&#39;t Panic" tags="" position="975,600" size="100,100">You feel the bear shaking in your hands.
 You hold on to the teddy bear gently, petting its furr and holding it close. 
 
 It&#39;ll all be alright.
-[[Regain Strength-&gt;Don&#39;t Panic2]]</tw-passagedata><tw-passagedata pid="48" name="Don&#39;t Panic2" tags="" position="975,600" size="100,100">You take a deep breath and try and think of a way out of this living room. 
+[[Regain Strength-&gt;Don&#39;t Panic2]]</tw-passagedata><tw-passagedata pid="49" name="Don&#39;t Panic2" tags="" position="1100,600" size="100,100">You take a deep breath and try and think of a way out of this living room. 
 You know the kitchen is locked. What do you do?
 &lt;&lt;if $inventory.includes(&quot;kitchen key&quot;)&gt;&gt;\
 [[Try again-&gt;kitchen]]
@@ -524,125 +526,125 @@ You know the kitchen is locked. What do you do?
 [[Try again-&gt;kitchenlocked]]
 &lt;&lt;/if&gt;&gt;\
 [[Look through display case-&gt;Display Case]]
-[[Go Back-&gt;Living Room2]]</tw-passagedata><tw-passagedata pid="49" name="kitchenlocked" tags="" position="1100,600" size="100,100">You try and open the door but it&#39;s locked. I always thought it was stupid that
+[[Go Back-&gt;Living Room2]]</tw-passagedata><tw-passagedata pid="50" name="kitchenlocked" tags="" position="1225,600" size="100,100">You try and open the door but it&#39;s locked. I always thought it was stupid that
 the kitchen had a door and lock, until I used it a couple of times.
 
 The key must be around here somewhere.
 
-[[Go Back-&gt; Don&#39;t Panic2]]</tw-passagedata><tw-passagedata pid="50" name="Display Case" tags="" position="1225,600" size="100,100">You go over to the glass display case next to the TV. There are a lot of different 
+[[Go Back-&gt; Don&#39;t Panic2]]</tw-passagedata><tw-passagedata pid="51" name="Display Case" tags="" position="100,725" size="100,100">You go over to the glass display case next to the TV. There are a lot of different 
 nick-nacks from travels, memories, and achievments. Just as any family should have up
 for display.
 Huh.. What&#39;s the key to the kitchen doing in here?
 &lt;&lt;run $inventory.push(&quot;kitchen key&quot;)&gt;&gt;
-[[Grab key-&gt;Kitchen Key]]</tw-passagedata><tw-passagedata pid="51" name="Kitchen Key" tags="" position="100,725" size="100,100">You equipped the kitchen key.</tw-passagedata><tw-passagedata pid="52" name="Bathroom" tags="" position="225,725" size="100,100">You&#39;ve entered the Bathroom.
+[[Grab key-&gt;Kitchen Key]]</tw-passagedata><tw-passagedata pid="52" name="Kitchen Key" tags="" position="225,725" size="100,100">You equipped the kitchen key.</tw-passagedata><tw-passagedata pid="53" name="Bathroom" tags="" position="350,725" size="100,100">You&#39;ve entered the Bathroom.
 You shouldn&#39;t have been able to make it this far. I mean, honestly, look at you. 
 You wouldn&#39;t have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you&#39;re nothing, right?
 
 [[Ignore-&gt; Mock]]
-[[Shut Up!-&gt; Rage]]</tw-passagedata><tw-passagedata pid="53" name="Mock" tags="" position="350,725" size="100,100">I&#39;m right aren&#39;t I? You know I always am. 
+[[Shut Up!-&gt; Rage]]</tw-passagedata><tw-passagedata pid="54" name="Mock" tags="" position="475,725" size="100,100">I&#39;m right aren&#39;t I? You know I always am. 
 [[Ignore-&gt; Focus]]
-[[Cry Break-&gt; Cry]]</tw-passagedata><tw-passagedata pid="54" name="Rage" tags="" position="475,725" size="100,100">No, you shut up! You know as well as I do that your worthless and can&#39;t do 
-anything for yourself without me!</tw-passagedata><tw-passagedata pid="55" name="Focus" tags="" position="600,725" size="100,100">Try to tune him out. You came in here for a reason. Focus on getting what you need here.
+[[Cry Break-&gt; Cry]]</tw-passagedata><tw-passagedata pid="55" name="Rage" tags="" position="600,725" size="100,100">No, you shut up! You know as well as I do that your worthless and can&#39;t do 
+anything for yourself without me!</tw-passagedata><tw-passagedata pid="56" name="Focus" tags="" position="725,725" size="100,100">Try to tune him out. You came in here for a reason. Focus on getting what you need here.
 One step at a time.
-[[Look around-&gt; First Glance]]</tw-passagedata><tw-passagedata pid="56" name="Cry" tags="" position="725,725" size="100,100">Sometimes, in the heat of things, it&#39;s okay to let yourself cry. Just remember to not 
+[[Look around-&gt; First Glance]]</tw-passagedata><tw-passagedata pid="57" name="Cry" tags="" position="850,725" size="100,100">Sometimes, in the heat of things, it&#39;s okay to let yourself cry. Just remember to not 
 stay there for too long. 
-[[Deep Breath-&gt; Focus]]</tw-passagedata><tw-passagedata pid="57" name="First Glance" tags="" position="850,725" size="100,100">Hey, what the hell do you think you&#39;re doing, snooping around? It&#39;s rude to go 
+[[Deep Breath-&gt; Focus]]</tw-passagedata><tw-passagedata pid="58" name="First Glance" tags="" position="975,725" size="100,100">Hey, what the hell do you think you&#39;re doing, snooping around? It&#39;s rude to go 
 searching through things that aren&#39;t yours. Oh wait, I&#39;m all you have, isn&#39;t that right?
-[[Look Around-&gt;What You See]]</tw-passagedata><tw-passagedata pid="58" name="What You See" tags="" position="975,725" size="100,100">[[Cabinets Under the Sink-&gt; Cabinet]]
+[[Look Around-&gt;What You See]]</tw-passagedata><tw-passagedata pid="59" name="What You See" tags="" position="1100,725" size="100,100">[[Cabinets Under the Sink-&gt; Cabinet]]
 [[Mirror-&gt; Mirror]]
 [[Shower-&gt; Shower]]
-[[Toilet-&gt; Toilet]]</tw-passagedata><tw-passagedata pid="59" name="Toilet" tags="" position="1100,725" size="100,100">I just cleaned the toilet yesterday. 
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="60" name="Shower" tags="" position="1225,725" size="100,100">Now isn&#39;t the time for a shower...
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="61" name="Cabinet" tags="" position="100,850" size="100,100">There&#39;s four cabinets... a large one to my left, 
+[[Toilet-&gt; Toilet]]</tw-passagedata><tw-passagedata pid="60" name="Toilet" tags="" position="1225,725" size="100,100">I just cleaned the toilet yesterday. 
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="61" name="Shower" tags="" position="100,850" size="100,100">Now isn&#39;t the time for a shower...
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="62" name="Cabinet" tags="" position="225,850" size="100,100">There&#39;s four cabinets... a large one to my left, 
 and three small ones on my right.
 [[Left Cabinet-&gt; Left Cabinet]]
 [[Upper Right Cabinet-&gt; Upper Right Cabinet]]
 [[Middle Right Cabinet-&gt; Middle Right Cabinet]]
 [[Lower Right Cabinet-&gt; Lower Right Cabinet]]
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="62" name="Left Cabinet" tags="" position="225,850" size="100,100">Locked...
-[[Look at the cabinets-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="63" name="Upper Right Cabinet" tags="" position="350,850" size="100,100">My personal items... at least he let me have my own toothbrush...
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="63" name="Left Cabinet" tags="" position="350,850" size="100,100">Locked...
+[[Look at the cabinets-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="64" name="Upper Right Cabinet" tags="" position="475,850" size="100,100">My personal items... at least he let me have my own toothbrush...
 and a place to keep my pads. 
-[[Look at the cabinets-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="64" name="Middle Right Cabinet" tags="" position="475,850" size="100,100">Nothing in here...
+[[Look at the cabinets-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="65" name="Middle Right Cabinet" tags="" position="600,850" size="100,100">Nothing in here...
 Wait I...remember seeing him put something in here...
 [[Investigate-&gt; Middle Right Cabinet2]]
-[[I must be mistaken-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="65" name="Middle Right Cabinet2" tags="" position="600,850" size="100,100">That&#39;s so weird I could&#39;ve sworn... Wait when I close this cabinet, 
+[[I must be mistaken-&gt; Cabinet]]</tw-passagedata><tw-passagedata pid="66" name="Middle Right Cabinet2" tags="" position="725,850" size="100,100">That&#39;s so weird I could&#39;ve sworn... Wait when I close this cabinet, 
 I can hear something rattling. There has to be something. But where? 
 [[Give up for now-&gt; Cabinet]]
-[[Listen again-&gt; Middle Right Cabinet3]]</tw-passagedata><tw-passagedata pid="66" name="Middle Right Cabinet3" tags="" position="725,850" size="100,100">No there&#39;s definantly something in here. I think this might be a false bottom on this 
+[[Listen again-&gt; Middle Right Cabinet3]]</tw-passagedata><tw-passagedata pid="67" name="Middle Right Cabinet3" tags="" position="850,850" size="100,100">No there&#39;s definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-&gt; Cabinet2]]</tw-passagedata><tw-passagedata pid="67" name="Middle Right Cabinet4" tags="" position="850,850" size="100,100">There&#39;s definantly something in here. I think this might be a false bottom on this 
+[[Look at the cabinets-&gt; Cabinet2]]</tw-passagedata><tw-passagedata pid="68" name="Middle Right Cabinet4" tags="" position="975,850" size="100,100">There&#39;s definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-&gt; Cabinet2]]</tw-passagedata><tw-passagedata pid="68" name="Lower Right Cabinet" tags="" position="975,850" size="100,100">There&#39;s nothing left here...
-[[Look at the cabinets-&gt; Cabinet Post Med]]</tw-passagedata><tw-passagedata pid="69" name="Lower Right Cabinet Post Key" tags="" position="1100,850" size="100,100">Oh hey, my medical history! Yeah, I&#39;m definantly taking this with me.
-[[Look at the cabinets-&gt; Cabinet Post Med]]</tw-passagedata><tw-passagedata pid="70" name="Cabinet Post Med" tags="" position="1225,850" size="100,100">There&#39;s four cabinets... a large one to my left, 
+[[Look at the cabinets-&gt; Cabinet2]]</tw-passagedata><tw-passagedata pid="69" name="Lower Right Cabinet" tags="" position="1100,850" size="100,100">There&#39;s nothing left here...
+[[Look at the cabinets-&gt; Cabinet Post Med]]</tw-passagedata><tw-passagedata pid="70" name="Lower Right Cabinet Post Key" tags="" position="1225,850" size="100,100">Oh hey, my medical history! Yeah, I&#39;m definantly taking this with me.
+[[Look at the cabinets-&gt; Cabinet Post Med]]</tw-passagedata><tw-passagedata pid="71" name="Cabinet Post Med" tags="" position="100,975" size="100,100">There&#39;s four cabinets... a large one to my left, 
 and three small ones on my right.
 [[Left Cabinet-&gt; Left Cabinet]]
 [[Upper Right Cabinet-&gt; Upper Right Cabinet]]
 [[Middle Right Cabinet-&gt; Middle Right Cabinet]]
 [[Lower Right Cabinet-&gt; Lower right Cabinet2]]
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="71" name="Cabinet2" tags="" position="100,975" size="100,100">There&#39;s four cabinets... a large one to my left, 
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="72" name="Cabinet2" tags="" position="225,975" size="100,100">There&#39;s four cabinets... a large one to my left, 
 and three small ones on my right.
 [[Left Cabinet-&gt; Left Cabinet]]
 [[Upper Right Cabinet-&gt; Upper Right Cabinet]]
 [[Middle Right Cabinet-&gt; Middle Right Cabinet4]]
 [[Lower Right Cabinet-&gt; Lower Right Cabinet]]
-[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="72" name="Mirror" tags="" position="225,975" size="100,100">I...don&#39;t really feel like looking at myself right now...
-[[[Look Around-&gt; Enter Room]]]</tw-passagedata><tw-passagedata pid="73" name="What&#39;s That" tags="" position="350,975" size="100,100">I guess I can make myself look again. Just to prove I can. 
-[[...-&gt; What&#39;s That2]]</tw-passagedata><tw-passagedata pid="74" name="What&#39;s That2" tags="" position="475,975" size="100,100">Wait, no that&#39;s not quite right. There&#39;s something...off about this mirror. 
+[[Look Around-&gt; What You See]]</tw-passagedata><tw-passagedata pid="73" name="Mirror" tags="" position="350,975" size="100,100">I...don&#39;t really feel like looking at myself right now...
+[[[Look Around-&gt; Enter Room]]]</tw-passagedata><tw-passagedata pid="74" name="What&#39;s That" tags="" position="475,975" size="100,100">I guess I can make myself look again. Just to prove I can. 
+[[...-&gt; What&#39;s That2]]</tw-passagedata><tw-passagedata pid="75" name="What&#39;s That2" tags="" position="600,975" size="100,100">Wait, no that&#39;s not quite right. There&#39;s something...off about this mirror. 
 [[It&#39;s all in my head. I should look somewhere else.-&gt; What You See]]
-[[Look closer.-&gt; What&#39;s That3]]</tw-passagedata><tw-passagedata pid="75" name="What&#39;s That3" tags="" position="600,975" size="100,100">This isn&#39;t a solid mirror. Maybe if I just...
-[[Press your finger into the mirror.-&gt; What&#39;s That4]]</tw-passagedata><tw-passagedata pid="76" name="What&#39;s That4" tags="" position="725,975" size="100,100">The mirror gives way under my touch. It&#39;s one of those thin mirror sheets!
+[[Look closer.-&gt; What&#39;s That3]]</tw-passagedata><tw-passagedata pid="76" name="What&#39;s That3" tags="" position="725,975" size="100,100">This isn&#39;t a solid mirror. Maybe if I just...
+[[Press your finger into the mirror.-&gt; What&#39;s That4]]</tw-passagedata><tw-passagedata pid="77" name="What&#39;s That4" tags="" position="850,975" size="100,100">The mirror gives way under my touch. It&#39;s one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it&#39;s locked. There has to be some way 
 to open it...
-[[Look Around-&gt; What You See Post Mirror]]</tw-passagedata><tw-passagedata pid="77" name="What You See Post Mirror" tags="" position="850,975" size="100,100">[[Cabinets Under the Sink-&gt; Cabinet]]
+[[Look Around-&gt; What You See Post Mirror]]</tw-passagedata><tw-passagedata pid="78" name="What You See Post Mirror" tags="" position="975,975" size="100,100">[[Cabinets Under the Sink-&gt; Cabinet]]
 [[Medicine Cabinet-&gt; Locked Medicine]]
 [[Shower-&gt; Shower]]
 [[Toilet-&gt; Toilet]]
-[[Wall Hangings-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="78" name="Wall Hangings" tags="" position="975,975" size="100,100">These were always so pretty...
+[[Wall Hangings-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="79" name="Wall Hangings" tags="" position="1100,975" size="100,100">These were always so pretty...
 [[First Wall Hanging-&gt; First Wall]]
-[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="79" name="First Wall" tags="" position="1100,975" size="100,100">I wonder...
+[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="80" name="First Wall" tags="" position="1225,975" size="100,100">I wonder...
 [[Remove Wall Hanging-&gt; First Wall2]]
-[[Nevermind-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="80" name="First Wall2" tags="" position="1225,975" size="100,100">Oh my god...medical records.
+[[Nevermind-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="81" name="First Wall2" tags="" position="100,1100" size="100,100">Oh my god...medical records.
 [[Take Them-&gt; First Wall 3]]
-[[Leave Them-&gt; First Wall3]]</tw-passagedata><tw-passagedata pid="81" name="First Wall 3" tags="" position="100,1100" size="100,100">I&#39;m gonna need these when I get out.
-[[Look at the Hangings-&gt; Wall Hangings With records]]</tw-passagedata><tw-passagedata pid="82" name="First Wall3" tags="" position="225,1100" size="100,100">If I need them, I&#39;ll come back. I need to focus.
-[[Look at the Hangings-&gt; Wall Hangings Without records]]</tw-passagedata><tw-passagedata pid="83" name="First Wall4" tags="" position="350,1100" size="100,100">I already have what was here.
-[[Go back-&gt; Wall Hangings With records]]</tw-passagedata><tw-passagedata pid="84" name="Wall Hangings With records" tags="" position="475,1100" size="100,100">[[First Wall Hanging-&gt; First Wall4]]
-[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="85" name="Wall Hangings Without records" tags="" position="600,1100" size="100,100">[[First Wall Hanging-&gt; First Wall2]]
-[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="86" name="Second Wall" tags="" position="725,1100" size="100,100">I wonder...
+[[Leave Them-&gt; First Wall3]]</tw-passagedata><tw-passagedata pid="82" name="First Wall 3" tags="" position="225,1100" size="100,100">I&#39;m gonna need these when I get out.
+[[Look at the Hangings-&gt; Wall Hangings With records]]</tw-passagedata><tw-passagedata pid="83" name="First Wall3" tags="" position="350,1100" size="100,100">If I need them, I&#39;ll come back. I need to focus.
+[[Look at the Hangings-&gt; Wall Hangings Without records]]</tw-passagedata><tw-passagedata pid="84" name="First Wall4" tags="" position="475,1100" size="100,100">I already have what was here.
+[[Go back-&gt; Wall Hangings With records]]</tw-passagedata><tw-passagedata pid="85" name="Wall Hangings With records" tags="" position="600,1100" size="100,100">[[First Wall Hanging-&gt; First Wall4]]
+[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="86" name="Wall Hangings Without records" tags="" position="725,1100" size="100,100">[[First Wall Hanging-&gt; First Wall2]]
+[[Second Wall Hanging-&gt; Second Wall]]</tw-passagedata><tw-passagedata pid="87" name="Second Wall" tags="" position="850,1100" size="100,100">I wonder...
 [[Remove Wall Hanging-&gt; Second Wall2]]
-[[Nevermind-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="87" name="Second Wall2" tags="" position="850,1100" size="100,100">[[...-&gt; Second Wall3]]</tw-passagedata><tw-passagedata pid="88" name="Second Wall3" tags="" position="975,1100" size="100,100">Oh my god.
-[[There&#39;s a Camera-&gt; Remember]]</tw-passagedata><tw-passagedata pid="89" name="Remember" tags="" position="1100,1100" size="100,100">I can&#39;t stop the memory from hitting me this time. 
-[[Remember-&gt; Memory]]</tw-passagedata><tw-passagedata pid="90" name="Memory" tags="" position="1225,1100" size="100,100">It&#39;s dark. I&#39;m scared. He&#39;s
-[[coming.-&gt; Memory2]]</tw-passagedata><tw-passagedata pid="91" name="Memory2" tags="" position="100,1225" size="100,100">I messed up. His dinner was slightly cold since 
+[[Nevermind-&gt; Wall Hangings]]</tw-passagedata><tw-passagedata pid="88" name="Second Wall2" tags="" position="975,1100" size="100,100">[[...-&gt; Second Wall3]]</tw-passagedata><tw-passagedata pid="89" name="Second Wall3" tags="" position="1100,1100" size="100,100">Oh my god.
+[[There&#39;s a Camera-&gt; Remember]]</tw-passagedata><tw-passagedata pid="90" name="Remember" tags="" position="1225,1100" size="100,100">I can&#39;t stop the memory from hitting me this time. 
+[[Remember-&gt; Memory]]</tw-passagedata><tw-passagedata pid="91" name="Memory" tags="" position="100,1225" size="100,100">It&#39;s dark. I&#39;m scared. He&#39;s
+[[coming.-&gt; Memory2]]</tw-passagedata><tw-passagedata pid="92" name="Memory2" tags="" position="225,1225" size="100,100">I messed up. His dinner was slightly cold since 
 I took it out of the oven too soon. I got scared. I
-[[hid.-&gt; Memory3]]</tw-passagedata><tw-passagedata pid="92" name="Memory3" tags="" position="225,1225" size="100,100">Why did I hide? Oh...that&#39;s right. He was going to teach me 
-[[a lesson.-&gt; Memory4]]</tw-passagedata><tw-passagedata pid="93" name="Memory4" tags="" position="350,1225" size="100,100">You fucking bitch! You think you can hide in a fucking bathroom!? 
+[[hid.-&gt; Memory3]]</tw-passagedata><tw-passagedata pid="93" name="Memory3" tags="" position="350,1225" size="100,100">Why did I hide? Oh...that&#39;s right. He was going to teach me 
+[[a lesson.-&gt; Memory4]]</tw-passagedata><tw-passagedata pid="94" name="Memory4" tags="" position="475,1225" size="100,100">You fucking bitch! You think you can hide in a fucking bathroom!? 
 You need to learn that actions have consequences!
-[[Stay Quiet-&gt; Memory5]]</tw-passagedata><tw-passagedata pid="94" name="Memory5" tags="" position="475,1225" size="100,100"></tw-passagedata><tw-passagedata pid="95" name="Locked Medicine" tags="" position="600,1225" size="100,100">I need a key...
-[[Look Around-&gt; What You See Post Mirror]]</tw-passagedata><tw-passagedata pid="96" name="kitchen" tags="" position="725,1225" size="100,100">You are in the kitchen
+[[Stay Quiet-&gt; Memory5]]</tw-passagedata><tw-passagedata pid="95" name="Memory5" tags="" position="600,1225" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="Locked Medicine" tags="" position="725,1225" size="100,100">I need a key...
+[[Look Around-&gt; What You See Post Mirror]]</tw-passagedata><tw-passagedata pid="97" name="kitchen" tags="" position="850,1225" size="100,100">You are in the kitchen
 
 Gotta find a code for the safe...
 
 [[Go to the Drawer -&gt; Drawer]]
-[[Go to Fridge -&gt; Fridge]]</tw-passagedata><tw-passagedata pid="97" name="Drawer" tags="" position="850,1225" size="100,100">Mmm... nothing here but letters...
+[[Go to Fridge -&gt; Fridge]]</tw-passagedata><tw-passagedata pid="98" name="Drawer" tags="" position="975,1225" size="100,100">Mmm... nothing here but letters...
 
-[[Go to Kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="98" name="Fridge" tags="" position="975,1225" size="100,100">Should I cook something up? Wait no... I need to find a combination
+[[Go to Kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="99" name="Fridge" tags="" position="1100,1225" size="100,100">Should I cook something up? Wait no... I need to find a combination
 
 A birthday? on November 21? That might work... Need to find the birth year
 
 [[Look at the top of cabinet -&gt; Shelf]]
-[[Go to the Drawer -&gt; Drawer]]</tw-passagedata><tw-passagedata pid="99" name="Inspect further" tags="" position="1100,1225" size="100,100">you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice &quot;NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID AS YOU! WHY WOULD YOU LEAVE? IM ALL YOU HAVE&quot;. The back door slams shut and is locked. You remember that the key was hidden at the top of the shelf</tw-passagedata><tw-passagedata pid="100" name="Kitchen" tags="" position="1225,1225" size="100,100">Why are you snooping around?
+[[Go to the Drawer -&gt; Drawer]]</tw-passagedata><tw-passagedata pid="100" name="Inspect further" tags="" position="1225,1225" size="100,100">you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice &quot;NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID AS YOU! WHY WOULD YOU LEAVE? IM ALL YOU HAVE&quot;. The back door slams shut and is locked. You remember that the key was hidden at the top of the shelf</tw-passagedata><tw-passagedata pid="101" name="Kitchen" tags="" position="100,1350" size="100,100">Why are you snooping around?
 
 [[Isn&#39;t that what I&#39;m supposed to do? -&gt; defensive]]
-[[I&#39;m sorry, I&#39;ll stop -&gt; Accepted]]</tw-passagedata><tw-passagedata pid="101" name="defensive" tags="" position="100,1350" size="100,100">No youre supposed to listen to me. You&#39;re supposed to do as your told. Get back to the objective.</tw-passagedata><tw-passagedata pid="102" name="Accepted" tags="" position="225,1350" size="100,100">Good! I love it when you do as you behave. Back to the objective
+[[I&#39;m sorry, I&#39;ll stop -&gt; Accepted]]</tw-passagedata><tw-passagedata pid="102" name="defensive" tags="" position="225,1350" size="100,100">No youre supposed to listen to me. You&#39;re supposed to do as your told. Get back to the objective.</tw-passagedata><tw-passagedata pid="103" name="Accepted" tags="" position="350,1350" size="100,100">Good! I love it when you do as you behave. Back to the objective
 
-[[Next -&gt; go to next]]</tw-passagedata><tw-passagedata pid="103" name="go to next" tags="" position="350,1350" size="100,100">He&#39;s 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
+[[Next -&gt; go to next]]</tw-passagedata><tw-passagedata pid="104" name="go to next" tags="" position="475,1350" size="100,100">He&#39;s 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
 
-[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="104" name="Living Room Tutorial" tags="tutorial" position="475,1350" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
+[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="105" name="Living Room Tutorial" tags="tutorial" position="600,1350" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="105" name="Enter Room" tags="tutorial" position="600,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="106" name="Enter Room" tags="tutorial" position="725,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;/div&gt;\
 &lt;div class=&quot;text1&quot;&gt;
@@ -654,17 +656,17 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 [[Shelves-&gt; Shelves]]
 [[Lamp-&gt; Lamp]]
 [[Plant-&gt; Plant]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="106" name="Sofa" tags="first" position="725,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="107" name="Sofa" tags="first" position="850,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-&gt; Sofa2]]
 &lt;/div&gt;
-[[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="107" name="Sofa2" tags="" position="850,1350" size="100,100">Why are there always things between the cushions?
+[[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="Sofa2" tags="" position="975,1350" size="100,100">Why are there always things between the cushions?
 [[Pick up remote-&gt;remote]]
 [[Pick up coin-&gt;coin]]
-[[Look Around-&gt;Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="coin" tags="" position="975,1350" size="100,100">I&#39;ll take the coin.
+[[Look Around-&gt;Enter Room]]</tw-passagedata><tw-passagedata pid="109" name="coin" tags="" position="1100,1350" size="100,100">I&#39;ll take the coin.
 In.add_item(coin)
-[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="109" name="Leave" tags="" position="1100,1350" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="110" name="StoryInit" tags="" position="1225,1350" size="100,100">Welcome to the Game!
+[[Look at the Sofa-&gt; Sofa2]]</tw-passagedata><tw-passagedata pid="110" name="Leave" tags="" position="1225,1350" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="111" name="StoryInit" tags="" position="100,1475" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
