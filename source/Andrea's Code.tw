@@ -1,33 +1,342 @@
-:: Bedroom[first]
-
-
+:: Bedroom[first, intercom]
 <div class="box1"></div>
-
+<div class="intercombox"></div>\
+<div class="intercomtext">\
+Finally made it in, I see.
+</div>\
 <div class = "text1">
-
 You enter the Bedroom
-
+<<set $inventory to []>>
 [[Go to Living Room again -> Living Room2]]
 [[Maybe you don't want to -> Bedroom2]]
-
 </div>
 
-:: Living Room2
-
-You are in the living Room again
-
-[[Go to Kitchen -> kitchen]]
-
 :: Bedroom2[first]
-
 <div class="box1"></div>
-
  <div class="text1">
-
-Perhaps you should rest
-
-[[Get in bed-> Lay]]
+What will you do?
+[[Get in bed->Lay]]
+[[Look Under Bed->Under Bed]]
+[[Search through messy clothes->Clothes]]
+[[Look on Shelf->InspectShelf]]
  </div>
 
-:: Lay
+:: InspectShelf[first]
+<div class="box2"></div>
+<div class="text1">
+You take a peek on the shelf and see your jewelry box. 
+Look inside?
 
+[[Look->LookBox]]
+ </div>
+
+:: LookBox
+<div class="box3"></div>
+<div class="text2">
+You take a look inside the jewelry box. You instantly notice a ring.
+
+It’s your favorite ring.
+
+Inspect further?
+[[Yes->YesYellow]]
+</div>
+
+:: YesYellow
+<div class="box4"></div>
+<div class="text3">
+You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
+He made you feel so special that day, putting his arms around you, opening doors for you. 
+He proposed to you with this ring that night, a 24-karrot pure gold ring with an oval diamond gem, 
+your most prized possession. You were so grateful and excited, you said yes on the spot. He’d never 
+done anything like that before. 
+<<if not $inventory.includes("yellow key")>>
+You take another look at the jewelry box and find a yellow key. 
+[[Take Yellow Key-> YellowKey]]
+<</if>>
+[[Go Back->Go Back1]]
+</div>
+
+:: YellowKey
+<div class="box1"></div>
+<div class="text1">
+<<run $inventory.push("yellow key")>>
+You equipped the key.
+[[Go Back->Go Back1]]
+</div>
+
+:: Lay[lay]
+<div class="box2"></div>
+<div class="text1">
+You get on your side of the bed and you turn to the bedside table. 
+There’s a framed picture sitting on it. 
+Take a look?
+
+[[Look at the picture->Look at picture]]
+</div>
+
+:: Look at picture
+<div class="box2"></div>
+<div class="text1">
+It seems like a happy couple on a hiking trip, smiling at the camera. 
+They look pretty happy as far as you can tell. 
+The woman looks like she’s pregnant too.
+[[Inspect further->Inspect]]
+</div>
+
+:: Inspect
+<div class="box5"></div>
+<div class="text4">
+You take a closer look at the photo.
+Our Grand Canyon trip, I remember that. We wanted to take a break from the stress of your work and I suggested a vacation. 
+I thought we were gonna have a relaxing time, we needed it especially with the baby on the way, and we did for a while. 
+Trips always get you in a bad mood though. After a while on the road he got snappy, and keeping him happy would get more difficult.
+I remember having to hold in my pee on the roadtrip over because you already got angry that we had to stop for that once. 
+
+I remember having to starve on the way there because you didnt want to stop for food. 
+I remember hiking in the hot sun, even when I said I couldn’t handle it, and I remember taking that picture.
+I remember having to hold in my tears as my feet felt like they were standing on spikes, and I remember chuckling nervously as you pretended to push me down the cliff.
+<<if not $inventory.includes("blue key")>>\
+[[>>>->Blue Key]]
+<<else>>\
+[[Go back->Go Back1]]\
+<</if>>\
+</div>
+
+:: Blue Key
+ENOUGH GOOFING AROUND. LET'S GET MOVING.
+<div class="box2"></div>
+<div class="text1">
+You grip the photo a little harder than one should. 
+You feel something that’s been taped to the back of the frame.
+You got a Blue Key
+[[Go Back->Go Back1]]
+<<run $inventory.push("blue key")>>
+</div>
+
+:: Under Bed
+
+You take a peek under the bed and find a toy chest. Pull it out from under the bed?
+
+[[Pull it out->Pull it out]]
+
+:: Pull it out
+
+It seems to be a colorful children’s toy chest, one that’s meant for storing toys and gadgets. 
+It’s covered in dust, and seems like it was hardly used. 
+Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
+
+You have $inventory.length keys
+<<if $inventory.length is 3>>
+[[Unlock Chest->UnlockChest]]
+<</if>>
+[[Go Back->Go Back1]]
+
+:: Clothes
+
+You look at the clothes on the floor and hesitate to go towards it.
+
+You look through them. Some blood spots.
+<<if not $inventory.includes("red key")>>
+You stick your hands in the pockets and find a Red Key.
+[[Grab It->Red Key]]
+<</if>>
+[[Go Back->Go Back1]]
+
+:: Red Key
+<<run $inventory.push("red key")>>
+You equipped the red key.
+[[Go Back->Go Back1]]
+
+
+:: Go Back1[first]
+<div class="box1"></div>
+<div class = "text1">
+What will you do?
+[[Get in bed->Lay]]
+[[Search through messy clothes->Clothes]]
+[[Look on Shelf->InspectShelf]]
+[[Look Under Bed->Under Bed]]
+</div>
+
+:: UnlockChest
+You insert each key into its respective lock.
+You hear a loud click and you lift the chest open.
+Inside, you find a single, stuffed teddy bear. It's dirty and has ripped clothes.
+It also seems to have stitches and burnmarks.
+<<run $inventory.push("bear")>>
+[[>>>->Unlock Chest2]]
+
+:: Unlock Chest2
+You can't explain it, but you need to hold onto it.
+You take another look inside the toy chest and you see a small paper where the bear was laying.
+[[Unfold Paper->UnfoldPaper]]
+
+:: UnfoldPaper
+You unfold the paper.
+
+<em>Behind the Bedside table</em>
+[[Go Back->GotoSafe]]
+
+:: GotoSafe
+What will you do?
+[[Give up->Give up]]
+[[Go to Bedside Table->GotoSafe2]]
+
+:: GotoSafe1.5
+What will you do?
+[[Go to Bedside Table->GotoSafe2]]
+
+:: Give up
+You are starting to feel like this is hopeless. Maybe it wasn't as bad
+as you thought it was. Maybe you <em>were</em> being crazy.
+You feel something shake in your hands and you jump. The stuffed bear you were
+holding onto is shaking in your grip, with tears coming out of its bead eyes.
+You start petting it slowly and it's shaking seems to calm down a bit.
+You can't give up yet.
+[[Go Back->GotoSafe1.5]]
+
+:: GotoSafe2
+What will you do?
+[[Look in Drawer->Tool1]]
+[[Push Table Aside->GotoSafe3]]
+
+:: Tool1
+You look inside the drawer of the bedside table.
+<<if not $inventory.includes("fork")>>
+You find a couple things--a bottle of pills, a broken pencil, a couple of coins, and a fork.
+[[Grab Fork->Equip Fork]]
+<</if>>
+[[Go Back->GotoSafe2]]
+
+:: Equip Fork
+You equip the fork.
+YOU REALLY THINK THAT'LL COME IN HANDY? YEESH.
+<<run $inventory.push("fork")>>
+[[>>>->GotoSafe2]]
+
+:: GotoSafe3
+You push the small table aside.
+DONT BREAK ANYTHING
+You are extra careful not to drop anything.
+You see an outline of a small door hidden in the wall. There might be a way to prop
+it open with a tool of somekind.
+<<if $inventory.includes("fork")>>
+[[Use Fork->PryItOpen]]
+<</if>>
+[[Go Back->GotoSafe2]]
+
+:: PryItOpen
+You try and pry the door open with the fork.
+[[Apply More Force->MoreForce]]
+
+:: MoreForce
+You apply more force and fall back a bit.
+HAHAHA YOU CAN'T EVEN OPEN A GODDAMN DOOR.
+HOW DO YOU THINK YOU'RE GONNA GET OUT OF HERE?
+[[Try Again->PryItOpen2]]
+
+:: PryItOpen2
+You try again, this time griping the fork a little tighter.
+You finally pull the door open, bringing out a couple pieces 
+of the wall with it.
+[[Take a peek->LookSafe]]
+
+:: LookSafe
+Inside, there is about a gray 2 foot x 2 foot metal safe.
+It has an 8-number combination.
+WHAT DO YOU THINK IT IS SWEETHEART?
+[[Go Back->GoBackFinal]]
+
+:: GoBackFinal
+AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.
+[[Go Back to Living Room->Living Room2]]
+[[Get in bed->Lay]]
+[[Search through messy clothes->Clothes]]
+[[Look on Shelf->InspectShelf]]
+
+:: Living Room2
+You are in the living Room again.
+[[Couch-> Couch]]
+[[Display Case-> Display Case]]
+[[Go to Bedroom->Bedroom2]]
+<<if $inventory.includes("kitchen key")>>
+[[Go to Kitchen -> kitchen]]
+<</if>>
+
+:: Couch
+You go over to the black leather couch.
+What will you do?
+[[Look between the seats->Couch2]]
+[[Sit->SitCouch1]]
+
+:: SitCouch1
+You sit on the couch. You start to feel sleepy, you should
+go back and escape before that could happen, it could end badly.
+[[Go Back->Couch]]
+
+:: Couch2
+You stick your hand and start searching between the seats. You feel something hard and pull
+it out. It's a remote. 
+[[Enter favorite channel->turn on tv]]
+
+:: turn on tv
+You enter his favorite channel, 63782011
+
+Draft
+[[Watch tv->Watch tv]]
+
+:: Watch tv
+You sit down on the couch as you start hearing the screams and cheer or the people on
+the tv. The sports channel. You hate it--it's loud, annoying, it's always the same, 
+and it triggers your fight or flight. You'd rather change the channel but then the announcer
+starts saying something out of the ordinary.
+[[>>>->Watch tv2]]
+
+:: Watch tv2
+<em>We're tuning live from the deepest parts of your subconscious, you are watching 
+NFJ football. 
+Wanna get out of this place? Too bad!! You're here forever- ever-ever-ever...</em>
+You quickly turn the tv off. You don't like this. 
+
+<<if $inventory.includes("bear")>>
+[[Don't Panic->Don't Panic]]\
+<</if>>
+[[Go Back->Living Room2]]
+
+:: Don't Panic
+
+You feel the bear shaking in your hands.
+You hold on to the teddy bear gently, petting its furr and holding it close. 
+
+It'll all be alright.
+[[Regain Strength->Don't Panic2]]
+
+:: Don't Panic2
+You take a deep breath and try and think of a way out of this living room. 
+You know the kitchen is locked. What do you do?
+<<if $inventory.includes("kitchen key")>>\
+[[Try again->kitchen]]
+<else>\
+[[Try again->kitchenlocked]]
+<</if>>\
+[[Look through display case->Display Case]]
+[[Go Back->Living Room2]]
+
+:: kitchenlocked
+You try and open the door but it's locked. I always thought it was stupid that
+the kitchen had a door and lock, until I used it a couple of times.
+
+The key must be around here somewhere.
+
+[[Go Back-> Don't Panic2]]
+
+:: Display Case
+You go over to the glass display case next to the TV. There are a lot of different 
+nick-nacks from travels, memories, and achievments. Just as any family should have up
+for display.
+Huh.. What's the key to the kitchen doing in here?
+<<run $inventory.push("kitchen key")>>
+[[Grab key->Kitchen Key]]
+
+:: Kitchen Key
+You equipped the kitchen key.
