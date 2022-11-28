@@ -1,5 +1,15 @@
 :: Starting
+[[Intercom->Intercom]]
 [[Go to the Bedroom-> Bedroom]]
+/* DELETE THIS BEFORE TURNING IN*/
+[[Go to Tutorial-> Tutorial]]
+[[Go to Kitchen->kitchen]]
+[[Go to bathroom-> Bathroom]]
+[[Go to safe-> Safe]]
+[[Go to living room-> Living Room]]
+[[Go to living room2-> Living Room2]]
+/* DELETE THIS BEFORE TURNING IN*/
+
 
 :: Intercom
 Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
@@ -11,13 +21,14 @@ Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
+[[Go to Couch Cushions -> Couch]]
 
 :: Have Not
 That's quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
 
 So I need to find a way to unlock the bedroom door.
 
-[[Go to Couch Cushions -> Couch]]
+[[Go to Tutorial-> Living Room Tutorial]]
 
 :: Couch
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
