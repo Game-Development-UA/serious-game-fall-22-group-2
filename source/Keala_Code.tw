@@ -1,11 +1,12 @@
 :: Bathroom[bathroom]
-<div class="box2"></div>
-<div class="text1">
-You've entered the Bathroom.
+<div class="intercombox3"></div>\
+<div class="intercomtext2">\
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
-
+<div class="box2"></div>
+<div class="text1">
+You've entered the Bathroom.
 [[Ignore-> MockB]]
 [[Shut Up!-> RageB]]
 </div>
@@ -70,7 +71,8 @@ Now isn't the time for a shower...
 :: CurtainB
 * You quietly take off the shower curtain rungs*
 * You hear something clink...* 
-There's two keys in here! Yes!
+There's three keys in here! Yes!
+<<run $inventory.push("largekey")>>
 <<run $inventory.push("HiddenBedKey")>>
 <<run $inventory.push("YourMedKey")>>
 [[Go back-> What You See]]
