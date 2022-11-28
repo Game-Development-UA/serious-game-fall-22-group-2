@@ -199,7 +199,6 @@ You can't give up yet.
 What will you do?
 [[Look in Drawer->Tool1]]
 [[Push Table Aside->GotoSafe3]]
-[[Go Back->GotOSafe]]
 
 :: Tool1
 You look inside the drawer of the bedside table.
@@ -258,19 +257,22 @@ AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.
 :: Living Room2
 You are in the living Room again.
 [[Couch-> Couch]]
-[[TV-> TV]]
 [[Display Case-> Display Case]]
 [[Go to Bedroom->Bedroom2]]
 <<if $inventory.includes("kitchen key")>>
 [[Go to Kitchen -> kitchen]]
 <</if>>
 
-
 :: Couch
 You go over to the black leather couch.
 What will you do?
 [[Look between the seats->Couch2]]
 [[Sit->SitCouch1]]
+
+:: SitCouch1
+You sit on the couch. You start to feel sleepy, you should
+go back and escape before that could happen, it could end badly.
+[[Go Back->Couch]]
 
 :: Couch2
 You stick your hand and start searching between the seats. You feel something hard and pull
@@ -281,7 +283,7 @@ it out. It's a remote.
 You enter his favorite channel, 63782011
 
 Draft
-[[Watch tv->What tv]]
+[[Watch tv->Watch tv]]
 
 :: Watch tv
 You sit down on the couch as you start hearing the screams and cheer or the people on
