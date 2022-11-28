@@ -1,225 +1,186 @@
-:: Bathroom
-
+:: Bathroom[bathroom]
+<div class="box2"></div>
+<div class="text1">
 You've entered the Bathroom.
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
 
-[[Ignore-> Mock]]
-[[Shut Up!-> Rage]]
+[[Ignore-> MockB]]
+[[Shut Up!-> RageB]]
+</div>
 
-:: Mock
+:: MockB
 I'm right aren't I? You know I always am. 
-[[Ignore-> Focus]]
-[[Cry Break-> Cry]]
+[[Ignore-> FocusB]]
+[[Cry Break-> CryB]]
 
-:: Rage
+:: RageB
 No, you shut up! You know as well as I do that your worthless and can't do 
 anything for yourself without me!
+[[Cry-> CryB]]
 
-:: Focus
+:: FocusB
 Try to tune him out. You came in here for a reason. Focus on getting what you need here.
 One step at a time.
-[[Look around-> First Glance]]
+[[Look around-> First GlanceB]]
 
-:: Cry
+:: CryB
 Sometimes, in the heat of things, it's okay to let yourself cry. Just remember to not 
 stay there for too long. 
-[[Deep Breath-> Focus]]
+[[Deep Breath-> FocusB]]
 
-:: First Glance
+:: First GlanceB
 Hey, what the hell do you think you're doing, snooping around? It's rude to go 
 searching through things that aren't yours. Oh wait, I'm all you have, isn't that right?
-[[Look Around->What You See]]
+[[Look Around->What You SeeB]]
 
-:: What You See
-[[Cabinets Under the Sink-> Cabinet]]
-[[Mirror-> Mirror]]
-[[Shower-> Shower]]
-[[Toilet-> Toilet]]
+:: What You SeeB[bathroom]
+<div class="box2"></div>
+<div class="text1">
+[[Cabinets Under the Sink-> CabinetB]]
+[[Mirror-> MirrorB]]
+[[Shower-> ShowerB]]
+[[Toilet-> ToiletB]]
+</div>
 
-:: Toilet
+:: ToiletB
 I just cleaned the toilet yesterday. 
 [[Look Around-> What You See]]
 
-:: Shower
+:: ShowerB
 Now isn't the time for a shower...
-[[Look Around-> What You See]]
+[[Look Around-> What You SeeB]]
 
-:: Cabinet
+:: CabinetB
 There's four cabinets... a large one to my left, 
 and three small ones on my right.
-[[Left Cabinet-> Left Cabinet]]
-[[Upper Right Cabinet-> Upper Right Cabinet]]
-[[Middle Right Cabinet-> Middle Right Cabinet]]
-[[Lower Right Cabinet-> Lower Right Cabinet]]
-[[Look Around-> What You See]]
+[[Left Cabinet-> Left CabinetB]]
+[[Upper Right Cabinet-> Upper Right CabinetB]]
+[[Middle Right Cabinet-> Middle Right CabinetB]]
+[[Lower Right Cabinet-> Lower Right CabinetB]]
+[[Look Around-> What You SeeB]]
 
-:: Left Cabinet
+:: Left CabinetB
 Locked...
-[[Look at the cabinets-> Cabinet]]
+[[Look at the cabinets-> CabinetB]]
 
-:: Upper Right Cabinet
+:: Upper Right CabinetB
 My personal items... at least he let me have my own toothbrush...
 and a place to keep my pads. 
-[[Look at the cabinets-> Cabinet]]
+[[Look at the cabinets-> CabinetB]]
 
-:: Middle Right Cabinet
+:: Middle Right CabinetB
 Nothing in here...
 Wait I...remember seeing him put something in here...
-[[Investigate-> Middle Right Cabinet2]]
-[[I must be mistaken-> Cabinet]]
+[[Investigate-> Middle Right CabinetB2]]
+[[I must be mistaken-> CabinetB]]
 
-:: Middle Right Cabinet2
+:: Middle Right CabinetB2
 That's so weird I could've sworn... Wait when I close this cabinet, 
 I can hear something rattling. There has to be something. But where? 
-[[Give up for now-> Cabinet]]
-[[Listen again-> Middle Right Cabinet3]]
+[[Give up for now-> CabinetB]]
+[[Listen again-> Middle Right CabinetB3]]
 
-:: Middle Right Cabinet3
+:: Middle Right CabinetB3
 No there's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-> Cabinet2]]
+[[Look at the cabinets-> CabinetB2]]
 
-:: Middle Right Cabinet4
+:: Middle Right CabinetB4
 There's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-> Cabinet2]]
+[[Look at the cabinets-> CabinetB2]]
 
-:: Lower Right Cabinet
+:: Lower Right CabinetB
 Locked...
-[[Look at the cabinets-> Cabinet]]
+[[Look at the cabinets-> CabinetB]]
 
-:: Lower Right Cabinet Post Key
-Oh hey, my medical history! Yeah, I'm definantly taking this with me.
-[[Look at the cabinets-> Cabinet Post Med]]
-
-:: Cabinet Post Med
-There's four cabinets... a large one to my left, 
-and three small ones on my right.
-[[Left Cabinet-> Left Cabinet]]
-[[Upper Right Cabinet-> Upper Right Cabinet]]
-[[Middle Right Cabinet-> Middle Right Cabinet]]
-[[Lower Right Cabinet-> Lower right Cabinet2]]
-[[Look Around-> What You See]]
-
-:: Cabinet2
-There's four cabinets... a large one to my left, 
-and three small ones on my right.
-[[Left Cabinet-> Left Cabinet]]
-[[Upper Right Cabinet-> Upper Right Cabinet]]
-[[Middle Right Cabinet-> Middle Right Cabinet4]]
-[[Lower Right Cabinet-> Lower Right Cabinet]]
-[[Look Around-> What You See]]
-
-:: Lower Right Cabinet
-There's nothing left here...
-[[Look at the cabinets-> Cabinet Post Med]]
-
-:: Mirror
+:: MirrorB
 It's me. Gosh, even now I still can't make myself look. 
 I don't like what I see. 
-[[Look Around-> What You See]]
-[[Look Again-> What's That]]
+[[Look Around-> What You SeeB]]
+[[Look Again-> What's ThatB]]
 
-:: What's That
+:: What's ThatB
 I guess I can make myself look again. Just to prove I can. 
-[[...-> What's That2]]
+[[...-> What's That2B]]
 
-:: What's That2
+:: What's That2B
 Wait, no that's not quite right. There's something...off about this mirror. 
 [[It's all in my head. I should look somewhere else.-> What You See]]
-[[Look closer.-> What's That3]]
+[[Look closer.-> What's That3B]]
 
-:: What's That3
+:: What's That3B
 This isn't a solid mirror. Maybe if I just...
-[[Press your finger into the mirror.-> What's That4]]
+[[Press your finger into the mirror.-> What's That4B]]
 
-:: What's That4
+:: What's That4B
 The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
 to open it...
-[[Look Around-> What You See Post Mirror]]
 
-:: What You See Post Mirror
-[[Cabinets Under the Sink-> Cabinet]]
-[[Medicine Cabinet-> Locked Medicine]]
-[[Shower-> Shower]]
-[[Toilet-> Toilet]]
-[[Wall Hangings-> Wall Hangings]]
-
-:: Wall Hangings
+:: Wall HangingsB
 These were always so pretty...
-[[First Wall Hanging-> First Wall]]
-[[Second Wall Hanging-> Second Wall]]
+[[First Wall Hanging-> First WallB]]
+[[Second Wall Hanging-> Second WallB]]
 
-:: First Wall
+:: First WallB
 I wonder...
-[[Remove Wall Hanging-> First Wall2]]
-[[Nevermind-> Wall Hangings]]
+[[Remove Wall Hanging-> First Wall2B]]
+[[Nevermind-> Wall HangingsB]]
 
-:: First Wall2
+:: First Wall2B
 Oh my god...medical records.
-[[Take Them-> First Wall 3]]
-[[Leave Them-> First Wall3]]
+[[Take Them-> First Wall 3B]]
+[[Leave Them-> First Wall3B]]
 
-:: First Wall 3
+:: First Wall 3B
 I'm gonna need these when I get out.
-[[Look at the Hangings-> Wall Hangings With records]]
 
-:: First Wall3
+:: First Wall3B
 If I need them, I'll come back. I need to focus.
-[[Look at the Hangings-> Wall Hangings Without records]]
 
-:: First Wall4
-I already have what was here.
-[[Go back-> Wall Hangings With records]]
-
-:: Wall Hangings With records
-[[First Wall Hanging-> First Wall4]]
-[[Second Wall Hanging-> Second Wall]]
-
-:: Wall Hangings Without records
-[[First Wall Hanging-> First Wall2]]
-[[Second Wall Hanging-> Second Wall]]
-
-:: Second Wall
+:: Second WallB
 I wonder...
-[[Remove Wall Hanging-> Second Wall2]]
-[[Nevermind-> Wall Hangings]]
+[[Remove Wall Hanging-> Second Wall2B]]
+[[Nevermind-> Wall HangingsB]]
 
-:: Second Wall2 
-[[...-> Second Wall3]]
+:: Second Wall2B
+[[...-> Second Wall3B]]
 
-:: Second Wall3
+:: Second Wall3B
 Oh my god.
-[[There's a Camera-> Remember]]
+[[There's a Camera-> RememberB]]
 
-:: Remember
+:: RememberB
 I can't stop the memory from hitting me this time. 
-[[Remember-> Memory]]
+[[Remember-> MemoryB]]
 
-:: Memory
+:: MemoryB
 It's dark. I'm scared. He's
-[[coming.-> Memory2]]
+[[coming.-> Memory2B]]
 
-:: Memory2
+:: Memory2B
 I messed up. His dinner was slightly cold since 
 I took it out of the oven too soon. I got scared. I
-[[hid.-> Memory3]]
+[[hid.-> Memory3B]]
 
-:: Memory3
+:: Memory3B
 Why did I hide? Oh...that's right. He was going to teach me 
-[[a lesson.-> Memory4]]
+[[a lesson.-> Memory4B]]
 
-:: Memory4
+:: Memory4B
 You fucking bitch! You think you can hide in a fucking bathroom!? 
 You need to learn that actions have consequences!
-[[Stay Quiet-> Memory5]]
+[[Stay Quiet-> Memory5B]]
 
-:: Memory5
+:: Memory5B
 
 
-:: Locked Medicine
+:: Locked MedicineB
 I need a key...
-[[Look Around-> What You See Post Mirror]]
+
+
+:: EscapeB
+[[Escape-> Safe]]
