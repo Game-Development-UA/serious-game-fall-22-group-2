@@ -669,7 +669,7 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="107" name="SofaT" tags="tutorial" position="850,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 Looks like a nice place to sit down and relax.
-[[Look between the cushions-&gt; Sofa2]]
+[[Look between the cushions-&gt; SofaT2]]
 &lt;/div&gt;
 [[Look around-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="SofaT2" tags="" position="975,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
@@ -677,13 +677,13 @@ Why are there always things between the cushions?
 &lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;
 [[Pick up coin-&gt;coinT]]
 &lt;&lt;/if&gt;&gt;
-[[Go Back-&gt;Go Back1]]
+[[Go Back-&gt; SofaT]]
 &lt;/div&gt;
 &lt;&lt;if not $inventory.includes(&quot;remote&quot;)&gt;&gt;
 [[Pick up remote-&gt;remoteT]]
 &lt;&lt;/if&gt;&gt;
 [[Pick up remote-&gt;remoteT]]
-[[Look Around-&gt;Enter Room]]
+[[Go Back-&gt;Sofa2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="coinT" tags="" position="1100,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
