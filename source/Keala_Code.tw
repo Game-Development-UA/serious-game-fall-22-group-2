@@ -44,15 +44,6 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 [[Toilet-> ToiletB]]
 </div>
 
-:: What You See2B[bathroom]
-<div class="box2"></div>
-<div class="text1">
-[[Cabinets Under the Sink-> CabinetB]]
-[[Medicine Cabinet-> MedicineB]]
-[[Shower-> ShowerB]]
-[[Toilet-> ToiletB]]
-</div>
-
 :: ToiletB
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
@@ -172,9 +163,15 @@ This isn't a solid mirror. Maybe if I just...
 [[Press your finger into the mirror.-> What's That4B]]
 
 :: What's That4B
+<<if not $inventory.includes("Medkey")>>
 The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
 to open it...
+[[Go back-> What You See]]
+</if>
+I think I have the key for this Medicine Cabinet...
+[[Go back-> What You See]]
+[[Try to open it-> MedicineB]]
 
 :: Wall HangingsB
 These were always so pretty...
@@ -188,14 +185,8 @@ I wonder...
 
 :: First Wall2B
 Oh my god...medical records.
-[[Take Them-> First Wall 3B]]
-[[Leave Them-> First Wall3B]]
-
-:: First Wall 3B
-I'm gonna need these when I get out.
-
-:: First Wall3B
-If I need them, I'll come back. I need to focus.
+<<run $inventory.push("childMedRecords")>>
+[[Look around more-> Wall HangingsB]]
 
 :: Second WallB
 I wonder...
@@ -232,8 +223,53 @@ You need to learn that actions have consequences!
 [[Stay Quiet-> Memory5B]]
 
 :: Memory5B
+* You hear the door handle shaking*
+* It sounds just like you feel* 
+Unlock this door!
+[[...-> Memory6B]]
 
+:: Memory6B
+* The door handle is ripped off *
+* You'll have to buy a new one later * 
+* The door flies open *
+[[Shit-> Memory7B]]
 
-:: Locked MedicineB
-I need a key...
+:: Memory7B
+I can't hear what he's saying-
+[[I'm on the floor-> Memory8B]]
 
+:: Memory8B
+I can feel the blood from where my head hit the shower.
+I can't focus. I'm going to pass out. 
+He stands over me, before huffing and moving. 
+[[Watch him-> Memory9B]]
+
+:: Memory9B
+He unscrews the shower curtain...
+I can kinda hear something clank before he screws it 
+back on. 
+I hear the toilet bowl open...he keeps something there...
+[[...-> Memory10B]]
+
+:: Memory10B
+Don't make the same mistake again you useless bitch. 
+Next time I won't be as nice.
+[[Snap Back-> Memory11B]]
+
+:: Memory11B
+I gasp, coming back to the present time. 
+I can't move...breathe I need to breate...
+[[Get grounded-> Memory12B]]
+
+:: Memory12B
+It takes me a second but...I think I can press forward.
+I should look at the everything again...
+<<run $inventory.push("memoryB")>>
+[[Look around with new eyes-> What You SeeB]]
+
+:: MedicineB
+* You open the cabinet *
+Inside is some medicine. 
+This might be useful when you get out of here!
+<<run $inventory.push("Medicine")>>
+[[Go back-> What You See]]
