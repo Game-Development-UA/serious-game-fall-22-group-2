@@ -670,9 +670,11 @@ Dangling from a chain in the toilet is a key!
 [[Run to the safe-&gt; Safe]]</tw-passagedata><tw-passagedata pid="62" name="ShowerB" tags="" position="225,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 Now isn&#39;t the time for a shower...
 [[Look Around-&gt; What You SeeB]]
-&lt;/if&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 [[Look at the shower curtain-&gt; CurtainB]]
-[[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="63" name="CurtainB" tags="" position="350,850" size="100,100">* You quietly take off the shower curtain rungs*
+[[Look Around-&gt; What You SeeB]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="CurtainB" tags="" position="350,850" size="100,100">* You quietly take off the shower curtain rungs*
 * You hear something clink...* 
 There&#39;s three keys in here! Yes!
 &lt;&lt;run $inventory.push(&quot;largekey&quot;)&gt;&gt;
@@ -731,9 +733,11 @@ Behind it is...the Medicine Cabinet! Wait, it&#39;s locked. There has to be some
 to open it...
 [[Go back-&gt; What You SeeB]]
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;Medkey&quot;)&gt;&gt;
 I think I have the key for this Medicine Cabinet...
 [[Go back-&gt; What You SeeB]]
-[[Try to open it-&gt; MedicineB]]</tw-passagedata><tw-passagedata pid="79" name="Wall HangingsB" tags="" position="1100,975" size="100,100">These were always so pretty...
+[[Try to open it-&gt; MedicineB]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="Wall HangingsB" tags="" position="1100,975" size="100,100">These were always so pretty...
 [[First Wall Hanging-&gt; First WallB]]
 [[Second Wall Hanging-&gt; Second WallB]]</tw-passagedata><tw-passagedata pid="80" name="First WallB" tags="" position="1225,975" size="100,100">I wonder...
 [[Remove Wall Hanging-&gt; First Wall2B]]

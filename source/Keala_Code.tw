@@ -44,14 +44,17 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 [[Mirror-> MirrorB]]
 [[Shower-> ShowerB]]
 [[Toilet-> ToiletB]]
+[[Wall Hangings-> Wall HangingsB]]
 </div>
 
 :: ToiletB
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
 <</if>>
+<<if not $inventory.includes("memoryB")>>
 There's something here...
 [[Look Closer-> Toilet2B]]
+<</if>>
 [[Look Around-> What You SeeB]]
 
 :: Toilet2B
