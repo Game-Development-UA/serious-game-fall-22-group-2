@@ -4,16 +4,14 @@
 [[Go to Bedroom->Bedroom]]
 [[Go to Tutorial-> Living Room Tutorial]]
 [[Go to Kitchen->Kitchen]]
-[[Go to Kitchen->kitchen]]
 [[Go to bathroom-> Bathroom]]
 [[Go to safe-> Safe]]
 [[Go to living room-> Living Room]]
-[[Go to living room2-> Living Room2]]
 /* DELETE THIS BEFORE TURNING IN*/
 
 
 :: Intercom
-Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
+Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
 
 [[Yes -> Have]]
 
@@ -22,52 +20,73 @@ Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
-[[Go to the Bedroom-> Bedroom]]
-[[Go to Couch Cushions -> Couch]]
+<<set $inventory to []>>
 
 :: Have Not
 That's quite alright! We all have to start somewhere, right? I kid I kid, just go 
 to our lovely tutorial room to get a feel for things.
-
 [[Go to Tutorial-> Living Room Tutorial]]
 
-:: Couch
-This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
-
-[[Look at Framed Pictures -> Pictures]]
-[[ Go to Bookshelf -> Shelf]]
-
-:: Pictures
-They all seem to be pointing to the bookshelf.
-
-:: Shelf
-Huh… There's a book that stands out more than the rest, but it seems a little obvious.
-
-[[Inspect Book -> Inspect Book]]
-
-:: Inspect Book
-Its hollow… a key fell out.
-
+:: Living Room[livingroom]
+Let's see what we've got here...
+[[Go to Couch Cushions -> CouchLivingRoom]]
+[[Go to Bookshelf -> Shelf]]
 [[Go to Bedroom Door -> Bedroom Door]]
 [[Go to Storage Ottoman -> Ottoman]]
 
-:: Bedroom Door
-The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?
 
-:: Ottoman
-Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 
-[[Go to Bookshelf -> Shelf]]
-[[Inspect Clothes -> Inspect]]
+:: CouchLivingRoom[livingroom]
+This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
+[[Keep Looking-> Living Room]]
+[[Look at Framed Pictures -> Pictures]]
 
-:: Shelf
- :: Intercom
+:: Pictures[livingroom]
+That's weird...They all seem to be pointing to the bookshelf.
+[[Keep Looking-> Living Room]]
+
+:: Shelf[livingroom]
 Are you interested in the collection of my novels? I know its very impressive.
+[[Um...not really-> Living Room]]
+<<if not $inventory.includes("hollowkey")>>
+Huh… There's a book that stands out more than the rest, but it seems a little obvious.
+[[Inspect Book -> Inspect Book]]
+<</if>>
 
-:: Inspect Clothes
-Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+:: Inspect Book[livingroom]
+Its hollow… a key fell out.
+<<run $inventory.push("hollowkey")>>
+[[Go Back-> Living Room]]
 
-[[ Go to Bedroom Door -> Bedroom Door]]
-Okay, lets try the bobby pin. It worked!
- 
+
+:: Bedroom Door[livingroom]
+<<if not $inventory.includes("bobbypin")>>
+It's locked...
+[[Keep Looking-> Living Room]]
+<</if>>
+<<if $inventory.includes("hollowkey")>>
+The key goes in but its not turning. This doesnt seem right. 
+Maybe I should try the ottoman?
+[[Keep Looking-> Living Room]]
+<</if>>
+<<if $inventory.includes("bobbypin")>>
+Okay, lets try the bobby pin.
+[[...-> Bedroom Door2]]
+<</if>>
+
+:: Bedroom Door2[livingroom]
+It worked!
 [[Go to Bedroom -> Bedroom]]
+
+:: Ottoman[livingroom]
+<<if not $inventory.includes("bobbypin")>>
+Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
+[[Inspect Clothes -> Inspect]]
+<</if>>
+[[Keep Looking-> Living Room]]
+
+
+:: Inspect Clothes[livingroom]
+Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+<<run $inventory.push("bobbypin")>>
+[[Go Back-> Living Room]]
