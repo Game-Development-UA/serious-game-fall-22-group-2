@@ -12,7 +12,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 [[Ask for a hint-> HintT]]
 </div>\
 <div class="box6"></div>
-<div class="text5">
+<div class="textt">
 [[Sofa-> SofaT]]
 [[Mirror-> MirrorT]]
 [[Fireplace-> FireplaceT]]
@@ -34,7 +34,6 @@ Looks like a nice place to sit down and relax.
 :: SofaT2
 <div class="box7"></div>
 <div class="text6">
-You have $inventory.length items
 Why are there always things between the cushions?
 <<if $inventory.includes("coin")>>
 [[Go Back->SofaT]]
@@ -79,7 +78,7 @@ But I won't pressure you if you're uncomftable.
 [[>>>->SecretT]]
 <<else>>\
 [[Nothing Here...->Enter Room]]\
-<</if>>\
+<</if>>
 </div>
 
 :: SecretT
