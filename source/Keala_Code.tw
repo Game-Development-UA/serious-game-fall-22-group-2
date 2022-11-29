@@ -202,31 +202,43 @@ I think I have the key for this Medicine Cabinet...
 <</if>>
 
 :: Wall HangingsB[bathroomwall]
+<div class="text2">
 These were always so pretty...
 [[First Wall Hanging-> First WallB]]
 [[Second Wall Hanging-> Second WallB]]
+</div>
 
 :: First WallB[bathroomwall]
+<div class="text2">
 I wonder...
 [[Remove Wall Hanging-> First Wall2B]]
 [[Nevermind-> Wall HangingsB]]
+</div>
 
 :: First Wall2B[bathroomwall]
+<div class="text2">
 Oh my god...medical records.
 <<run $inventory.push("childMedRecords")>>
 [[Look around more-> Wall HangingsB]]
+</div>
 
 :: Second WallB[bathroomwall]
+<div class="text2">
 I wonder...
 [[Remove Wall Hanging-> Second Wall2B]]
 [[Nevermind-> Wall HangingsB]]
+</div>
 
 :: Second Wall2B[bathroomwall]
+<div class="text2">
 [[...-> Second Wall3B]]
+</div>
 
 :: Second Wall3B[bathroomwall]
+<div class="text2">
 Oh my god.
 [[There's a Camera-> RememberB]]
+</div>
 
 :: RememberB[bathroom]
 I can't stop the memory from hitting me this time. 

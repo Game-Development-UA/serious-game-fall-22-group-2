@@ -453,14 +453,14 @@ body.bathroomtoilet{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: -30% 95%;
+	background-position: -28% 95%;
 	background-size: 175%;
 }
 body.bathroomwall{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: -30% 65%;
+	background-position: -28% 65%;
 	background-size: 175%;
 }
 body{
@@ -842,17 +842,21 @@ searching through things that aren&#39;t yours. Oh wait, I&#39;m all you have, i
 [[Shower-&gt; ShowerB]]
 [[Toilet-&gt; ToiletB]]
 [[Wall Hangings-&gt; Wall HangingsB]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ToiletB" tags="bathroomtoilet" position="1225,725" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ToiletB" tags="bathroomtoilet" position="1225,725" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 I just cleaned the toilet yesterday. 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 There&#39;s something here...
 [[Look Closer-&gt; Toilet2B]]
 &lt;&lt;/if&gt;&gt;
-[[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="bathroomtoilet" position="100,850" size="100,100">- You lift off the top of the toilet -
+[[Look Around-&gt; What You SeeB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="bathroomtoilet" position="100,850" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+- You lift off the top of the toilet -
 Dangling from a chain in the toilet is a key!
 &lt;&lt;run $inventory.push(&quot;SafeKey&quot;)&gt;&gt;
-[[Run to the safe-&gt; Safe]]</tw-passagedata><tw-passagedata pid="62" name="ShowerB" tags="bathroomshower" position="225,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
+[[Run to the safe-&gt; Safe]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="ShowerB" tags="bathroomshower" position="225,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 Now isn&#39;t the time for a shower...
 [[Look Around-&gt; What You SeeB]]
 &lt;&lt;/if&gt;&gt;
