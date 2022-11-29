@@ -432,7 +432,7 @@ body.bathroomcab{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 75% 55%;
+	background-position: 75% 95%;
 	background-size: 175%;
 }
 body.bathroommirror{
@@ -453,14 +453,14 @@ body.bathroomtoilet{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: -20% 95%;
+	background-position: -40% 95%;
 	background-size: 175%;
 }
 body.bathroomwall{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: -200% 65%;
+	background-position: -40% 65%;
 	background-size: 175%;
 }
 body{
@@ -845,11 +845,11 @@ searching through things that aren&#39;t yours. Oh wait, I&#39;m all you have, i
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ToiletB" tags="bathroomtoilet" position="1225,725" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 I just cleaned the toilet yesterday. 
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 There&#39;s something here...
 [[Look Closer-&gt; Toilet2B]]
 &lt;&lt;/if&gt;&gt;
-[[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="bathroomtoilet" position="100,850" size="100,100">* You lift off the top of the toilet *
+[[Look Around-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="61" name="Toilet2B" tags="bathroomtoilet" position="100,850" size="100,100">- You lift off the top of the toilet -
 Dangling from a chain in the toilet is a key!
 &lt;&lt;run $inventory.push(&quot;SafeKey&quot;)&gt;&gt;
 [[Run to the safe-&gt; Safe]]</tw-passagedata><tw-passagedata pid="62" name="ShowerB" tags="bathroomshower" position="225,850" size="100,100">&lt;&lt;if not $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
@@ -859,8 +859,8 @@ Now isn&#39;t the time for a shower...
 &lt;&lt;if $inventory.includes(&quot;memoryB&quot;)&gt;&gt;
 [[Look at the shower curtain-&gt; CurtainB]]
 [[Look Around-&gt; What You SeeB]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="CurtainB" tags="bathroomshower" position="350,850" size="100,100">* You quietly take off the shower curtain rungs*
-* You hear something clink...* 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="CurtainB" tags="bathroomshower" position="350,850" size="100,100">- You quietly take off the shower curtain rungs-
+- You hear something clink...-
 There&#39;s three keys in here! Yes!
 &lt;&lt;run $inventory.push(&quot;largekey&quot;)&gt;&gt;
 &lt;&lt;run $inventory.push(&quot;HiddenBedKey&quot;)&gt;&gt;
@@ -892,7 +892,7 @@ cabinet. But how do I lift it up? I need something thin...
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;HiddenBedKey&quot;)&gt;&gt;
 The cabinet has a fake floor!
-*You find a tiny hole in the floor* 
+-You find a tiny hole in the floor-
 [[Unlock?-&gt; Middle Right CabinetB4]]
 &lt;&lt;/if&gt;&gt;
 [[Look at the cabinets-&gt; CabinetB]]</tw-passagedata><tw-passagedata pid="71" name="Middle Right CabinetB4" tags="bathroomcab" position="100,975" size="100,100">There&#39;s a key in here!
@@ -938,12 +938,12 @@ I took it out of the oven too soon. I got scared. I
 [[hid.-&gt; Memory3B]]</tw-passagedata><tw-passagedata pid="88" name="Memory3B" tags="bathroom" position="975,1100" size="100,100">Why did I hide? Oh...that&#39;s right. He was going to teach me 
 [[a lesson.-&gt; Memory4B]]</tw-passagedata><tw-passagedata pid="89" name="Memory4B" tags="bathroom" position="1100,1100" size="100,100">You fucking bitch! You think you can hide in a fucking bathroom!? 
 You need to learn that actions have consequences!
-[[Stay Quiet-&gt; Memory5B]]</tw-passagedata><tw-passagedata pid="90" name="Memory5B" tags="bathroom" position="1225,1100" size="100,100">* You hear the door handle shaking*
-* It sounds just like you feel* 
+[[Stay Quiet-&gt; Memory5B]]</tw-passagedata><tw-passagedata pid="90" name="Memory5B" tags="bathroom" position="1225,1100" size="100,100">- You hear the door handle shaking-
+- It sounds just like you feel-
 Unlock this door!
-[[...-&gt; Memory6B]]</tw-passagedata><tw-passagedata pid="91" name="Memory6B" tags="bathroom" position="100,1225" size="100,100">* The door handle is ripped off *
-* You&#39;ll have to buy a new one later * 
-* The door flies open *
+[[...-&gt; Memory6B]]</tw-passagedata><tw-passagedata pid="91" name="Memory6B" tags="bathroom" position="100,1225" size="100,100">- The door handle is ripped off -
+- You&#39;ll have to buy a new one later - 
+- The door flies open -
 [[Shit-&gt; Memory7B]]</tw-passagedata><tw-passagedata pid="92" name="Memory7B" tags="bathroom" position="225,1225" size="100,100">I can&#39;t hear what he&#39;s saying-
 [[I&#39;m on the floor-&gt; Memory8B]]</tw-passagedata><tw-passagedata pid="93" name="Memory8B" tags="bathroom" position="350,1225" size="100,100">I can feel the blood from where my head hit the shower.
 I can&#39;t focus. I&#39;m going to pass out. 
@@ -959,7 +959,7 @@ I can&#39;t move...breathe I need to breate...
 [[Get grounded-&gt; Memory12B]]</tw-passagedata><tw-passagedata pid="97" name="Memory12B" tags="bathroom" position="850,1225" size="100,100">It takes me a second but...I think I can press forward.
 I should look at the everything again...
 &lt;&lt;run $inventory.push(&quot;memoryB&quot;)&gt;&gt;
-[[Look around with new eyes-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="98" name="MedicineB" tags="bathroommirror" position="975,1225" size="100,100">* You open the cabinet *
+[[Look around with new eyes-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="98" name="MedicineB" tags="bathroommirror" position="975,1225" size="100,100">- You open the cabinet -
 Inside is some medicine. 
 This might be useful when you get out of here!
 &lt;&lt;run $inventory.push(&quot;Medicine&quot;)&gt;&gt;
