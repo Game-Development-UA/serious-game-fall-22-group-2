@@ -187,8 +187,8 @@ body.cal{
 	background-image: url(https://th.bing.com/th/id/R.88bf2aec0e8aaf1bb888c3e8d5288f32?rik=1YsTRpj4gBoR%2fg&riu=http%3a%2f%2fwww.todayifoundout.com%2fwp-content%2fuploads%2f2011%2f11%2fnovember-22.jpg&ehk=VDALOkkuVlkXSa9zXCUFq2QUOT%2bFy3d%2frISnqQ2fvc8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 60% 55%;
-	background-size: 85%;
+	background-position: 90% 120%;
+	background-size: 80%;
 }
 body.livingroomotto{
 	z-index: 2;
@@ -1170,61 +1170,61 @@ you remember sitting in the living room. There is a lot of yelling and shouting.
 [[Go Back-&gt;Go Back5]]
 &lt;/div&gt;
 */</tw-passagedata><tw-passagedata pid="108" name="Fridge2" tags="kitchen" position="975,1350" size="100,100">&lt;mark&gt;Theres some food in here, Why don’t you make me something to eat while your at it?&lt;/mark&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 [[I’d like to focus-&gt;reject1]]
 [[I think a snack is a great Idea-&gt;accept1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="reject1" tags="kitchen" position="1100,1350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="reject1" tags="kitchen" position="1100,1350" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Sure, whatever. Youre not that good at anything else really.
 [[...Sorry-&gt; Go Back5]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="110" name="accept1" tags="kitchen" position="1225,1350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="110" name="accept1" tags="kitchen" position="1225,1350" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 I like it when you listen to me
-&lt;/div&gt;
-[[Go Back-&gt;Go Back5]]</tw-passagedata><tw-passagedata pid="111" name="Calendar" tags="cal" position="100,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+[[Go Back-&gt;Go Back5]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="111" name="Calendar" tags="cal" position="100,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
 1122… Thats half a code! Got to find the birth year…
 &lt;&lt;run $inventory.push(&quot;safecode1&quot;)&gt;&gt;
 [[Go Back-&gt;Go Back5]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="Go Back5" tags="kitchen" position="225,1475" size="100,100">&lt;div class = &quot;text1&quot;&gt;
-&lt;&lt;if not $inventory.includes(&quot;safecode1&quot;)&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="Go Back5" tags="kitchen" position="225,1475" size="100,100">&lt;div class = &quot;text1&quot;&gt;\
+&lt;&lt;if not $inventory.includes(&quot;safecode1&quot;)&gt;&gt;\
 What will you do?
 [[Look Fridge-&gt;Fridge1]]
 [[Look at Calendar-&gt;Calendar]]
 [[Look on Shelf-&gt;InspectShelf1]]
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $inventory.includes(&quot;safecode1&quot;)&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;safecode1&quot;)&gt;&gt;\
 Lets keep looking around shall we?
 [[Look on the Fridge -&gt; Fridge2]]
 [[Look at the drawer -&gt;Drawer1]]
 &lt;&lt;/if&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="113" name="Drawer1" tags="kitchen" position="350,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="113" name="Drawer1" tags="kitchen" position="350,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Lots of junk in these drawers... silverware, pots &amp; pans, mail... I think you should also clean up while your at it?
 [[Look at Silverware-&gt;Silverware1]]
 [[Look Pots and Pans-&gt;Pots1]]
 [[Look at Mail-&gt;mail1]]
- &lt;/div&gt;</tw-passagedata><tw-passagedata pid="114" name="Silverware1" tags="kitchen" position="475,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="114" name="Silverware1" tags="kitchen" position="475,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 MM nothing here...
 
 [[Go back -&gt;Drawer1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="115" name="Pots1" tags="kitchen" position="600,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="115" name="Pots1" tags="kitchen" position="600,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 
 Wow… I remember being gifted all these pots and pans. But nothing of important here
 &lt;/div&gt;
 &lt;mark&gt;[[If I may -&gt;Pots2]]&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="116" name="mail1" tags="kitchen" position="725,1475" size="100,100">&lt;mark&gt;Lots of letters here... Are you going to go through each one?&lt;/mark&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 [[Yes, I&#39;m looking for something -&gt;accept2]]
 [[No, there is no point -&gt;reject2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="accept2" tags="kitchen" position="850,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="accept2" tags="kitchen" position="850,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Good job on staying determined
 [[Thank You-&gt; Go Back5]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="reject2" tags="kitchen" position="975,1475" size="100,100">&lt;mark&gt;Giving up so easily? Disappointing of you.&lt;/mark&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 [[Investigate -&gt; Mail2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="Mail2" tags="kitchen" position="1100,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="Mail2" tags="kitchen" position="1100,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Lots of bills here... Medical bills, rent, utilities, and car payments. You notice that you dont pay any of them. 
 
 [[Go through mail -&gt; Mail3]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="Enter Kitchen1" tags="Kitchen" position="1225,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="Enter Kitchen1" tags="Kitchen" position="1225,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 &lt;&lt;set $inventory to []&gt;&gt;\
 [[Look on the Fridge -&gt; Fridge1]]
 [[Look at the drawer -&gt;Drawer1]]
@@ -1238,27 +1238,27 @@ You hear a loud voice &quot;NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID.
 &lt;&lt;run $inventory.push(&quot;BDKey&quot;)&gt;&gt;\
 
 [[Go Back-&gt;Enter Back5]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="123" name="Enter Back5" tags="kitchen" position="350,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="123" name="Enter Back5" tags="kitchen" position="350,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 &lt;&lt;set $inventory to []&gt;&gt;\
 What will you do?
 [[Look on the Fridge -&gt; Fridge1]]
 [[Look at the drawer -&gt;Drawer1]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="124" name="Pots2" tags="Kitchen" position="475,1600" size="100,100">&lt;mark&gt;I got you those gifts! Dont you remember how happy you were? I’m an amazing gift giver&lt;/mark&gt;
- &lt;div class=&quot;text1&quot;&gt;
+ &lt;div class=&quot;text1&quot;&gt;\
 [[Right…Thank You-&gt; Drawer1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="125" name="Mail3" tags="kitchen" position="600,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="125" name="Mail3" tags="kitchen" position="600,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Lots of things on the Fridge
 [[Look at Rent-&gt;Rent1]]
 [[Look at Car Payments-&gt;Car1]]
 [[Look at Medical Bills-&gt;Medb1]]
 [[Look Somewhere Else-&gt; Go Back5]]
- &lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="Rent1" tags="kitchen" position="725,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="Rent1" tags="kitchen" position="725,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 $2000 to live in this place? Yikes. AT least its roomy
 [[Go Back-&gt;Mail3]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="127" name="Car1" tags="kitchen" position="850,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="127" name="Car1" tags="kitchen" position="850,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
 [[Go Back-&gt;Mail3]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="128" name="Medb1" tags="kitchen" position="975,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="128" name="Medb1" tags="kitchen" position="975,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
 Thats a combination... 11221984
 
