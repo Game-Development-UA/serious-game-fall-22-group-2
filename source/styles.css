@@ -4,27 +4,24 @@ Andrea's stuff,,, sorry its a mess ;-;
 */
 .redlock{
 	z-index: 5;
-	background-image: url(media/red-key.png);
-	background-size: 5%;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-attachment: fixed;
+	width: 5%;
+	position: absolute;
+	left: 920px;
+	top: 225px
 }
 .bluelock{
 	z-index: 5;
-	background-image: url(media/blue-key.png);
-	background-size: 5%;
-	background-repeat: no-repeat;
-	background-position: 50% 54%;
-	background-attachment: fixed;
+	width: 5%;
+	position: absolute;
+	left: 720px;
+	top: 225px
 }
 .yellowlock{
 	z-index: 5;
-	background-image: url(media/yellow-key.png);
-	background-size: 5%;
-	background-repeat: no-repeat;
-	background-position: 50% 58%;
-	background-attachment: fixed;
+	width: 5%;
+	position: absolute;
+	left: 820px;
+	top: 225px
 }
 .chest{
 	z-index: 3;
