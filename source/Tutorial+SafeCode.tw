@@ -47,7 +47,7 @@ Why are there always things between the cushions?
 <div class="text1">
 <<run $inventory.push("coin")>>
 I'll take the coin.
-[[Look at the Sofa-> SofaT2]]
+[[Look at the Sofa-> SofaT]]
 </div>
 
 
@@ -56,7 +56,7 @@ I'll take the coin.
 <div class="text1">
 <<run $inventory.push("remote")>>
 I'll take the remote.
-[[Look at the Sofa-> SofaT2]]
+[[Look at the Sofa-> SofaT]]
 </div>
 
 :: MirrorT
