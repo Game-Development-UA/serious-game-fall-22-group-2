@@ -246,7 +246,7 @@ body.tutorialplant{
 	position: fixed;
 	color: white;
 	right: 200px;
-	height: 350
+	height: 300
 
 }
 
@@ -260,6 +260,15 @@ body.tutorialplant{
 }
 
 .intercombox{
+	position: fixed;
+	border: 2px solid black;
+	background-color: rgb(77, 74, 74);
+	width: 270px;
+	height: 95px;
+	right: 100px;
+}
+
+.intercomboxhint{
 	position: fixed;
 	border: 2px solid black;
 	background-color: rgb(77, 74, 74);
@@ -291,6 +300,14 @@ body.tutorialplant{
 	color: white;
 	right: 105px;
 	top: 25px;
+
+}
+
+.intercomtexthint{
+	position: fixed;
+	color: white;
+	right: 105px;
+	top: 75px;
 
 }
 
@@ -990,13 +1007,15 @@ You got a Key!
 I&#39;m not warm or anything...
 I should focus on getting out.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="128" name="HintT" tags="tutorial" position="975,1600" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
-&lt;div class=&quot;intercomtext3&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="128" name="HintT" tags="tutorial" position="975,1600" size="100,100">&lt;div class=&quot;intercomboxhint&quot;&gt;&lt;/div&gt;\
+&lt;div class=&quot;intercomtexthint&quot;&gt;\
 You need a hint? You have to pay to 
 escape this room.
 &lt;/div&gt;\
 &lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;textt2&quot;&gt;
+
+
 [[?-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="LampT" tags="tutoriallamp" position="1100,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;textt2&quot;&gt;
@@ -1013,8 +1032,8 @@ watered...poor thing.
 I need the code...
 What&#39;s the code??
 [[11221984-&gt; Safe3]]
-[[63782011-&gt; Nope]]</tw-passagedata><tw-passagedata pid="134" name="Safe3" tags="" position="475,1725" size="100,100">*You hear the safe creak open*
-*Quickly, you grab the phone and*
+[[63782011-&gt; Nope]]</tw-passagedata><tw-passagedata pid="134" name="Safe3" tags="" position="475,1725" size="100,100">-You hear the safe creak open-
+-Quickly, you grab the phone and-
 [[call 911-&gt; End]]</tw-passagedata><tw-passagedata pid="135" name="End" tags="" position="600,1725" size="100,100">Help is on the way. You&#39;re going to be okay.</tw-passagedata><tw-passagedata pid="136" name="Nope" tags="" position="725,1725" size="100,100">YOU DUMB BITCH! YOU&#39;RE DEAD!</tw-passagedata><tw-passagedata pid="137" name="StoryInit" tags="" position="850,1725" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
