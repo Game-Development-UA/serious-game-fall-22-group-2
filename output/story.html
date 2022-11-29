@@ -179,8 +179,18 @@ body.livingroombook{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 85%;
-	background-size: 130%;
+	background-size: 150%;
 }
+
+body.livingroomotto{
+	z-index: 2;
+	background-image: url(media/living-room.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 20% 95%;
+	background-size: 150%;
+}
+
 
 body.livingroomdoor{
 	z-index: 2;
@@ -627,11 +637,11 @@ Maybe I should try the ottoman?
 Okay, lets try the bobby pin.
 [[...-&gt; Bedroom Door2]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Bedroom Door2" tags="livingroomdoor" position="225,225" size="100,100">It worked!
-[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="13" name="Ottoman" tags="livingroom" position="350,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="13" name="Ottoman" tags="livingroomotto" position="350,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 [[Inspect Clothes -&gt; Inspect Clothes]]
 &lt;&lt;/if&gt;&gt;
-[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="14" name="Inspect Clothes" tags="livingroom" position="475,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="14" name="Inspect Clothes" tags="livingroomotto" position="475,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
 &lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;
 [[Go Back-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="15" name="Bedroom" tags="first, intercom" position="600,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
 &lt;div class = &quot;text1&quot;&gt;\
