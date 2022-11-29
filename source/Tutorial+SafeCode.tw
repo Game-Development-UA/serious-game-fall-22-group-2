@@ -123,6 +123,8 @@ escape this room.
 :: LampT[tutoriallamp]
 <div class="boxtut"></div>
 <div class="textt2">
+
+
 This lamp looks like the one my 
 mom got me for my wedding gift.
 [[Go Back-> Enter Room]]
@@ -131,6 +133,8 @@ mom got me for my wedding gift.
 :: PlantT[tutorialplant]
 <div class="boxtut"></div>
 <div class="textt2">
+
+
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-> Enter Room]]

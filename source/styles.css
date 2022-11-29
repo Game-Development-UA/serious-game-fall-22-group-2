@@ -128,16 +128,16 @@ body.tutoriallamp{
 	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 75% 65%;
-	background-size: 150%;
+	background-position: 75% 45%;
+	background-size: 175%;
 }
 
 body.tutorialplant{
 	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 75% 65%;
-	background-size: 150%;
+	background-position: 45% 45%;
+	background-size: 175%;
 }
 
 .intercomtext2{
