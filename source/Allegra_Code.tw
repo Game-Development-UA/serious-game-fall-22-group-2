@@ -1,15 +1,3 @@
-:: Starting
-[[Intercom->Intercom]]
-/* DELETE THIS BEFORE TURNING IN*/
-[[Go to Bedroom->Bedroom]]
-[[Go to Tutorial-> Living Room Tutorial]]
-[[Go to Kitchen->Kitchen]]
-[[Go to bathroom-> Bathroom]]
-[[Go to safe-> Safe]]
-[[Go to living room-> Living RoomPre]]
-/* DELETE THIS BEFORE TURNING IN*/
-
-
 :: Intercom[livingroom]
 <div class="text1">\
 Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
