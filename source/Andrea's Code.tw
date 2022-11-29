@@ -393,4 +393,5 @@ Huh.. What's the key to the kitchen doing in here?
 :: Kitchen Key[livingroom]
 <div class="text1">\
 You equipped the kitchen key.
+[[Ok->Living Room2]]
 </div>

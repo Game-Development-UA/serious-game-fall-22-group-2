@@ -10,88 +10,114 @@
 /* DELETE THIS BEFORE TURNING IN*/
 
 
-:: Intercom
+:: Intercom[livingroom]
+<div class="text1">\
 Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
 
 [[Yes -> Have]]
 
 [[No-> Have Not]]
+</div>
 
-:: Have
+:: Have[livingroom]
+<div class="text1">\
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living RoomPre]]
+</div>
 
-:: Have Not
+:: Have Not[livingroom]
+<div class="text1">\
 That's quite alright! We all have to start somewhere, right? I kid I kid, just go 
 to our lovely tutorial room to get a feel for things.
 [[Go to Tutorial-> Living Room Tutorial]]
+</div>
 
 :: Living RoomPre[livingroom]
+<div class="text1">\
 <<set $inventory to []>>
 [[Good Luck!-> Living Room]]
+</div>
 
 
 :: Living Room[livingroom]
+<div class="text1">\
 Let's see what we've got here...
 [[Go to Couch Cushions -> CouchLivingRoom]]
 [[Go to Bookshelf -> Shelf]]
 [[Go to Bedroom Door -> Bedroom Door]]
 [[Go to Storage Ottoman -> Ottoman]]
+</div>
 
 
 
 :: CouchLivingRoom[livingroomcouch]
+<div class="text1">\
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
 [[Keep Looking-> Living Room]]
 [[Look at Framed Pictures -> Pictures]]
+</div>
 
 :: Pictures[livingroompic]
+<div class="text1">\
 That's weird...They all seem to be pointing to the bookshelf.
 [[Keep Looking-> Living Room]]
+</div>
 
 :: Shelf[livingroombook]
-<<if $inventory.includes("hollowkey")>>
+<div class="text1">\
+<<if $inventory.includes("hollowkey")>>\
 Are you interested in the collection of my novels? I know its very impressive.
 [[Um...not really-> Living Room]]
 <</if>>
-<<if not $inventory.includes("hollowkey")>>
+<<if not $inventory.includes("hollowkey")>>\
 Huh… There's a book that stands out more than the rest, but it seems a little obvious.
 [[Inspect Book -> Inspect Book]]
 <</if>>
+</div>
 
 :: Inspect Book[livingroombook]
+<div class="text1">\
 Its hollow… a key fell out.
-<<run $inventory.push("hollowkey")>>
+<<run $inventory.push("hollowkey")>>\
 [[Go Back-> Living Room]]
+</div>
 
 
 :: Bedroom Door[livingroomdoor]
-<<if not $inventory.includes("bobbypin")>>
+<div class="text1">\
+<<if not $inventory.includes("bobbypin")>>\
 It's locked...
 [[Keep Looking-> Living Room]]
 <</if>>
-<<if $inventory.includes("hollowkey")>>
+<<if $inventory.includes("hollowkey")>>\
 The key goes in but its not turning. This doesnt seem right. 
 Maybe I should try the ottoman?
 <</if>>
-<<if $inventory.includes("bobbypin")>>
+<<if $inventory.includes("bobbypin")>>\
 Okay, lets try the bobby pin.
 [[...-> Bedroom Door2]]
 <</if>>
+</div>
 
 :: Bedroom Door2[livingroomdoor]
+<div class="text1">\
 It worked!
 [[Go to Bedroom -> Bedroom]]
+</div>
 
 :: Ottoman[livingroomotto]
-<<if not $inventory.includes("bobbypin")>>
+<div class="text1">\
+<<if not $inventory.includes("bobbypin")>>\
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 [[Inspect Clothes -> Inspect Clothes]]
 <</if>>
 [[Keep Looking-> Living Room]]
+</div>
 
 
 :: Inspect Clothes[livingroomotto]
+<div class="text1">\
 Theres a little bobby pin in the pocket of the overalls. Would this open the door?
-<<run $inventory.push("bobbypin")>>
+<<run $inventory.push("bobbypin")>>\
 [[Go Back-> Living Room]]
+</div>

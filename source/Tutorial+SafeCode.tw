@@ -1,8 +1,10 @@
 :: Living Room Tutorial[tutorial]
+<div class="text1">\
 Welcome to the Tutorial! Take a look around, see what you can't find!
 And if you need any help, reach out to me, that's what I'm here for. 
 <<set $inventory to []>>
 [[Thank You-> Enter Room]]
+</div>
 
 :: Enter Room[tutorial]
 <div class="intercombox"></div>
@@ -94,7 +96,7 @@ You got a Key!
 <div class="textt2">
 
 
-[[Leave->LeaveT]]
+[[Leave Tutorial->LeaveT]]
 </div>
 
 :: FireplaceT[tutorialfire]
@@ -166,8 +168,10 @@ What's the code??
 [[call 911-> End]]
 </div>
 
-:: End
+:: End[end]
+<div class="safee">
 Help is on the way. You're going to be okay.
+</div>
 
 :: Nope
-YOU DUMB BITCH! YOU'RE DEAD!
+<mark>YOU DUMB BITCH! YOU'RE DEAD!</mark>
