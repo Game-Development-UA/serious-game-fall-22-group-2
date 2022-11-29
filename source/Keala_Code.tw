@@ -60,20 +60,24 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 </div>
 
 :: ToiletB[bathroomtoilet]
+<div class="text2">
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
 <</if>>
-<<if not $inventory.includes("memoryB")>>
+<<if $inventory.includes("memoryB")>>
 There's something here...
 [[Look Closer-> Toilet2B]]
 <</if>>
 [[Look Around-> What You SeeB]]
+</div>
 
 :: Toilet2B[bathroomtoilet]
-* You lift off the top of the toilet *
+<div class="text2">
+- You lift off the top of the toilet -
 Dangling from a chain in the toilet is a key!
 <<run $inventory.push("SafeKey")>>
 [[Run to the safe-> Safe]]
+</div>
 
 :: ShowerB[bathroomshower]
 <<if not $inventory.includes("memoryB")>>
@@ -86,8 +90,8 @@ Now isn't the time for a shower...
 <</if>>
 
 :: CurtainB[bathroomshower]
-* You quietly take off the shower curtain rungs*
-* You hear something clink...* 
+- You quietly take off the shower curtain rungs-
+- You hear something clink...-
 There's three keys in here! Yes!
 <<run $inventory.push("largekey")>>
 <<run $inventory.push("HiddenBedKey")>>
@@ -140,7 +144,7 @@ cabinet. But how do I lift it up? I need something thin...
 <</if>>
 <<if $inventory.includes("HiddenBedKey")>>
 The cabinet has a fake floor!
-*You find a tiny hole in the floor* 
+-You find a tiny hole in the floor-
 [[Unlock?-> Middle Right CabinetB4]]
 <</if>>
 [[Look at the cabinets-> CabinetB]]
@@ -198,31 +202,43 @@ I think I have the key for this Medicine Cabinet...
 <</if>>
 
 :: Wall HangingsB[bathroomwall]
+<div class="text2">
 These were always so pretty...
 [[First Wall Hanging-> First WallB]]
 [[Second Wall Hanging-> Second WallB]]
+</div>
 
 :: First WallB[bathroomwall]
+<div class="text2">
 I wonder...
 [[Remove Wall Hanging-> First Wall2B]]
 [[Nevermind-> Wall HangingsB]]
+</div>
 
 :: First Wall2B[bathroomwall]
+<div class="text2">
 Oh my god...medical records.
 <<run $inventory.push("childMedRecords")>>
 [[Look around more-> Wall HangingsB]]
+</div>
 
 :: Second WallB[bathroomwall]
+<div class="text2">
 I wonder...
 [[Remove Wall Hanging-> Second Wall2B]]
 [[Nevermind-> Wall HangingsB]]
+</div>
 
 :: Second Wall2B[bathroomwall]
+<div class="text2">
 [[...-> Second Wall3B]]
+</div>
 
 :: Second Wall3B[bathroomwall]
+<div class="text2">
 Oh my god.
 [[There's a Camera-> RememberB]]
+</div>
 
 :: RememberB[bathroom]
 I can't stop the memory from hitting me this time. 
@@ -247,15 +263,15 @@ You need to learn that actions have consequences!
 [[Stay Quiet-> Memory5B]]
 
 :: Memory5B[bathroom]
-* You hear the door handle shaking*
-* It sounds just like you feel* 
+- You hear the door handle shaking-
+- It sounds just like you feel-
 Unlock this door!
 [[...-> Memory6B]]
 
 :: Memory6B[bathroom]
-* The door handle is ripped off *
-* You'll have to buy a new one later * 
-* The door flies open *
+- The door handle is ripped off -
+- You'll have to buy a new one later - 
+- The door flies open -
 [[Shit-> Memory7B]]
 
 :: Memory7B[bathroom]
@@ -292,7 +308,7 @@ I should look at the everything again...
 [[Look around with new eyes-> What You SeeB]]
 
 :: MedicineB[bathroommirror]
-* You open the cabinet *
+- You open the cabinet -
 Inside is some medicine. 
 This might be useful when you get out of here!
 <<run $inventory.push("Medicine")>>

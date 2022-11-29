@@ -143,22 +143,28 @@ watered...poor thing.
 :: LeaveT[tutorial]
 [[Back to Main Room->Starting]]
 
-:: Safe
+:: Safe[safe]
+<div class="safetext">
 WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 [[Getting Out!->Safe2]]
+</div>
 
-:: Safe2
+:: Safe2[safe]
+<div class="textsafe">
 I have the key...
 I need the code...
 What's the code??
 [[25112002-> Nope]]
 [[11221984-> Safe3]]
 [[63782011-> Nope]]
+</div>
 
-:: Safe3
+:: Safe3[safe]
+<div class="textsafe">
 -You hear the safe creak open-
 -Quickly, you grab the phone and-
 [[call 911-> End]]
+</div>
 
 :: End
 Help is on the way. You're going to be okay.
