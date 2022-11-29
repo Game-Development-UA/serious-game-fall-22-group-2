@@ -170,9 +170,9 @@ body.tutorialplant{
 	position: fixed;
 	border: 2px solid black;
 	background-color: rgb(77, 74, 74);
-	width: 250px;
+	width: 350px;
 	height: 80px;
-	right: 200px;
+	left: 200px;
 }
 
 .intercombox3{
@@ -216,7 +216,7 @@ body.tutorialplant{
 	background: white;
 	position: relative;
 	top: 550px;
-	left: 120px;
+	right: 120px;
 }
 
 .boxtut{
