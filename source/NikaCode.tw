@@ -48,22 +48,22 @@ you remember sitting in the living room. There is a lot of yelling and shouting.
 */
 :: Fridge2[kitchen]
 <mark>Theres some food in here, Why don’t you make me something to eat while your at it?</mark>
-<div class="text1">
+<div class="text1">\
 [[I’d like to focus->reject1]]
 [[I think a snack is a great Idea->accept1]]
 </div>
 
 :: reject1[kitchen]
-<div class="text1">
+<div class="text1">\
 Sure, whatever. Youre not that good at anything else really.
 [[...Sorry-> Go Back5]]
 </div>
 
 :: accept1[kitchen]
-<div class="text1">
+<div class="text1">\
 I like it when you listen to me
-</div>
 [[Go Back->Go Back5]]
+</div>
 
 :: Calendar[cal]
 <div class="text1">
@@ -75,14 +75,14 @@ You go through the months on the calendar, Nothing strikes as important aside fr
 </div>
 
 :: Go Back5[kitchen]
-<div class = "text1">
-<<if not $inventory.includes("safecode1")>>
+<div class = "text1">\
+<<if not $inventory.includes("safecode1")>>\
 What will you do?
 [[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
 <</if>>
-<<if $inventory.includes("safecode1")>>
+<<if $inventory.includes("safecode1")>>\
 Lets keep looking around shall we?
 [[Look on the Fridge -> Fridge2]]
 [[Look at the drawer ->Drawer1]]
@@ -91,7 +91,7 @@ Lets keep looking around shall we?
 
 
 :: Drawer1[kitchen]
- <div class="text1">
+ <div class="text1">\
 Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
 [[Look at Silverware->Silverware1]]
 [[Look Pots and Pans->Pots1]]
@@ -99,14 +99,14 @@ Lots of junk in these drawers... silverware, pots & pans, mail... I think you sh
  </div>
 
 :: Silverware1[kitchen]
-<div class="text1">
+<div class="text1">\
 MM nothing here...
 
 [[Go back ->Drawer1]]
 </div>
 
 :: Pots1[kitchen]
-<div class="text1">
+<div class="text1">\
 Remember when I gifted you that pan set? Yeah Im the best!
 
 [[Go back ->Drawer1]]
@@ -114,24 +114,24 @@ Remember when I gifted you that pan set? Yeah Im the best!
 
 :: mail1[kitchen]
 <mark>Lots of letters here... Are you going to go through each one?</mark>
-<div class="text1">
+<div class="text1">\
 [[Yes, I'm looking for something ->accept2]]
 [[No, there is no point ->reject2]]
 </div>
 
 :: accept2[kitchen]
-<div class="text1">
+<div class="text1">\
 Good job on staying determined
 [[Thank You-> Go Back5]]
 </div>
 
 :: reject2[kitchen]
 <mark>Giving up so easily? Disappointing of you.</mark>
-<div class="text1">
+<div class="text1">\
 [[Investigate -> Mail2]]
 </div>
 :: Mail2[kitchen]
-<div class="text1">
+<div class="text1">\
 Lots of bills here... Medical bills, rent, utilities, and car payments. You notice that you dont pay any of them. 
 
 [[Go through mail -> Mail3]]
@@ -145,7 +145,7 @@ Welcome to the kitchen! Theres plenty of nooks and crannies to look here
 </div>
 
 :: Enter Kitchen1[Kitchen]
-<div class="text1">
+<div class="text1">\
 <<set $inventory to []>>\
 [[Look on the Fridge -> Fridge1]]
 [[Look at the drawer ->Drawer1]]
@@ -194,7 +194,7 @@ You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID.
 </div>
 
 :: Enter Back5[kitchen]
-<div class="text1">
+<div class="text1">\
 <<set $inventory to []>>\
 What will you do?
 [[Look on the Fridge -> Fridge1]]
@@ -202,7 +202,7 @@ What will you do?
 </div>
 
 :: Drawer1[kitchen]
- <div class="text1">
+ <div class="text1">\
 <mark>Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?</mark>
 [[Look Pots and Pans->Pots1]]
 [[Look at Mail->mail1]]
@@ -210,7 +210,7 @@ What will you do?
 
 
 :: Pots1[kitchen]
- <div class="text1">
+ <div class="text1">\
 
 Wow… I remember being gifted all these pots and pans. But nothing of important here
 </div>
@@ -218,12 +218,12 @@ Wow… I remember being gifted all these pots and pans. But nothing of important
 
 :: Pots2[Kitchen]
 <mark>I got you those gifts! Dont you remember how happy you were? I’m an amazing gift giver</mark>
- <div class="text1">
+ <div class="text1">\
 [[Right…Thank You-> Drawer1]]
 </div>
 
 :: Drawer1[kitchen]
- <div class="text1">
+ <div class="text1">\
 Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
 [[Look at Silverware->Silverware1]]
 [[Look Pots and Pans->Pots1]]
@@ -231,7 +231,7 @@ Lots of junk in these drawers... silverware, pots & pans, mail... I think you sh
  </div>
 
 :: Mail3[kitchen]
- <div class="text1">
+ <div class="text1">\
 Lots of things on the Fridge
 [[Look at Rent->Rent1]]
 [[Look at Car Payments->Car1]]
@@ -240,19 +240,19 @@ Lots of things on the Fridge
  </div>
 
 :: Rent1[kitchen]
- <div class="text1">
+ <div class="text1">\
 $2000 to live in this place? Yikes. AT least its roomy
 [[Go Back->Mail3]]
 </div>
 
 :: Car1[kitchen]
- <div class="text1">
+ <div class="text1">\
 mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
 [[Go Back->Mail3]]
 </div>
 
 :: Medb1[kitchen]
- <div class="text1">
+ <div class="text1">\
 Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
 Thats a combination... 11221984
 
