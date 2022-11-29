@@ -1,60 +1,172 @@
-:: kitchen
-You are in the kitchen
+:: Kitchen [first, intercom]
+<div class="box1"></div>
+<div class="intercombox5"></div>\
+<div class="intercomtext6">\
+Welcome to the kitchen! Theres plenty of nooks and crannys to look at in here. 
+</div>\
+<div class = "text1">
+I think you’ll find what you’re looking for if you look around
+<<set $inventory to []>>
+[[Look on the Fridge -> Fridge1]]
+[[Look at the drawer ->Drawer1]]
+</div>
 
-Gotta find a code for the safe...
+:: Fridge1[first]
+<div class="box1"></div>
+ <div class="text1">
+Lots of things on the Fridge
+[[Look at Magnets->Magnet]]
+[[Look Fridge1->Fridge1]]
+[[Look at Calendar->Calendar]]
+[[Look on Shelf->InspectShelf1]]
+ </div>
 
-[[Go to the Drawer -> Drawer]]
-[[Go to Fridge -> Fridge]]
+:: InspectShelf1[first]
+<div class="box2"></div>
+<div class="text1">
+You look at the shelf, and nothing is inside…
+Look around?
 
-:: Drawer
-Mmm... nothing here but letters... 
+[[Investigate->Lookshelf]]
+ </div>
 
-:: Fridge
+:: Lookshelf
+<div class="box3"></div>
+<div class="text2">
+You feel around and feel something at the top of the shelf… A key?
 
-Should I cook something up? Wait no... I need to find a combination
+What does this key open?
 
-A birthday? on November 21? That might work... Need to find the birth year
+Inspect further?
+[[Yes->YesKey]]
+</div>
 
-[[Look at the top of cabinet -> Shelf]]
-[[Go to the Drawer -> Drawer]]
+:: YesKey
+<div class="box5"></div>
+<div class="text6">
+you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID. The back door slams shut as you drown out the yelling.
+<<run $inventory.push(BDKey)>>
 
-:: Shelf
+[[Go Back->Go Back5]]
+</div>
 
-You reach at the top, you feel something...
+:: Fridge1
 
-[[ Inspect further -> Inspect further]]
-[[Go to the Drawer -> Drawer]]
+Theres some food in here, Why don’t you make me something to eat while your at it?
 
-:: Inspect further
+[[I’d like to focus->reject1]]
+[[I think a snack is a great Idea->accept1]]
 
-you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID AS YOU! WHY WOULD YOU LEAVE? IM ALL YOU HAVE". The back door slams shut and is locked. You remember that the key was hidden at the top of the shelf
+:: reject1
 
-[[Go to kitchen -> Kitchen]]
+Sure, whatever. Youre not that good at anything else really.
 
-:: Drawer
-Mmm... nothing here but letters...
+:: accept1
 
-[[Go to kitchen -> Kitchen]]
+I like it when you listen to me
 
-:: Kitchen
+[[Go Back->Go Back5]]
 
-Why are you snooping around?
+:: Calendar
 
-[[Isn't that what I'm supposed to do? -> defensive]]
-[[I'm sorry, I'll stop -> Accepted]]
+You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
-:: defensive
+1122… Thats half a code! Got to find the birth year…
+[[Go Back->Go Back6]]
 
-No youre supposed to listen to me. You're supposed to do as your told. Get back to the objective.
+:: Go Back5[first]
+<div class="box1"></div>
+<div class = "text1">
+What will you do?
+[[Look at Magnets->Magnet]]
+[[Look Fridge1->Fridge1]]
+[[Look at Calendar->Calendar]]
+[[Look on Shelf->InspectShelf1]]
+</div>
 
-:: Accepted
+:: Go Back6[first]
+<div class="box1"></div>
+<div class = "text1">
+Lets keep looking around shall we?
+[[Look on the Fridge -> Fridge1]]
+[[Look at the drawer ->Drawer1]]
+</div>
 
-Good! I love it when you do as you behave. Back to the objective
+:: Drawer1[first]
+<div class="box1"></div>
+ <div class="text1">
+Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
+[[Look at Silverware->Silverware1]]
+[[Look Pots and Pans->Pots1]]
+[[Look at Mail->mail1]]
+ </div>
 
-[[Next -> go to next]]
+ :: Silverware1
+<div class="box2"></div>
+<div class="text1">
+MM nothing here...
 
-:: go to next
+[[Go back ->Drawer1]]
 
-He's 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
+ :: Pots1
+<div class="box2"></div>
+<div class="text1">
+Remember when I gifted you that pan set? Yeah Im the best!
 
-[[Go to the bathroom -> Bathroom]]
+[[Go back ->Drawer1]]
+
+ :: mail1
+<div class="box2"></div>
+<div class="text1">
+Lots of letters here... Are you going to go through each one?
+
+[[Yes, I'm looking for something ->accept2]]
+[[No, there is no point ->reject2]]
+
+:: accept2
+
+Good job on staying determined
+
+:: reject2
+
+Giving up so easily? Disappointing of you.
+
+[[Investigate -> Mail2]]
+
+:: Mail2
+
+Lots of bills here... Medical bills, rent, utilities, and car payments. You notice that you dont pay any of them. 
+
+[[Go through mail -> Mail3]]
+
+:: Mail3[first]
+<div class="box1"></div>
+ <div class="text1">
+Lots of things on the Fridge
+[[Look at Rent->Rent1]]
+[[Look Car Payments->Car1]]
+[[Look at Medical Bills->Medb1]]
+ </div>
+
+:: Rent1
+
+$2000 to live in this place? Yikes
+
+:: Car1
+
+mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
+
+:: Medb1
+
+Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
+Thats a combination... 11221984
+
+<<run $inventory.push(CombinationKitchen)>>
+
+[[Go Back ->Back7]]
+
+:: Back7
+
+Congrats on figuring out the kitchen! Take a look at the bathroom?
+
+[[ Go to Bathroom ->bathroom]]
