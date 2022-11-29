@@ -32,6 +32,7 @@ What does this key open?
 
 Inspect further?
 [[Yes->YesKey]]
+[[No->Go Back5]]
 </div>
 
 :: YesKey
@@ -52,6 +53,7 @@ you remember sitting in the living room. There is a lot of yelling and shouting.
 :: reject1[kitchen]
 <div class="text1">
 Sure, whatever. Youre not that good at anything else really.
+[[...Sorry-> Go Back5]]
 </div>
 
 :: accept1[kitchen]
@@ -114,6 +116,7 @@ Remember when I gifted you that pan set? Yeah Im the best!
 :: accept2[kitchen]
 <div class="text1">
 Good job on staying determined
+[[Thank You-> Go Back5]]
 </div>
 
 :: reject2[kitchen]
@@ -171,15 +174,15 @@ You feel around and feel something at the top of the shelf… A key?
 What does this key open?
 
 Inspect further?
-[[Yes->YesKey]]
+[[Yes->YesBDKey]]
 </div>
 
-:: YesKey[kitchen]
+:: YesBDKey[kitchen]
 <div class="text1">\
 You remember sitting in the living room. There is a lot of yelling and shouting. You feel small. 
 You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID.
  The back door slams shut as you drown out the yelling.
-<<run $inventory.push(BDKey)>>\
+<<run $inventory.push("BDKey")>>\
 
 [[Go Back->Enter Back5]]
 </div>
