@@ -176,7 +176,7 @@ body.tutorial{
 	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 25% 60%;
+	background-position: 50% 60%;
 	background-size: 95%;
 }
 
@@ -192,6 +192,15 @@ body.tutorial{
 	border: 2px solid black;
 	background-color: red;
 	width: 350px;
+	height: 80px;
+	right: 100px;
+}
+
+.intercombox{
+	position: fixed;
+	border: 2px solid black;
+	background-color: red;
+	width: 250px;
 	height: 80px;
 	right: 100px;
 }
@@ -249,6 +258,14 @@ body.tutorial{
 	position: relative;
 	top: 550px;
 	right: 20px;
+}
+
+.textt{
+	position: fixed;
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:245px;
 }
 
 .text5{
@@ -806,7 +823,7 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 [[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
 &lt;div class=&quot;box6&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text5&quot;&gt;
+&lt;div class=&quot;textt&quot;&gt;
 [[Sofa-&gt; SofaT]]
 [[Mirror-&gt; MirrorT]]
 [[Fireplace-&gt; FireplaceT]]
@@ -822,7 +839,6 @@ Looks like a nice place to sit down and relax.
 [[Look around-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="121" name="SofaT2" tags="" position="100,1600" size="100,100">&lt;div class=&quot;box7&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text6&quot;&gt;
-You have $inventory.length items
 Why are there always things between the cushions?
 &lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;
 [[Go Back-&gt;SofaT]]
@@ -854,7 +870,7 @@ But I won&#39;t pressure you if you&#39;re uncomftable.
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
 [[Nothing Here...-&gt;Enter Room]]\
-&lt;&lt;/if&gt;&gt;\
+&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="SecretT" tags="" position="725,1600" size="100,100">*You place the coin on a shelf*
 You got a Key!
 &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
