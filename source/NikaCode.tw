@@ -26,13 +26,16 @@ Look around?
 
 :: Lookshelf
 <div class="text1">
+<<if not $inventory.includes("BDKey")>>
 You feel around and feel something at the top of the shelf… A key?
-
-What does this key open?
-
 Inspect further?
 [[Yes->YesKey]]
 [[No->Go Back5]]
+<</if>>
+<<if $inventory.includes("BDKey")>>
+What does this key open?
+[[Hmm...-> Go Back5]]
+<</if>>
 </div>
 
 :: YesKey
@@ -67,22 +70,24 @@ I like it when you listen to me
 You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
 1122… Thats half a code! Got to find the birth year…
-[[Go Back->Go Back6]]
+<<run $inventory.push("safecode1")>>
+[[Go Back->Go Back5]]
 
 :: Go Back5[kitchen]
 <div class = "text1">
+<<if not $inventory.includes("safecode1")>>
 What will you do?
 [[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
-</div>
-
-:: Go Back6[kitchen]
-<div class = "text1">
+<</if>>
+<<if $inventory.includes("safecode1")>>
 Lets keep looking around shall we?
 [[Look on the Fridge -> Fridge2]]
 [[Look at the drawer ->Drawer1]]
+<</if>>
 </div>
+
 
 :: Drawer1[kitchen]
  <div class="text1">
