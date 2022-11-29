@@ -8,16 +8,14 @@ I think you’ll find what you’re looking for if you look around.
 </div>
 
 :: Fridge1[first]
-<div class="box1"></div>
  <div class="text1">
 Lots of things on the Fridge
-[[Look Fridge->Fridge1]]
+[[Look Fridge->Fridge2]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
 
 :: InspectShelf1[first]
-<div class="box2"></div>
 <div class="text1">
 You look at the shelf, and nothing is inside…
 Look around?
@@ -26,8 +24,7 @@ Look around?
  </div>
 
 :: Lookshelf
-<div class="box3"></div>
-<div class="text2">
+<div class="text1">
 You feel around and feel something at the top of the shelf… A key?
 
 What does this key open?
@@ -37,29 +34,28 @@ Inspect further?
 </div>
 
 :: YesKey
-<div class="box5"></div>
-<div class="text6">
+<div class="text1">
 you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID. The back door slams shut as you drown out the yelling.
 <<run $inventory.push(BDKey)>>
 
 [[Go Back->Go Back5]]
 </div>
 
-:: Fridge1
-
+:: Fridge2
+<div class="text1">
 Theres some food in here, Why don’t you make me something to eat while your at it?
 
 [[I’d like to focus->reject1]]
 [[I think a snack is a great Idea->accept1]]
-
+</div>
 :: reject1
-
+<div class="text1">
 Sure, whatever. Youre not that good at anything else really.
-
+</div>
 :: accept1
-
+<div class="text1">
 I like it when you listen to me
-
+</div>
 [[Go Back->Go Back5]]
 
 :: Calendar
@@ -70,7 +66,6 @@ You go through the months on the calendar, Nothing strikes as important aside fr
 [[Go Back->Go Back6]]
 
 :: Go Back5[first]
-<div class="box1"></div>
 <div class = "text1">
 What will you do?
 [[Look Fridge->Fridge1]]
@@ -79,7 +74,6 @@ What will you do?
 </div>
 
 :: Go Back6[first]
-<div class="box1"></div>
 <div class = "text1">
 Lets keep looking around shall we?
 [[Look on the Fridge -> Fridge1]]
@@ -87,7 +81,6 @@ Lets keep looking around shall we?
 </div>
 
 :: Drawer1[first]
-<div class="box1"></div>
  <div class="text1">
 Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
 [[Look at Silverware->Silverware1]]
@@ -95,64 +88,60 @@ Lots of junk in these drawers... silverware, pots & pans, mail... I think you sh
 [[Look at Mail->mail1]]
  </div>
 
- :: Silverware1
-<div class="box2"></div>
+:: Silverware1
 <div class="text1">
 MM nothing here...
 
 [[Go back ->Drawer1]]
+</div>
 
- :: Pots1
-<div class="box2"></div>
+:: Pots1
 <div class="text1">
 Remember when I gifted you that pan set? Yeah Im the best!
 
 [[Go back ->Drawer1]]
+</div>
 
- :: mail1
-<div class="box2"></div>
+:: mail1
+<mark>Lots of letters here... Are you going to go through each one?</mark>
 <div class="text1">
-Lots of letters here... Are you going to go through each one?
-
 [[Yes, I'm looking for something ->accept2]]
 [[No, there is no point ->reject2]]
+</div>
 
 :: accept2
-
+<div class="text1">
 Good job on staying determined
+</div>
 
 :: reject2
-
-Giving up so easily? Disappointing of you.
-
+<mark>Giving up so easily? Disappointing of you.</mark>
+<div class="text1">
 [[Investigate -> Mail2]]
-
+</div>
 :: Mail2
-
+<div class="text1">
 Lots of bills here... Medical bills, rent, utilities, and car payments. You notice that you dont pay any of them. 
 
 [[Go through mail -> Mail3]]
+</div>
 
 :: Kitchen [Kitchen]
+<div class="text1">\
 Welcome to the kitchen! Theres plenty of nooks and crannies to look here
-<<set $inventory to []>>
+<<set $inventory to []>>\
 [[Lets have a look around-> Enter Kitchen1]]
+</div>
 
 :: Enter Kitchen1[Kitchen]
-<div class="intercombox"></div>
-<div class="intercomtext2">
-[[Ask for a hint-> HintK]]
-</div>\
-<div class="box6"></div>
-<div class="textt">
-<<set $inventory to []>>
+<div class="text1">
+<<set $inventory to []>>\
 [[Look on the Fridge -> Fridge1]]
 [[Look at the drawer ->Drawer1]]
 </div>
 
 :: Fridge1[Kitchen]
-<div class="box1"></div>
- <div class="text1">
+ <div class="text1">\
 Lots of things on the Fridge
 [[Look at Magnets->Magnet]]
 [[Look Fridge1->Fridge1]]
@@ -161,8 +150,7 @@ Lots of things on the Fridge
  </div>
 
 :: Fridge1[Kitchen]
-<div class="box1"></div>
- <div class="text1">
+ <div class="text1">\
 Lots of things on the Fridge
 [[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
@@ -170,17 +158,14 @@ Lots of things on the Fridge
  </div>
 
 :: InspectShelf1[Kitchen]
-<div class="box2"></div>
-<div class="text1">
+<div class="text1">\
 You look at the shelf, and nothing is inside…
 Look around?
-
 [[Investigate->Lookshelf]]
  </div>
 
 :: Lookshelf
-<div class="box3"></div>
-<div class="text2">
+<div class="text1">\
 You feel around and feel something at the top of the shelf… A key?
 
 What does this key open?
@@ -190,93 +175,53 @@ Inspect further?
 </div>
 
 :: YesKey
-<div class="box5"></div>
-<div class="text6">
-you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID. The back door slams shut as you drown out the yelling.
-<<run $inventory.push(BDKey)>>
+<div class="text1">\
+You remember sitting in the living room. There is a lot of yelling and shouting. You feel small. 
+You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID.
+ The back door slams shut as you drown out the yelling.
+<<run $inventory.push(BDKey)>>\
 
-[[Go Back->Go Back5]]
+[[Go Back->Enter Back5]]
 </div>
 
-:: Go Back5 [Kitchen]
-<div class = "text1">\
-What will you do next?
-
 :: Enter Back5
-<div class="intercombox"></div>
-<div class="intercomtext2">
-[[Ask for a hint-> HintK]]
-</div>\
-<div class="box6"></div>
-<div class="textt">
-<<set $inventory to []>>
+<div class="text1">
+<<set $inventory to []>>\
+What will you do?
 [[Look on the Fridge -> Fridge1]]
 [[Look at the drawer ->Drawer1]]
 </div>
 
 :: Drawer1[kitchen]
-<div class="box1"></div>
  <div class="text1">
-Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
-[[Look at Silverware->Silverware1]]
+<mark>Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?</mark>
 [[Look Pots and Pans->Pots1]]
 [[Look at Mail->mail1]]
  </div>
-
-
-:: Silverware1[kitchen]
-<div class="boxtut"></div>
-<div class="textt2">
-
-There’s not much silverware… Maybe take a fork just in case?
-<<if $inventory.includes (ForkK")>>
-[[Go Back->Silverware1]]
-<<else>>
-[[Pick up coin->ForkK]]
-[[Go Back->SofaT]]
-<</if>>
-</div>
-
-:: ForkK[kitchen]
-<div class="boxtut"></div>
-<div class="textt2">
-
-Just in case I need to pry something open…
-
-
-[[Look at some pots and pans-> Pots1]]
-</div>
 
 
 :: Pots1[kitchen]
-<div class="boxtut"></div>
-<div class="textt2">
-
+ <div class="text1">
 
 Wow… I remember being gifted all these pots and pans. But nothing of important here
 </div>
-<div class="intercombox"></div>
-<div class="intercomtext">
-[[If I may ->Pots2]]
-</div>
+<mark>[[If I may ->Pots2]]</mark>
 
 :: Pots2[Kitchen]
-<div class="intercombox2"></div>
-<div class="intercomtext3">
-I got you those gifts! Dont you remember how happy you were? I’m an amazing gift giver
-</div>
+<mark>I got you those gifts! Dont you remember how happy you were? I’m an amazing gift giver</mark>
+ <div class="text1">
 [[Right…Thank You-> Drawer1]]
+</div>
 
 :: Drawer1[kitchen]
-<div class="box1"></div>
  <div class="text1">
 Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
 [[Look at Silverware->Silverware1]]
 [[Look Pots and Pans->Pots1]]
 [[Look at Mail->mail1]]
  </div>
+
 :: Mail3[first]
-<div class="box1"></div>
  <div class="text1">
 Lots of things on the Fridge
 [[Look at Rent->Rent1]]
@@ -285,16 +230,24 @@ Lots of things on the Fridge
  </div>
 
 :: Rent1
-
+ <div class="text1">
 $2000 to live in this place? Yikes. AT least its roomy
+[[Go to bathroom-> Bathroom]]
+[[Go Back->Mail3]]
+</div>
 
 :: Car1
-
+ <div class="text1">
 mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
+[[Go to bathroom-> Bathroom]]
+[[Go Back->Mail3]]
+</div>
 
 :: Medb1
-
+ <div class="text1">
 Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
 Thats a combination... 11221984
 
 [[Go to bathroom-> Bathroom]]
+[[Go Back->Mail3]]
+</div>
