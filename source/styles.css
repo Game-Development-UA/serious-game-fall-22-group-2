@@ -222,8 +222,8 @@ body.tutorialplant{
 .boxtut{
 	position: fixed;
 	z-index:0;
-	width: 250px;
-	height: 190px;
+	width: 350px;
+	height: 170px;
 	border: 2px solid black;
 	background: white;
 	position: relative;
@@ -257,8 +257,6 @@ body.tutorialplant{
 	color: black;
 	position:relative;
 	top:490px;
-	padding: 5px 10px 5px 10px;
-	border: 2px solid black;
 }
 
 .text5{

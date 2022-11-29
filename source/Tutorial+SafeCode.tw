@@ -21,7 +21,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 
 :: SofaT[tutorialsofa]
 <div class="boxtut"></div>
-<div class="text1">
+<div class="textt2">
 <<if not $inventory.includes("coin")>>
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> SofaT2]]
@@ -31,7 +31,7 @@ Looks like a nice place to sit down and relax.
 
 :: SofaT2[tutorialsofa]
 <div class="boxtut"></div>
-<div class="text6">
+<div class="textt2">
 Why are there always things between the cushions?
 <<if $inventory.includes("coin")>>
 [[Go Back->SofaT]]
