@@ -130,11 +130,8 @@ Andrea's stuff,,, sorry its a mess ;-;
 }
 .chest{
 	z-index: 3;
-	background-image: url(media/toychest.png);
-	background-size: 20%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	width: 50%;
+	position: fixed;
 }
 .underbed{
 	z-index: 2;
@@ -217,8 +214,8 @@ body.first{
 .picture{
 	z-index: 3;
 	background-image: url(media/picture.png);
-	background-size: 20%;
-	background-position: 40% 120%;
+	background-size: 40%;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 /*
@@ -435,7 +432,7 @@ body.bathroomcab{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 75% 75%;
+	background-position: 75% 55%;
 	background-size: 175%;
 }
 body.bathroommirror{
@@ -449,21 +446,21 @@ body.bathroomshower{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 50% 75%;
+	background-position: 45% 75%;
 	background-size: 175%;
 }
 body.bathroomtoilet{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 10% 85%;
+	background-position: -20% 95%;
 	background-size: 175%;
 }
 body.bathroomwall{
 	background-image: url(https://i.pinimg.com/originals/fa/aa/20/faaa20ba6ed371995a399452c8e06cfd.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 10% 65%;
+	background-position: -200% 65%;
 	background-size: 175%;
 }
 body{
@@ -567,7 +564,7 @@ You take a peek on the shelf and see your jewelry box.
 Look inside?
 
 [[Look-&gt;LookBox]]
- &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="LookBox" tags="first, jewel" position="600,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="LookBox" tags="jewel, first" position="600,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You take a look inside the jewelry box. You instantly notice a ring.
 
 It’s your favorite ring.
@@ -626,7 +623,8 @@ You got a Blue Key
 You take a peek under the bed and find a toy chest. Pull it out from under the bed?
 
 [[Pull it out-&gt;Pull it out]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Pull it out" tags="underbed, chest" position="350,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Pull it out" tags="underbed" position="350,350" size="100,100">&lt;img class= &quot;chest&quot; src=&quot;media/toychest.png&quot;&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
 Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
@@ -669,9 +667,9 @@ You take another look inside the toy chest and you see a small paper where the b
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="UnfoldPaper" tags="underbed" position="1100,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You unfold the paper.
 
-&lt;em&gt;Behind the Bedside table&lt;/em&gt;\
+&lt;em&gt;Behind the Bedside table&lt;/em&gt;
 [[Go Back-&gt;GotoSafe]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="GotoSafe" tags="first, intercom" position="1225,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="GotoSafe" tags="first, intercom" position="1225,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 What will you do?
 [[Give up-&gt;Give up]]
 [[Go to Bedside Table-&gt;GotoSafe2]]
@@ -697,14 +695,14 @@ You find a couple things--a bottle of pills, a broken pencil, a couple of coins,
 [[Grab Fork-&gt;Equip Fork]]
 &lt;&lt;/if&gt;&gt;\
 [[Go Back-&gt;GotoSafe2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Equip Fork" tags="first, intercom" position="600,475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Equip Fork" tags="first, intercom" position="600,475" size="100,100">&lt;mark&gt;YOU REALLY THINK THAT&#39;LL COME IN HANDY? YEESH.&lt;/mark&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 You equip the fork.
-YOU REALLY THINK THAT&#39;LL COME IN HANDY? YEESH.
 &lt;&lt;run $inventory.push(&quot;fork&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;GotoSafe2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="GotoSafe3" tags="first, intercom" position="725,475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="GotoSafe3" tags="first, intercom" position="725,475" size="100,100">&lt;mark&gt;DONT BREAK ANYTHING&lt;/mark&gt;
+&lt;div class=&quot;text1&quot;&gt;\
 You push the small table aside.
-DONT BREAK ANYTHING
 You are extra careful not to drop anything.
 You see an outline of a small door hidden in the wall. There might be a way to prop
 it open with a tool of somekind.
@@ -712,13 +710,14 @@ it open with a tool of somekind.
 [[Use Fork-&gt;PryItOpen]]
 &lt;&lt;/if&gt;&gt;\
 [[Go Back-&gt;GotoSafe2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="PryItOpen" tags="first, intercom" position="850,475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="PryItOpen" tags="first" position="850,475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You try and pry the door open with the fork.
 [[Apply More Force-&gt;MoreForce]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="MoreForce" tags="first, intercom" position="975,475" size="100,100">&lt;mark&gt;HAHAHA YOU CAN&#39;T EVEN OPEN A GODDAMN DOOR.&lt;/mark&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="MoreForce" tags="first, intercom" position="975,475" size="100,100">&lt;mark&gt;HAHAHA YOU CAN&#39;T EVEN OPEN A GODDAMN DOOR.
+HOW DO YOU THINK YOU&#39;RE GONNA GET OUT OF HERE?&lt;/mark&gt;
 &lt;div class=&quot;text1&quot;&gt;\
 You apply more force and fall back a bit.
-HOW DO YOU THINK YOU&#39;RE GONNA GET OUT OF HERE?
+
 [[Try Again-&gt;PryItOpen2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="PryItOpen2" tags="first, intercom" position="1100,475" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You try again, this time griping the fork a little tighter.
@@ -744,23 +743,24 @@ You are in the living Room again.
 &lt;&lt;if $inventory.includes(&quot;kitchen key&quot;)&gt;&gt;\
 [[Go to Kitchen -&gt; Kitchen]]
 &lt;&lt;/if&gt;&gt;\
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="SitCouch1" tags="" position="350,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="SitCouch1" tags="livingroom" position="350,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You sit on the couch. You start to feel sleepy, you should
 go back and escape before that could happen, it could end badly.
 [[Go Back-&gt;Couch]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Couch2" tags="" position="475,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Couch2" tags="livingroom" position="475,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You stick your hand and start searching between the seats. You feel something hard and pull
 it out. It&#39;s a remote. 
-[[Enter favorite channel-&gt;turn on tv]]</tw-passagedata><tw-passagedata pid="45" name="turn on tv" tags="" position="600,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+[[Enter favorite channel-&gt;turn on tv]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="turn on tv" tags="livingroom" position="600,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You enter his favorite channel, 63782011
 [[Watch tv-&gt;Watch tv]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Watch tv" tags="" position="725,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Watch tv" tags="livingroom" position="725,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You sit down on the couch as you start hearing the screams and cheer or the people on
 the tv. The sports channel. You hate it--it&#39;s loud, annoying, it&#39;s always the same, 
 and it triggers your fight or flight. You&#39;d rather change the channel but then the announcer
 starts saying something out of the ordinary.
 [[&gt;&gt;&gt;-&gt;Watch tv2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Watch tv2" tags="" position="850,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Watch tv2" tags="livingroom" position="850,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 &lt;em&gt;We&#39;re tuning live from the deepest parts of your subconscious, you are watching 
 NFJ football. 
 Wanna get out of this place? Too bad!! You&#39;re here forever- ever-ever-ever...&lt;/em&gt;\
@@ -770,13 +770,13 @@ You quickly turn the tv off. You don&#39;t like this.
 [[Don&#39;t Panic-&gt;Don&#39;t Panic]]
 &lt;&lt;/if&gt;&gt;
 [[Go Back-&gt;Living Room2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Don&#39;t Panic" tags="" position="975,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Don&#39;t Panic" tags="livingroom" position="975,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You feel the bear shaking in your hands.
 You hold on to the teddy bear gently, petting its furr and holding it close. 
 
 It&#39;ll all be alright.
 [[Regain Strength-&gt;Don&#39;t Panic2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Don&#39;t Panic2" tags="" position="1100,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Don&#39;t Panic2" tags="livingroom" position="1100,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You take a deep breath and try and think of a way out of this living room. 
 You know the kitchen is locked. What do you do?
 &lt;&lt;if $inventory.includes(&quot;kitchen key&quot;)&gt;&gt;\
@@ -786,21 +786,21 @@ You know the kitchen is locked. What do you do?
 &lt;&lt;/if&gt;&gt;\
 [[Look through display case-&gt;Display Case]]
 [[Go Back-&gt;Living Room2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="kitchenlocked" tags="" position="1225,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="kitchenlocked" tags="livingroom" position="1225,600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You try and open the door but it&#39;s locked. I always thought it was stupid that
 the kitchen had a door and lock, until I used it a couple of times.
 
 The key must be around here somewhere.
 
 [[Go Back-&gt; Don&#39;t Panic2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Display Case" tags="" position="100,725" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Display Case" tags="livingroom" position="100,725" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You go over to the glass display case next to the TV. There are a lot of different 
 nick-nacks from travels, memories, and achievments. Just as any family should have up
 for display.
 Huh.. What&#39;s the key to the kitchen doing in here?
 &lt;&lt;run $inventory.push(&quot;kitchen key&quot;)&gt;&gt;\
 [[Grab key-&gt;Kitchen Key]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Kitchen Key" tags="" position="225,725" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Kitchen Key" tags="livingroom" position="225,725" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You equipped the kitchen key.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="Bathroom" tags="bathroom" position="350,725" size="100,100">&lt;div class=&quot;intercombox3&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext4&quot;&gt;\
