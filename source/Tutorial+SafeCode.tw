@@ -24,8 +24,10 @@ And if you need any help, reach out to me, that's what I'm here for.
 :: SofaT[tutorial]
 <div class="box2"></div>
 <div class="text1">
+<<if not $inventory.includes("coin")>>
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> SofaT2]]
+<</if>>\
 [[Look around-> Enter Room]]
 </div>
 
@@ -33,9 +35,7 @@ Looks like a nice place to sit down and relax.
 <div class="box7"></div>
 <div class="text6">
 Why are there always things between the cushions?
-<<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
-<</if>>\
 [[Go Back->SofaT]]
 </div>
 

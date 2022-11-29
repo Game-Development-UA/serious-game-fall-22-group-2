@@ -829,21 +829,13 @@ Why are there always things between the cushions?
 &lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;
 [[Pick up coin-&gt;coinT]]
 &lt;&lt;/if&gt;&gt;\
-&lt;&lt;if not $inventory.includes(&quot;remote&quot;)&gt;&gt;
-[[Pick up remote-&gt;remoteT]]
-&lt;&lt;/if&gt;&gt;\
 [[Go Back-&gt;SofaT]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="111" name="coinT" tags="" position="100,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
 I&#39;ll take the coin.
 [[Look at the Sofa-&gt; SofaT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="remoteT" tags="" position="225,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
-&lt;&lt;run $inventory.push(&quot;remote&quot;)&gt;&gt;
-I&#39;ll take the remote.
-[[Look at the Sofa-&gt; SofaT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="113" name="MirrorT" tags="" position="350,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="MirrorT" tags="" position="225,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 I...don&#39;t really feel like looking 
 at myself right now...
@@ -851,29 +843,29 @@ at myself right now...
 &lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext&quot;&gt;\
 [[If I may--&gt; Mirror2T]]
-&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="114" name="Mirror2T" tags="" position="475,1475" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;\
+&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="113" name="Mirror2T" tags="" position="350,1475" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext3&quot;&gt;\
 I think you look wonderful. 
 But I won&#39;t pressure you if you&#39;re uncomftable. 
 &lt;/div&gt;\
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="115" name="ShelvesT" tags="" position="600,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="114" name="ShelvesT" tags="" position="475,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
 [[Nothing Here...-&gt;Enter Room]]\
 &lt;&lt;/if&gt;&gt;\
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="116" name="SecretT" tags="" position="725,1475" size="100,100">*You place the coin on a shelf*
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="115" name="SecretT" tags="" position="600,1475" size="100,100">*You place the coin on a shelf*
 You got a Key!
 &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 [[Leave-&gt;LeaveT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="FireplaceT" tags="" position="850,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="116" name="FireplaceT" tags="" position="725,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 I&#39;m not warm or anything...
 I should focus on getting out.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="HintT" tags="tutorial" position="975,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="HintT" tags="tutorial" position="850,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext3&quot;&gt;\
 You need a hint? You have to pay to 
 escape this room.
@@ -881,20 +873,20 @@ escape this room.
 &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 [[?-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="LampT" tags="" position="1100,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="LampT" tags="" position="975,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 This lamp looks like the one my 
 mom got me for my wedding gift.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="PlantT" tags="" position="1225,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="PlantT" tags="" position="1100,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="121" name="LeaveT" tags="" position="100,1600" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="122" name="Safe" tags="" position="225,1600" size="100,100">WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
-[[Getting Out!-&gt;Safe2]]</tw-passagedata><tw-passagedata pid="123" name="Safe2" tags="" position="350,1600" size="100,100">I have the key...
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="LeaveT" tags="" position="1225,1475" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="121" name="Safe" tags="" position="100,1600" size="100,100">WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
+[[Getting Out!-&gt;Safe2]]</tw-passagedata><tw-passagedata pid="122" name="Safe2" tags="" position="225,1600" size="100,100">I have the key...
 I need the code...
-What&#39;s the code??</tw-passagedata><tw-passagedata pid="124" name="StoryInit" tags="" position="475,1600" size="100,100">Welcome to the Game!
+What&#39;s the code??</tw-passagedata><tw-passagedata pid="123" name="StoryInit" tags="" position="350,1600" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
