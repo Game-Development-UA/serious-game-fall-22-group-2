@@ -88,10 +88,12 @@ But I won't pressure you if you're uncomftable.
 </div>
 
 :: SecretT[tutorialshelf]
-*You place the coin on a shelf*
+-You place the coin on a shelf-
 You got a Key!
 <div class="boxtut"></div>
 <div class="textt2">
+
+
 [[Leave->LeaveT]]
 </div>
 
