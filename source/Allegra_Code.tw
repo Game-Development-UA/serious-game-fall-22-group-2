@@ -83,7 +83,7 @@ Okay, lets try the bobby pin.
 It worked!
 [[Go to Bedroom -> Bedroom]]
 
-:: Ottoman[livingroom]
+:: Ottoman[livingroomotto]
 <<if not $inventory.includes("bobbypin")>>
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 [[Inspect Clothes -> Inspect Clothes]]
@@ -91,7 +91,7 @@ Nothing but toys and baby clothes… these tiny overalls remind me of a teddy be
 [[Keep Looking-> Living Room]]
 
 
-:: Inspect Clothes[livingroom]
+:: Inspect Clothes[livingroomotto]
 Theres a little bobby pin in the pocket of the overalls. Would this open the door?
 <<run $inventory.push("bobbypin")>>
 [[Go Back-> Living Room]]
