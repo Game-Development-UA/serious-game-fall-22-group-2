@@ -1,10 +1,8 @@
 :: Living Room Tutorial[tutorial]
-<div class="tutorialbox"></div>
 Welcome to the Tutorial! Take a look around, see what you can't find!
 And if you need any help, reach out to me, that's what I'm here for. 
 <<set $inventory to []>>
 [[Thank You-> Enter Room]]
-</div>\
 
 :: Enter Room[tutorial]
 <div class="intercombox"></div>
