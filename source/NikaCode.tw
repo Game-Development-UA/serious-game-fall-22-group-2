@@ -26,12 +26,16 @@ Look around?
 
 :: Lookshelf
 <div class="text1">
+<<if not $inventory.includes("BDKey")>>
 You feel around and feel something at the top of the shelf… A key?
-
-What does this key open?
-
 Inspect further?
 [[Yes->YesKey]]
+[[No->Go Back5]]
+<</if>>
+<<if $inventory.includes("BDKey")>>
+What does this key open?
+[[Hmm...-> Go Back5]]
+<</if>>
 </div>
 
 :: YesKey
@@ -52,6 +56,7 @@ you remember sitting in the living room. There is a lot of yelling and shouting.
 :: reject1[kitchen]
 <div class="text1">
 Sure, whatever. Youre not that good at anything else really.
+[[...Sorry-> Go Back5]]
 </div>
 
 :: accept1[kitchen]
@@ -65,22 +70,24 @@ I like it when you listen to me
 You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
 1122… Thats half a code! Got to find the birth year…
-[[Go Back->Go Back6]]
+<<run $inventory.push("safecode1")>>
+[[Go Back->Go Back5]]
 
 :: Go Back5[kitchen]
 <div class = "text1">
+<<if not $inventory.includes("safecode1")>>
 What will you do?
 [[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
-</div>
-
-:: Go Back6[kitchen]
-<div class = "text1">
+<</if>>
+<<if $inventory.includes("safecode1")>>
 Lets keep looking around shall we?
 [[Look on the Fridge -> Fridge2]]
 [[Look at the drawer ->Drawer1]]
+<</if>>
 </div>
+
 
 :: Drawer1[kitchen]
  <div class="text1">
@@ -114,6 +121,7 @@ Remember when I gifted you that pan set? Yeah Im the best!
 :: accept2[kitchen]
 <div class="text1">
 Good job on staying determined
+[[Thank You-> Go Back5]]
 </div>
 
 :: reject2[kitchen]
@@ -146,7 +154,7 @@ Welcome to the kitchen! Theres plenty of nooks and crannies to look here
  <div class="text1">\
 Lots of things on the Fridge
 [[Look at Magnets->Magnet]]
-[[Look in Fridge1->Fridge2]]
+[[Look in Fridge->Fridge2]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
@@ -171,15 +179,15 @@ You feel around and feel something at the top of the shelf… A key?
 What does this key open?
 
 Inspect further?
-[[Yes->YesKey]]
+[[Yes->YesBDKey]]
 </div>
 
-:: YesKey[kitchen]
+:: YesBDKey[kitchen]
 <div class="text1">\
 You remember sitting in the living room. There is a lot of yelling and shouting. You feel small. 
 You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID.
  The back door slams shut as you drown out the yelling.
-<<run $inventory.push(BDKey)>>\
+<<run $inventory.push("BDKey")>>\
 
 [[Go Back->Enter Back5]]
 </div>
@@ -225,21 +233,20 @@ Lots of junk in these drawers... silverware, pots & pans, mail... I think you sh
  <div class="text1">
 Lots of things on the Fridge
 [[Look at Rent->Rent1]]
-[[Look Car Payments->Car1]]
+[[Look at Car Payments->Car1]]
 [[Look at Medical Bills->Medb1]]
+[[Look Somewhere Else-> Go Back5]]
  </div>
 
 :: Rent1[kitchen]
  <div class="text1">
 $2000 to live in this place? Yikes. AT least its roomy
-[[Go to bathroom-> Bathroom]]
 [[Go Back->Mail3]]
 </div>
 
 :: Car1[kitchen]
  <div class="text1">
 mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
-[[Go to bathroom-> Bathroom]]
 [[Go Back->Mail3]]
 </div>
 
