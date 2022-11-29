@@ -265,6 +265,16 @@ body.tutorialplant{
 	position:relative;
 	top:310px;
 }
+
+.safetext{
+	position: fixed;
+	z-index: 1;
+	color: rgb(77, 74, 74);;
+	position:relative;
+	top:310px;
+}
+
+
 .box6{
 	position: fixed;
 	z-index:0;
@@ -361,6 +371,14 @@ body.bathroomwall{
 	background-position: -28% 65%;
 	background-size: 175%;
 }
+
+body.safe{
+	background-image: url(https://img-new.cgtrader.com/items/1965100/1f2748629a/safe-mit-pin-pad-3d-modell-3d-model-obj-mtl-3ds-fbx-stl-dae-x3d.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 body{
 	z-index: 1;
 	position: static;

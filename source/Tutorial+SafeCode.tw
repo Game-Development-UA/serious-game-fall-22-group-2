@@ -144,21 +144,27 @@ watered...poor thing.
 [[Back to Main Room->Starting]]
 
 :: Safe
+<div class="safetext">
 WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 [[Getting Out!->Safe2]]
+</div>
 
 :: Safe2
+<div class="text6">
 I have the key...
 I need the code...
 What's the code??
 [[25112002-> Nope]]
 [[11221984-> Safe3]]
 [[63782011-> Nope]]
+</div>
 
 :: Safe3
+<div class="text6">
 -You hear the safe creak open-
 -Quickly, you grab the phone and-
 [[call 911-> End]]
+</div>
 
 :: End
 Help is on the way. You're going to be okay.
