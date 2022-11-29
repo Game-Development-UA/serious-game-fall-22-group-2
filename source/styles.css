@@ -222,13 +222,13 @@ body.tutorialplant{
 .boxtut{
 	position: fixed;
 	z-index:0;
-	width: 350px;
+	width: 370px;
 	height: 170px;
 	border: 2px solid black;
 	background: white;
 	position: relative;
 	top: 550px;
-	right: 20px;
+	right: 15px;
 }
 
 .box7{
