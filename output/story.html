@@ -182,6 +182,13 @@ body.livingroombook{
 	background-size: 150%;
 }
 
+body.cal{
+	z-index: 2;
+	background-image: url(https://th.bing.com/th/id/R.88bf2aec0e8aaf1bb888c3e8d5288f32?rik=1YsTRpj4gBoR%2fg&riu=http%3a%2f%2fwww.todayifoundout.com%2fwp-content%2fuploads%2f2011%2f11%2fnovember-22.jpg&ehk=VDALOkkuVlkXSa9zXCUFq2QUOT%2bFy3d%2frISnqQ2fvc8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 body.livingroomotto{
 	z-index: 2;
 	background-image: url(media/living-room.png);
@@ -255,6 +262,17 @@ body.first{
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
+.safee{
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:510px;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid black;
+	text-align: center;
+}
 .text2{
 	background-color: white;
 	position: fixed;
@@ -271,6 +289,12 @@ body.first{
 	background-size: 40%;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.end{
+	background-image: url(media/sirens.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /*
 
@@ -601,49 +625,75 @@ config.history.controls = false;
 [[Go to bathroom-&gt; Bathroom]]
 [[Go to safe-&gt; Safe]]
 [[Go to living room-&gt; Living RoomPre]]
-/* DELETE THIS BEFORE TURNING IN*/</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
+/* DELETE THIS BEFORE TURNING IN*/</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="livingroom" position="225,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
 
 [[Yes -&gt; Have]]
 
-[[No-&gt; Have Not]]</tw-passagedata><tw-passagedata pid="3" name="Have" tags="" position="350,100" size="100,100">Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won&#39;t keep you here any longer than needed! Best of luck!
-[[Go to Living Room -&gt; Living RoomPre]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, just go 
+[[No-&gt; Have Not]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Have" tags="livingroom" position="350,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won&#39;t keep you here any longer than needed! Best of luck!
+[[Go to Living Room -&gt; Living RoomPre]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="livingroom" position="475,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, just go 
 to our lovely tutorial room to get a feel for things.
-[[Go to Tutorial-&gt; Living Room Tutorial]]</tw-passagedata><tw-passagedata pid="5" name="Living RoomPre" tags="livingroom" position="600,100" size="100,100">&lt;&lt;set $inventory to []&gt;&gt;
-[[Good Luck!-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="6" name="Living Room" tags="livingroom" position="725,100" size="100,100">Let&#39;s see what we&#39;ve got here...
+[[Go to Tutorial-&gt; Living Room Tutorial]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Living RoomPre" tags="livingroom" position="600,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;&lt;set $inventory to []&gt;&gt;
+[[Good Luck!-&gt; Living Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Living Room" tags="livingroom" position="725,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Let&#39;s see what we&#39;ve got here...
 [[Go to Couch Cushions -&gt; CouchLivingRoom]]
 [[Go to Bookshelf -&gt; Shelf]]
 [[Go to Bedroom Door -&gt; Bedroom Door]]
-[[Go to Storage Ottoman -&gt; Ottoman]]</tw-passagedata><tw-passagedata pid="7" name="CouchLivingRoom" tags="livingroomcouch" position="850,100" size="100,100">This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
+[[Go to Storage Ottoman -&gt; Ottoman]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="CouchLivingRoom" tags="livingroomcouch" position="850,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
 [[Keep Looking-&gt; Living Room]]
-[[Look at Framed Pictures -&gt; Pictures]]</tw-passagedata><tw-passagedata pid="8" name="Pictures" tags="livingroompic" position="975,100" size="100,100">That&#39;s weird...They all seem to be pointing to the bookshelf.
-[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="9" name="Shelf" tags="livingroombook" position="1100,100" size="100,100">&lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
+[[Look at Framed Pictures -&gt; Pictures]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Pictures" tags="livingroompic" position="975,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+That&#39;s weird...They all seem to be pointing to the bookshelf.
+[[Keep Looking-&gt; Living Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Shelf" tags="livingroombook" position="1100,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;\
 Are you interested in the collection of my novels? I know its very impressive.
 [[Um...not really-&gt; Living Room]]
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if not $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
+&lt;&lt;if not $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;\
 Huh… There&#39;s a book that stands out more than the rest, but it seems a little obvious.
 [[Inspect Book -&gt; Inspect Book]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Inspect Book" tags="livingroombook" position="1225,100" size="100,100">Its hollow… a key fell out.
-&lt;&lt;run $inventory.push(&quot;hollowkey&quot;)&gt;&gt;
-[[Go Back-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="11" name="Bedroom Door" tags="livingroomdoor" position="100,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Inspect Book" tags="livingroombook" position="1225,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Its hollow… a key fell out.
+&lt;&lt;run $inventory.push(&quot;hollowkey&quot;)&gt;&gt;\
+[[Go Back-&gt; Living Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Bedroom Door" tags="livingroomdoor" position="100,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;\
 It&#39;s locked...
 [[Keep Looking-&gt; Living Room]]
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;\
 The key goes in but its not turning. This doesnt seem right. 
 Maybe I should try the ottoman?
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;\
 Okay, lets try the bobby pin.
 [[...-&gt; Bedroom Door2]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Bedroom Door2" tags="livingroomdoor" position="225,225" size="100,100">It worked!
-[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="13" name="Ottoman" tags="livingroomotto" position="350,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Bedroom Door2" tags="livingroomdoor" position="225,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+It worked!
+[[Go to Bedroom -&gt; Bedroom]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Ottoman" tags="livingroomotto" position="350,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;\
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 [[Inspect Clothes -&gt; Inspect Clothes]]
 &lt;&lt;/if&gt;&gt;
-[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="14" name="Inspect Clothes" tags="livingroomotto" position="475,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
-&lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;
-[[Go Back-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="15" name="Bedroom" tags="first, intercom" position="600,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
+[[Keep Looking-&gt; Living Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Inspect Clothes" tags="livingroomotto" position="475,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+&lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;\
+[[Go Back-&gt; Living Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Bedroom" tags="first, intercom" position="600,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
 &lt;div class = &quot;text1&quot;&gt;\
 You enter the Bedroom
 &lt;&lt;set $inventory to []&gt;&gt;\
@@ -913,6 +963,7 @@ Huh.. What&#39;s the key to the kitchen doing in here?
 [[Grab key-&gt;Kitchen Key]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Kitchen Key" tags="livingroom" position="725,725" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You equipped the kitchen key.
+[[Ok-&gt;Living Room2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Bathroom" tags="bathroom" position="850,725" size="100,100">&lt;div class=&quot;intercombox3&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext4&quot;&gt;\
 You shouldn&#39;t have been able to make it this far. I mean, honestly, look at you. 
@@ -1127,11 +1178,13 @@ Sure, whatever. Youre not that good at anything else really.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="110" name="accept1" tags="kitchen" position="1225,1350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 I like it when you listen to me
 &lt;/div&gt;
-[[Go Back-&gt;Go Back5]]</tw-passagedata><tw-passagedata pid="111" name="Calendar" tags="" position="100,1475" size="100,100">You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
+[[Go Back-&gt;Go Back5]]</tw-passagedata><tw-passagedata pid="111" name="Calendar" tags="cal" position="100,1475" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
 1122… Thats half a code! Got to find the birth year…
 &lt;&lt;run $inventory.push(&quot;safecode1&quot;)&gt;&gt;
-[[Go Back-&gt;Go Back5]]</tw-passagedata><tw-passagedata pid="112" name="Go Back5" tags="kitchen" position="225,1475" size="100,100">&lt;div class = &quot;text1&quot;&gt;
+[[Go Back-&gt;Go Back5]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="Go Back5" tags="kitchen" position="225,1475" size="100,100">&lt;div class = &quot;text1&quot;&gt;
 &lt;&lt;if not $inventory.includes(&quot;safecode1&quot;)&gt;&gt;
 What will you do?
 [[Look Fridge-&gt;Fridge1]]
@@ -1210,10 +1263,12 @@ Thats a combination... 11221984
 
 [[Go to bathroom-&gt; Bathroom]]
 [[Go Back-&gt;Mail3]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="Living Room Tutorial" tags="tutorial" position="1100,1600" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="Living Room Tutorial" tags="tutorial" position="1100,1600" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
+Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
 &lt;&lt;set $inventory to []&gt;&gt;
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="130" name="Enter Room" tags="tutorial" position="1225,1600" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;
+[[Thank You-&gt; Enter Room]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="130" name="Enter Room" tags="tutorial" position="1225,1600" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;intercomtext2&quot;&gt;
 [[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
@@ -1280,7 +1335,7 @@ You got a Key!
 &lt;div class=&quot;textt2&quot;&gt;
 
 
-[[Leave-&gt;LeaveT]]
+[[Leave Tutorial-&gt;LeaveT]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="138" name="FireplaceT" tags="tutorialfire" position="975,1725" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;textt2&quot;&gt;
 
@@ -1326,7 +1381,9 @@ What&#39;s the code??
 -You hear the safe creak open-
 -Quickly, you grab the phone and-
 [[call 911-&gt; End]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="146" name="End" tags="" position="725,1850" size="100,100">Help is on the way. You&#39;re going to be okay.</tw-passagedata><tw-passagedata pid="147" name="Nope" tags="" position="850,1850" size="100,100">YOU DUMB BITCH! YOU&#39;RE DEAD!</tw-passagedata><tw-passagedata pid="148" name="StoryInit" tags="" position="975,1850" size="100,100">Welcome to the Game!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="146" name="End" tags="end" position="725,1850" size="100,100">&lt;div class=&quot;safee&quot;&gt;
+Help is on the way. You&#39;re going to be okay.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="147" name="Nope" tags="" position="850,1850" size="100,100">&lt;mark&gt;YOU DUMB BITCH! YOU&#39;RE DEAD!&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="148" name="StoryInit" tags="" position="975,1850" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
