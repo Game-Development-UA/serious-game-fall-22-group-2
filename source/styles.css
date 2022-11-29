@@ -199,6 +199,13 @@ body.tutorialplant{
 
 }
 
+.intercomtext{
+	position: fixed;
+	color: white;
+	right: 130px;
+
+}
+
 .text6{
 	position: fixed;
 	z-index: 1;
