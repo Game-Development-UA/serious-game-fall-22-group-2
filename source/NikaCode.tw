@@ -135,6 +135,148 @@ Lots of bills here... Medical bills, rent, utilities, and car payments. You noti
 
 [[Go through mail -> Mail3]]
 
+:: Kitchen [Kitchen]
+Welcome to the kitchen! Theres plenty of nooks and crannies to look here
+<<set $inventory to []>>
+[[Lets have a look around-> Enter Kitchen1]]
+
+:: Enter Kitchen1[Kitchen]
+<div class="intercombox"></div>
+<div class="intercomtext2">
+[[Ask for a hint-> HintK]]
+</div>\
+<div class="box6"></div>
+<div class="textt">
+<<set $inventory to []>>
+[[Look on the Fridge -> Fridge1]]
+[[Look at the drawer ->Drawer1]]
+</div>
+
+:: Fridge1[Kitchen]
+<div class="box1"></div>
+ <div class="text1">
+Lots of things on the Fridge
+[[Look at Magnets->Magnet]]
+[[Look Fridge1->Fridge1]]
+[[Look at Calendar->Calendar]]
+[[Look on Shelf->InspectShelf1]]
+ </div>
+
+:: Fridge1[Kitchen]
+<div class="box1"></div>
+ <div class="text1">
+Lots of things on the Fridge
+[[Look at Magnets->Magnet]]
+[[Look Fridge1->Fridge1]]
+[[Look at Calendar->Calendar]]
+[[Look on Shelf->InspectShelf1]]
+ </div>
+
+:: InspectShelf1[Kitchen]
+<div class="box2"></div>
+<div class="text1">
+You look at the shelf, and nothing is inside…
+Look around?
+
+[[Investigate->Lookshelf]]
+ </div>
+
+:: Lookshelf
+<div class="box3"></div>
+<div class="text2">
+You feel around and feel something at the top of the shelf… A key?
+
+What does this key open?
+
+Inspect further?
+[[Yes->YesKey]]
+</div>
+
+:: YesKey
+<div class="box5"></div>
+<div class="text6">
+you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice "NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID. The back door slams shut as you drown out the yelling.
+<<run $inventory.push(BDKey)>>
+
+[[Go Back->Go Back5]]
+</div>
+
+:: Go Back5 [Kitchen]
+<div class = "text1">\
+What will you do next?
+
+:: Enter Back5
+<div class="intercombox"></div>
+<div class="intercomtext2">
+[[Ask for a hint-> HintK]]
+</div>\
+<div class="box6"></div>
+<div class="textt">
+<<set $inventory to []>>
+[[Look on the Fridge -> Fridge1]]
+[[Look at the drawer ->Drawer1]]
+</div>
+
+:: Drawer1[kitchen]
+<div class="box1"></div>
+ <div class="text1">
+Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
+[[Look at Silverware->Silverware1]]
+[[Look Pots and Pans->Pots1]]
+[[Look at Mail->mail1]]
+ </div>
+
+
+:: Silverware1[kitchen]
+<div class="boxtut"></div>
+<div class="textt2">
+
+There’s not much silverware… Maybe take a fork just in case?
+<<if $inventory.includes (ForkK")>>
+[[Go Back->Silverware1]]
+<<else>>
+[[Pick up coin->ForkK]]
+[[Go Back->SofaT]]
+<</if>>
+</div>
+
+:: ForkK[kitchen]
+<div class="boxtut"></div>
+<div class="textt2">
+<<run $inventory.push("ForkK")>>
+Just in case I need to pry something open…
+
+[[Look at some pots and pans-> Pots1]]
+</div>
+
+
+:: Pots1[kitchen]
+<div class="boxtut"></div>
+<div class="textt2">
+
+
+Wow… I remember being gifted all these pots and pans. But nothing of important here
+</div>
+<div class="intercombox"></div>
+<div class="intercomtext">
+[[If I may ->Pots2]]
+</div>
+
+:: Pots2[Kitchen]
+<div class="intercombox2"></div>
+<div class="intercomtext3">
+I got you those gifts! Dont you remember how happy you were? I’m an amazing gift giver
+</div>
+[[Right…Thank You-> Drawer1]]
+
+:: Drawer1[kitchen]
+<div class="box1"></div>
+ <div class="text1">
+Lots of junk in these drawers... silverware, pots & pans, mail... I think you should also clean up while your at it?
+[[Look at Silverware->Silverware1]]
+[[Look Pots and Pans->Pots1]]
+[[Look at Mail->mail1]]
+ </div>
 :: Mail3[first]
 <div class="box1"></div>
  <div class="text1">
