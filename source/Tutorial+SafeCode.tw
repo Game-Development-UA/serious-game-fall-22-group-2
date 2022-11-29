@@ -108,13 +108,15 @@ I should focus on getting out.
 </div>
 
 :: HintT[tutorial]
-<div class="intercombox"></div>\
-<div class="intercomtext3">\
+<div class="intercomboxhint"></div>\
+<div class="intercomtexthint">\
 You need a hint? You have to pay to 
 escape this room.
 </div>\
 <div class="boxtut"></div>
 <div class="textt2">
+
+
 [[?-> Enter Room]]
 </div>
 
@@ -149,8 +151,8 @@ What's the code??
 [[63782011-> Nope]]
 
 :: Safe3
-*You hear the safe creak open*
-*Quickly, you grab the phone and*
+-You hear the safe creak open-
+-Quickly, you grab the phone and-
 [[call 911-> End]]
 
 :: End
