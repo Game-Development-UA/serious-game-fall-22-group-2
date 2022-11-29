@@ -58,12 +58,10 @@ body.lay{
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
-.picture{
+body.picture{
 	z-index: 3;
 	background-image: url(media/picture.png);
-	background-size: 50%;
 	background-repeat: no-repeat;
-	position: fixed;
 
 }
 /*
