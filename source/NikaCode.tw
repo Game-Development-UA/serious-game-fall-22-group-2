@@ -288,7 +288,7 @@ Lots of things on the Fridge
 
 :: Rent1
 
-$2000 to live in this place? Yikes
+$2000 to live in this place? Yikes. AT least its roomy
 
 :: Car1
 
@@ -299,12 +299,3 @@ mmmm one old truck.. not even worth anything at this point. At least it still go
 Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
 Thats a combination... 11221984
 
-<<run $inventory.push(CombinationKitchen)>>
-
-[[Go Back ->Back7]]
-
-:: Back7
-
-Congrats on figuring out the kitchen! Take a look at the bathroom?
-
-[[ Go to Bathroom ->bathroom]]
