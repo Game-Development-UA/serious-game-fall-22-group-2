@@ -64,7 +64,7 @@ Take a look?
 [[Look at the picture->Look at picture]]
 </div>
 
-:: Look at picture[lay,picture]
+:: Look at picture[lay, picture]
 <div class="text1">
 It seems like a happy couple on a hiking trip, smiling at the camera. 
 They look pretty happy as far as you can tell. 
@@ -246,16 +246,16 @@ AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.
 [[Search through messy clothes->Clothes]]
 [[Look on Shelf->InspectShelf]]
 
-:: Living Room2
+:: Living Room2[livingroom]
 You are in the living Room again.
 [[Couch-> Couch]]
 [[Display Case-> Display Case]]
 [[Go to Bedroom->Bedroom2]]
 <<if $inventory.includes("kitchen key")>>
-[[Go to Kitchen -> kitchen]]
+[[Go to Kitchen -> Kitchen]]
 <</if>>
 
-:: Couch
+:: Couch[livingroom]
 You go over to the black leather couch.
 What will you do?
 [[Look between the seats->Couch2]]

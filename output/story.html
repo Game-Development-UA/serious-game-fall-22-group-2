@@ -160,10 +160,12 @@ body.lay{
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
-body.picture{
+.picture{
 	z-index: 3;
 	background-image: url(media/picture.png);
+	background-size: 50%;
 	background-repeat: no-repeat;
+	position: fixed;
 
 }
 /*
@@ -176,8 +178,12 @@ body.tutorial{
 	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+<<<<<<< HEAD
 	background-position: 60% 65%;
 	background-size: 95%;
+=======
+	background-size: 90%;
+>>>>>>> 1d225ca288a87698d6bb4c6fde8f7f29c6f7d348
 }
 
 .intercomtext2{
@@ -190,17 +196,8 @@ body.tutorial{
 .intercombox2{
 	position: fixed;
 	border: 2px solid black;
-	background-color: rgb(77, 74, 74);
+	background-color: red;
 	width: 350px;
-	height: 80px;
-	right: 100px;
-}
-
-.intercombox{
-	position: fixed;
-	border: 2px solid black;
-	background-color: rgb(77, 74, 74);
-	width: 250px;
 	height: 80px;
 	right: 100px;
 }
@@ -224,7 +221,11 @@ body.tutorial{
 .intercomtext4{
 	position: fixed;
 	color: white;
+<<<<<<< HEAD
 	right: 130px;
+=======
+	right: 110px;
+>>>>>>> 1d225ca288a87698d6bb4c6fde8f7f29c6f7d348
 
 }
 
@@ -258,14 +259,6 @@ body.tutorial{
 	position: relative;
 	top: 550px;
 	right: 20px;
-}
-
-.textt{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	top:325px;
 }
 
 .text5{
@@ -337,6 +330,7 @@ config.history.controls = false;
 */</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Intercom-&gt;Intercom]]
 /* DELETE THIS BEFORE TURNING IN*/
 [[Go to Bedroom-&gt;Bedroom]]
+[[Go to Tutorial-&gt; Living Room Tutorial]]
 [[Go to Kitchen-&gt;kitchen]]
 [[Go to bathroom-&gt; Bathroom]]
 [[Go to safe-&gt; Safe]]
@@ -349,8 +343,9 @@ config.history.controls = false;
 [[No-&gt; Have Not]]</tw-passagedata><tw-passagedata pid="3" name="Have" tags="" position="350,100" size="100,100">Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won&#39;t keep you here any longer than needed! Best of luck!
 [[Go to Living Room -&gt; Living Room]]
 [[Go to the Bedroom-&gt; Bedroom]]
-[[Go to Couch Cushions -&gt; Couch]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, just go 
-to our lovely tutorial room to get a feel for things.
+[[Go to Couch Cushions -&gt; Couch]]</tw-passagedata><tw-passagedata pid="4" name="Have Not" tags="" position="475,100" size="100,100">That&#39;s quite alright! We all have to start somewhere, right? I kid I kid, anyway youve got a limited time to solve the puzzle before you and unlock the door.
+
+So I need to find a way to unlock the bedroom door.
 
 [[Go to Tutorial-&gt; Living Room Tutorial]]</tw-passagedata><tw-passagedata pid="5" name="Couch" tags="" position="600,100" size="100,100">You go over to the black leather couch.
 What will you do?
@@ -816,13 +811,13 @@ Thats a combination... 11221984
 
 [[ Go to Bathroom -&gt;bathroom]]</tw-passagedata><tw-passagedata pid="118" name="Living Room Tutorial" tags="tutorial" position="975,1475" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
-&lt;&lt;set $inventory to []&gt;&gt;
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="119" name="Enter Room" tags="tutorial" position="1100,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;intercomtext2&quot;&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="119" name="Enter Room" tags="tutorial" position="1100,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+&lt;div class=&quot;intercomtext2&quot;&gt;\
 [[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
 &lt;div class=&quot;box6&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;textt&quot;&gt;
+&lt;div class=&quot;text5&quot;&gt;
+&lt;&lt;set $inventory to []&gt;&gt;
 [[Sofa-&gt; SofaT]]
 [[Mirror-&gt; MirrorT]]
 [[Fireplace-&gt; FireplaceT]]
@@ -834,17 +829,18 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 &lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-&gt; SofaT2]]
-&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;\
 [[Look around-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="121" name="SofaT2" tags="" position="100,1600" size="100,100">&lt;div class=&quot;box7&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text6&quot;&gt;
 Why are there always things between the cushions?
-&lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;
+
+&lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[Go Back-&gt;SofaT]]
-&lt;&lt;else&gt;&gt;
+&lt;&lt;else&gt;&gt;\
 [[Pick up coin-&gt;coinT]]
 [[Go Back-&gt;SofaT]]
-&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;\
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="122" name="coinT" tags="" position="225,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
@@ -855,21 +851,21 @@ I&#39;ll take the coin.
 I...don&#39;t really feel like looking 
 at myself right now...
 &lt;/div&gt;
-&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;intercomtext&quot;&gt;
+&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+&lt;div class=&quot;intercomtext&quot;&gt;\
 [[If I may--&gt; Mirror2T]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="124" name="Mirror2T" tags="" position="475,1600" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;intercomtext3&quot;&gt;
+&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="124" name="Mirror2T" tags="" position="475,1600" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;\
+&lt;div class=&quot;intercomtext3&quot;&gt;\
 I think you look wonderful. 
 But I won&#39;t pressure you if you&#39;re uncomftable. 
-&lt;/div&gt;
+&lt;/div&gt;\
 [[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="125" name="ShelvesT" tags="" position="600,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
 [[Nothing Here...-&gt;Enter Room]]\
-&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;\
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="SecretT" tags="" position="725,1600" size="100,100">*You place the coin on a shelf*
 You got a Key!
 &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
