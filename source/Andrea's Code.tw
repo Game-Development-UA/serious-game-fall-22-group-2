@@ -108,7 +108,10 @@ You take a peek under the bed and find a toy chest. Pull it out from under the b
 </div>
 
 :: Pull it out[underbed]
-<img class= "chest" src="media/toychest.png">
+<img class="yellowlock" src="media/yellow-key.png">\
+<img class="redlock" src="media/red-key.png">\
+<img class="bluelock" src="media/blue-key.png">\
+<img class= "chest" src="media/toychest.png">\
 <div class="text1">\
 It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
