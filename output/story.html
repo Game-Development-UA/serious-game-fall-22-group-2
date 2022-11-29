@@ -119,33 +119,54 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 Andrea's stuff,,, sorry its a mess ;-; 
 
 */
-body.intercom{
-	z-index: 2;
-	background-image: url("/media/Intercom.png");
-	background-size: 40%;
-	background-repeat: no-repeat;
-	position: absolute;
-}
-.intercomtext{
-	position: fixed;
-	color: white;
-	right: 200px;
-
-}
-.intercombox{
-	position: fixed;
-	border: 2px solid black;
+mark{
+	bottom: 40px;
 	background-color: red;
-	width: 300px;
-	height: 80px;
-	right: 100px;
+	color: black;
+	border: 3px solid red;
+	position: fixed;
+	bottom: 530px;
+}
+
+.intercom{
+	z-index: 3;
+	background-image: url(media/intercom.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	position: fixed;
 }
 
 body.first{
-	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
+	z-index: 2;
+	background-image: url(media/bedroom.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+body.lay{
+	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
+	background-repeat: no-repeat;
+	background-size: 180%;
+	background-position: 25% 60%;
+	bottom: 50px;
+}
+.text1{
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	color: black;
+	position:relative;
+	top:490px;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid black;
+}
+.picture{
+	z-index: 3;
+	background-image: url(media/picture.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	position: fixed;
+
 }
 /*
 
@@ -154,7 +175,7 @@ messy, sorry.
 
 */
 body.tutorial{
-	background-image: url('https://www.thespruce.com/thmb/xygNXUvHrZP-4cqd4nJoJNZYvsU=/2118x1419/filters:fill(auto,1)/105471078-58a7239e3df78c345b927c24.jpg');
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 90%;
@@ -240,18 +261,12 @@ body.tutorial{
 }
 
 body.bathroom{
-	background-image: url(https://jodyfinucan.files.wordpress.com/2017/11/bathroom-small-spaces.jpg?w=584);
+	background-image: url(https://cdnb.artstation.com/p/assets/images/images/027/345/729/large/anya-allin-gonegirl-inspired-bathroom-03.jpg?1591271454);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-body.lay{
-	background-image: url(https://www.gannett-cdn.com/presto/2022/10/18/PLOU/13ce2248-71ef-429c-8f13-80f8d5978553-contemporary_and_chic_1.jpg?crop=6199,3487,x0,y160&width=3200&height=1801&format=pjpg&auto=webp);
-	background-repeat: no-repeat;
-	background-size: 180%;
-	background-position: 25% 60%;
-}
 
 body{
 	z-index: 1;
@@ -260,92 +275,7 @@ body{
 	font-family: helvetica;
 }
 
-.box1{
-	position: fixed;
-	z-index:0;
-	width: 250px;
-	height: 150px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 550px;
-	right: 20px;
-}
 
-.box2{
-	position: fixed;
-	z-index:0;
-	width: 500px;
-	height: 150px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 550px;
-	right: 20px;
-}
-
-.box3{
-	position: fixed;
-	z-index:0;
-	width: 500px;
-	height: 200px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 500px;
-	right: 20px;
-}
-.box4{
-	position: fixed;
-	z-index:0;
-	width: 750px;
-	height: 300px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 400px;
-	right: 20px;
-}
-.box5{
-	position: fixed;
-	z-index:0;
-	width: 1000px;
-	height: 400px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 300px;
-	right: 20px;
-}
-
-.text1{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	top:355px;
-}
-.text2{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	top:250px;
-}
-.text3{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	top: 50px;
-}
-.text4{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	bottom: 140px;
-}
 
 
 /* The body is everything displayed in the main text delivery area
@@ -390,6 +320,7 @@ config.ui.stowBarInitially = true;
 config.history.controls = false;
 */</script><tw-passagedata pid="1" name="Starting" tags="" position="100,100" size="100,100">[[Intercom-&gt;Intercom]]
 /* DELETE THIS BEFORE TURNING IN*/
+[[Go to Bedroom-&gt;Bedroom]]
 [[Go to Tutorial-&gt; Living Room Tutorial]]
 [[Go to Kitchen-&gt;kitchen]]
 [[Go to bathroom-&gt; Bathroom]]
@@ -410,10 +341,8 @@ So I need to find a way to unlock the bedroom door.
 [[Go to Tutorial-&gt; Living Room Tutorial]]</tw-passagedata><tw-passagedata pid="5" name="Couch" tags="" position="600,100" size="100,100">You go over to the black leather couch.
 What will you do?
 [[Look between the seats-&gt;Couch2]]
-[[Sit-&gt;SitCouch1]]</tw-passagedata><tw-passagedata pid="6" name="Pictures" tags="" position="725,100" size="100,100">They all seem to be pointing to the bookshelf.</tw-passagedata><tw-passagedata pid="7" name="Shelf" tags="" position="850,100" size="100,100">You reach at the top, you feel something...
-
-[[ Inspect further -&gt; Inspect further]]
-[[Go to the Drawer -&gt; Drawer]]</tw-passagedata><tw-passagedata pid="8" name="Inspect Book" tags="" position="975,100" size="100,100">Its hollow… a key fell out.
+[[Sit-&gt;SitCouch1]]</tw-passagedata><tw-passagedata pid="6" name="Pictures" tags="" position="725,100" size="100,100">They all seem to be pointing to the bookshelf.</tw-passagedata><tw-passagedata pid="7" name="Shelf" tags="" position="850,100" size="100,100">:: Intercom
+Are you interested in the collection of my novels? I know its very impressive.</tw-passagedata><tw-passagedata pid="8" name="Inspect Book" tags="" position="975,100" size="100,100">Its hollow… a key fell out.
 
 [[Go to Bedroom Door -&gt; Bedroom Door]]
 [[Go to Storage Ottoman -&gt; Ottoman]]</tw-passagedata><tw-passagedata pid="9" name="Bedroom Door" tags="" position="1100,100" size="100,100">The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?</tw-passagedata><tw-passagedata pid="10" name="Ottoman" tags="" position="1225,100" size="100,100">Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
@@ -424,39 +353,31 @@ What will you do?
 [[ Go to Bedroom Door -&gt; Bedroom Door]]
 Okay, lets try the bobby pin. It worked!
  
-[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="12" name="Bedroom" tags="first, intercom" position="225,225" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
-&lt;div class=&quot;intercomtext&quot;&gt;\
-Finally made it in, I see.
-&lt;/div&gt;\
+[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="12" name="Bedroom" tags="first, intercom" position="225,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
 &lt;div class = &quot;text1&quot;&gt;
 You enter the Bedroom
 &lt;&lt;set $inventory to []&gt;&gt;
 [[Go to Living Room again -&gt; Living Room2]]
 [[Maybe you don&#39;t want to -&gt; Bedroom2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Bedroom2" tags="first" position="350,225" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
- &lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Bedroom2" tags="first, intercom" position="350,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 What will you do?
 [[Get in bed-&gt;Lay]]
 [[Look Under Bed-&gt;Under Bed]]
 [[Search through messy clothes-&gt;Clothes]]
 [[Look on Shelf-&gt;InspectShelf]]
- &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="InspectShelf" tags="first" position="475,225" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="InspectShelf" tags="first" position="475,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You take a peek on the shelf and see your jewelry box. 
 Look inside?
 
 [[Look-&gt;LookBox]]
- &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="LookBox" tags="" position="600,225" size="100,100">&lt;div class=&quot;box3&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text2&quot;&gt;
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="LookBox" tags="" position="600,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You take a look inside the jewelry box. You instantly notice a ring.
 
 It’s your favorite ring.
 
 Inspect further?
 [[Yes-&gt;YesYellow]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="YesYellow" tags="" position="725,225" size="100,100">&lt;div class=&quot;box4&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text3&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="YesYellow" tags="" position="725,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
 He made you feel so special that day, putting his arms around you, opening doors for you. 
 He proposed to you with this ring that night, a 24-karrot pure gold ring with an oval diamond gem, 
@@ -467,26 +388,22 @@ You take another look at the jewelry box and find a yellow key.
 [[Take Yellow Key-&gt; YellowKey]]
 &lt;&lt;/if&gt;&gt;
 [[Go Back-&gt;Go Back1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="YellowKey" tags="" position="850,225" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="YellowKey" tags="" position="850,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;yellow key&quot;)&gt;&gt;
 You equipped the key.
 [[Go Back-&gt;Go Back1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Lay" tags="lay" position="975,225" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Lay" tags="lay" position="975,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You get on your side of the bed and you turn to the bedside table. 
 There’s a framed picture sitting on it. 
 Take a look?
 
 [[Look at the picture-&gt;Look at picture]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Look at picture" tags="" position="1100,225" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Look at picture" tags="lay,picture" position="1100,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 It seems like a happy couple on a hiking trip, smiling at the camera. 
 They look pretty happy as far as you can tell. 
 The woman looks like she’s pregnant too.
 [[Inspect further-&gt;Inspect]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Inspect" tags="" position="1225,225" size="100,100">&lt;div class=&quot;box5&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text4&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Inspect" tags="" position="1225,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;
 You take a closer look at the photo.
 Our Grand Canyon trip, I remember that. We wanted to take a break from the stress of your work and I suggested a vacation. 
 I thought we were gonna have a relaxing time, we needed it especially with the baby on the way, and we did for a while. 
@@ -502,16 +419,18 @@ I remember having to hold in my tears as my feet felt like they were standing on
 [[Go back-&gt;Go Back1]]\
 &lt;&lt;/if&gt;&gt;\
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Blue Key" tags="" position="100,350" size="100,100">ENOUGH GOOFING AROUND. LET&#39;S GET MOVING.
-&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 You grip the photo a little harder than one should. 
 You feel something that’s been taped to the back of the frame.
 You got a Blue Key
 [[Go Back-&gt;Go Back1]]
 &lt;&lt;run $inventory.push(&quot;blue key&quot;)&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Under Bed" tags="" position="225,350" size="100,100">You take a peek under the bed and find a toy chest. Pull it out from under the bed?
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Under Bed" tags="" position="225,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+You take a peek under the bed and find a toy chest. Pull it out from under the bed?
 
-[[Pull it out-&gt;Pull it out]]</tw-passagedata><tw-passagedata pid="23" name="Pull it out" tags="" position="350,350" size="100,100">It seems to be a colorful children’s toy chest, one that’s meant for storing toys and gadgets. 
+[[Pull it out-&gt;Pull it out]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Pull it out" tags="" position="350,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
 Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
 
@@ -519,16 +438,21 @@ You have $inventory.length keys
 &lt;&lt;if $inventory.length is 3&gt;&gt;
 [[Unlock Chest-&gt;UnlockChest]]
 &lt;&lt;/if&gt;&gt;
-[[Go Back-&gt;Go Back1]]</tw-passagedata><tw-passagedata pid="24" name="Clothes" tags="" position="475,350" size="100,100">You look at the clothes on the floor and hesitate to go towards it.
+[[Go Back-&gt;Go Back1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Clothes" tags="" position="475,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+You look at the clothes on the floor and hesitate to go towards it.
 
 You look through them. Some blood spots.
 &lt;&lt;if not $inventory.includes(&quot;red key&quot;)&gt;&gt;
 You stick your hands in the pockets and find a Red Key.
 [[Grab It-&gt;Red Key]]
 &lt;&lt;/if&gt;&gt;
-[[Go Back-&gt;Go Back1]]</tw-passagedata><tw-passagedata pid="25" name="Red Key" tags="" position="600,350" size="100,100">&lt;&lt;run $inventory.push(&quot;red key&quot;)&gt;&gt;
+[[Go Back-&gt;Go Back1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Red Key" tags="" position="600,350" size="100,100">&lt;div class=&quot;text1&quot;&gt;
+&lt;&lt;run $inventory.push(&quot;red key&quot;)&gt;&gt;
 You equipped the red key.
-[[Go Back-&gt;Go Back1]]</tw-passagedata><tw-passagedata pid="26" name="Go Back1" tags="first" position="725,350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+[[Go Back-&gt;Go Back1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Go Back1" tags="first" position="725,350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class = &quot;text1&quot;&gt;
 What will you do?
 [[Get in bed-&gt;Lay]]
@@ -781,30 +705,104 @@ I should look at the everything again...
 Inside is some medicine. 
 This might be useful when you get out of here!
 &lt;&lt;run $inventory.push(&quot;Medicine&quot;)&gt;&gt;
-[[Go back-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="99" name="kitchen" tags="" position="1100,1225" size="100,100">You are in the kitchen
+[[Go back-&gt; What You SeeB]]</tw-passagedata><tw-passagedata pid="99" name="Kitchen" tags="first, intercom" position="1100,1225" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;intercombox5&quot;&gt;&lt;/div&gt;\
+&lt;div class=&quot;intercomtext6&quot;&gt;\
+Welcome to the kitchen! Theres plenty of nooks and crannys to look at in here. 
+&lt;/div&gt;\
+&lt;div class = &quot;text1&quot;&gt;
+I think you’ll find what you’re looking for if you look around
+&lt;&lt;set $inventory to []&gt;&gt;
+[[Look on the Fridge -&gt; Fridge1]]
+[[Look at the drawer -&gt;Drawer1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="100" name="Fridge1" tags="" position="1225,1225" size="100,100">Theres some food in here, Why don’t you make me something to eat while your at it?
 
-Gotta find a code for the safe...
+[[I’d like to focus-&gt;reject1]]
+[[I think a snack is a great Idea-&gt;accept1]]</tw-passagedata><tw-passagedata pid="101" name="InspectShelf1" tags="first" position="100,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+You look at the shelf, and nothing is inside…
+Look around?
 
-[[Go to the Drawer -&gt; Drawer]]
-[[Go to Fridge -&gt; Fridge]]</tw-passagedata><tw-passagedata pid="100" name="Drawer" tags="" position="1225,1225" size="100,100">Mmm... nothing here but letters...
+[[Investigate-&gt;Lookshelf]]
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="102" name="Lookshelf" tags="" position="225,1350" size="100,100">&lt;div class=&quot;box3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text2&quot;&gt;
+You feel around and feel something at the top of the shelf… A key?
 
-[[Go to kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="101" name="Fridge" tags="" position="100,1350" size="100,100">Should I cook something up? Wait no... I need to find a combination
+What does this key open?
 
-A birthday? on November 21? That might work... Need to find the birth year
+Inspect further?
+[[Yes-&gt;YesKey]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="103" name="YesKey" tags="" position="350,1350" size="100,100">&lt;div class=&quot;box5&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text6&quot;&gt;
+you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice &quot;NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID. The back door slams shut as you drown out the yelling.
+&lt;&lt;run $inventory.push(BDKey)&gt;&gt;
 
-[[Look at the top of cabinet -&gt; Shelf]]
-[[Go to the Drawer -&gt; Drawer]]</tw-passagedata><tw-passagedata pid="102" name="Inspect further" tags="" position="225,1350" size="100,100">you remember sitting in the living room. There is a lot of yelling and shouting. You feel small. You hear a loud voice &quot;NEVER IN MY 35 YEARS HAVE I MET SOMEONE AS STUPID AS YOU! WHY WOULD YOU LEAVE? IM ALL YOU HAVE&quot;. The back door slams shut and is locked. You remember that the key was hidden at the top of the shelf
+[[Go Back-&gt;Go Back5]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="104" name="reject1" tags="" position="475,1350" size="100,100">Sure, whatever. Youre not that good at anything else really.</tw-passagedata><tw-passagedata pid="105" name="accept1" tags="" position="600,1350" size="100,100">I like it when you listen to me
 
-[[Go to kitchen -&gt; Kitchen]]</tw-passagedata><tw-passagedata pid="103" name="Kitchen" tags="" position="350,1350" size="100,100">Why are you snooping around?
+[[Go Back-&gt;Go Back5]]</tw-passagedata><tw-passagedata pid="106" name="Calendar" tags="" position="725,1350" size="100,100">You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
-[[Isn&#39;t that what I&#39;m supposed to do? -&gt; defensive]]
-[[I&#39;m sorry, I&#39;ll stop -&gt; Accepted]]</tw-passagedata><tw-passagedata pid="104" name="defensive" tags="" position="475,1350" size="100,100">No youre supposed to listen to me. You&#39;re supposed to do as your told. Get back to the objective.</tw-passagedata><tw-passagedata pid="105" name="Accepted" tags="" position="600,1350" size="100,100">Good! I love it when you do as you behave. Back to the objective
+1122… Thats half a code! Got to find the birth year…
+[[Go Back-&gt;Go Back6]]</tw-passagedata><tw-passagedata pid="107" name="Go Back5" tags="first" position="850,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class = &quot;text1&quot;&gt;
+What will you do?
+[[Look at Magnets-&gt;Magnet]]
+[[Look Fridge1-&gt;Fridge1]]
+[[Look at Calendar-&gt;Calendar]]
+[[Look on Shelf-&gt;InspectShelf1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="108" name="Go Back6" tags="first" position="975,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div class = &quot;text1&quot;&gt;
+Lets keep looking around shall we?
+[[Look on the Fridge -&gt; Fridge1]]
+[[Look at the drawer -&gt;Drawer1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="Drawer1" tags="first" position="1100,1350" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+ &lt;div class=&quot;text1&quot;&gt;
+Lots of junk in these drawers... silverware, pots &amp; pans, mail... I think you should also clean up while your at it?
+[[Look at Silverware-&gt;Silverware1]]
+[[Look Pots and Pans-&gt;Pots1]]
+[[Look at Mail-&gt;mail1]]
+ &lt;/div&gt;
 
-[[Next -&gt; go to next]]</tw-passagedata><tw-passagedata pid="106" name="go to next" tags="" position="725,1350" size="100,100">He&#39;s 35 years old... so that means he was born in 1987. Thats a combination! 11211987. Okay... lets see if we can find something in the bathroom
+ :: Silverware1
+&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+MM nothing here...
 
-[[Go to the bathroom -&gt; Bathroom]]</tw-passagedata><tw-passagedata pid="107" name="Living Room Tutorial" tags="tutorial" position="850,1350" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
+[[Go back -&gt;Drawer1]]
+
+ :: Pots1
+&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+Remember when I gifted you that pan set? Yeah Im the best!
+
+[[Go back -&gt;Drawer1]]
+
+ :: mail1
+&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text1&quot;&gt;
+Lots of letters here... Are you going to go through each one?
+
+[[Yes, I&#39;m looking for something -&gt;accept2]]
+[[No, there is no point -&gt;reject2]]</tw-passagedata><tw-passagedata pid="110" name="accept2" tags="" position="1225,1350" size="100,100">Good job on staying determined</tw-passagedata><tw-passagedata pid="111" name="reject2" tags="" position="100,1475" size="100,100">Giving up so easily? Disappointing of you.
+
+[[Investigate -&gt; Mail2]]</tw-passagedata><tw-passagedata pid="112" name="Mail2" tags="" position="225,1475" size="100,100">Lots of bills here... Medical bills, rent, utilities, and car payments. You notice that you dont pay any of them. 
+
+[[Go through mail -&gt; Mail3]]</tw-passagedata><tw-passagedata pid="113" name="Mail3" tags="first" position="350,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+ &lt;div class=&quot;text1&quot;&gt;
+Lots of things on the Fridge
+[[Look at Rent-&gt;Rent1]]
+[[Look Car Payments-&gt;Car1]]
+[[Look at Medical Bills-&gt;Medb1]]
+ &lt;/div&gt;</tw-passagedata><tw-passagedata pid="114" name="Rent1" tags="" position="475,1475" size="100,100">$2000 to live in this place? Yikes</tw-passagedata><tw-passagedata pid="115" name="Car1" tags="" position="600,1475" size="100,100">mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B</tw-passagedata><tw-passagedata pid="116" name="Medb1" tags="" position="725,1475" size="100,100">Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
+Thats a combination... 11221984
+
+&lt;&lt;run $inventory.push(CombinationKitchen)&gt;&gt;
+
+[[Go Back -&gt;Back7]]</tw-passagedata><tw-passagedata pid="117" name="Back7" tags="" position="850,1475" size="100,100">Congrats on figuring out the kitchen! Take a look at the bathroom?
+
+[[ Go to Bathroom -&gt;bathroom]]</tw-passagedata><tw-passagedata pid="118" name="Living Room Tutorial" tags="tutorial" position="975,1475" size="100,100">Welcome to the Tutorial! Take a look around, see what you can&#39;t find!
 And if you need any help, reach out to me, that&#39;s what I&#39;m here for. 
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="108" name="Enter Room" tags="tutorial" position="975,1350" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="119" name="Enter Room" tags="tutorial" position="1100,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext2&quot;&gt;\
 [[Ask for a hint-&gt; HintT]]
 &lt;/div&gt;\
@@ -817,24 +815,29 @@ And if you need any help, reach out to me, that&#39;s what I&#39;m here for.
 [[Shelves-&gt; ShelvesT]]
 [[Lamp-&gt; LampT]]
 [[Plant-&gt; PlantT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="109" name="SofaT" tags="tutorial" position="1100,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="SofaT" tags="tutorial" position="1225,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;if not $inventory.includes(&quot;coin&quot;)&gt;&gt;
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-&gt; SofaT2]]
 &lt;&lt;/if&gt;&gt;\
 [[Look around-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="110" name="SofaT2" tags="" position="1225,1350" size="100,100">&lt;div class=&quot;box7&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="121" name="SofaT2" tags="" position="100,1600" size="100,100">&lt;div class=&quot;box7&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text6&quot;&gt;
 Why are there always things between the cushions?
+
+&lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
+[[Go Back-&gt;SofaT]]
+&lt;&lt;else&gt;&gt;\
 [[Pick up coin-&gt;coinT]]
 [[Go Back-&gt;SofaT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="111" name="coinT" tags="" position="100,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="122" name="coinT" tags="" position="225,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
 I&#39;ll take the coin.
 [[Look at the Sofa-&gt; SofaT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="112" name="MirrorT" tags="" position="225,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="123" name="MirrorT" tags="" position="350,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 I...don&#39;t really feel like looking 
 at myself right now...
@@ -842,29 +845,29 @@ at myself right now...
 &lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext&quot;&gt;\
 [[If I may--&gt; Mirror2T]]
-&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="113" name="Mirror2T" tags="" position="350,1475" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;\
+&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="124" name="Mirror2T" tags="" position="475,1600" size="100,100">&lt;div class=&quot;intercombox2&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext3&quot;&gt;\
 I think you look wonderful. 
 But I won&#39;t pressure you if you&#39;re uncomftable. 
 &lt;/div&gt;\
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="114" name="ShelvesT" tags="" position="475,1475" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="125" name="ShelvesT" tags="" position="600,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 &lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
 [[Nothing Here...-&gt;Enter Room]]\
 &lt;&lt;/if&gt;&gt;\
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="115" name="SecretT" tags="" position="600,1475" size="100,100">*You place the coin on a shelf*
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="SecretT" tags="" position="725,1600" size="100,100">*You place the coin on a shelf*
 You got a Key!
 &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 [[Leave-&gt;LeaveT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="116" name="FireplaceT" tags="" position="725,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="127" name="FireplaceT" tags="" position="850,1600" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 I&#39;m not warm or anything...
 I should focus on getting out.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="117" name="HintT" tags="tutorial" position="850,1475" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="128" name="HintT" tags="tutorial" position="975,1600" size="100,100">&lt;div class=&quot;intercombox&quot;&gt;&lt;/div&gt;\
 &lt;div class=&quot;intercomtext3&quot;&gt;\
 You need a hint? You have to pay to 
 escape this room.
@@ -872,20 +875,24 @@ escape this room.
 &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 [[?-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="118" name="LampT" tags="" position="975,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="LampT" tags="" position="1100,1600" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 This lamp looks like the one my 
 mom got me for my wedding gift.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="119" name="PlantT" tags="" position="1100,1475" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="130" name="PlantT" tags="" position="1225,1600" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;text1&quot;&gt;
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="120" name="LeaveT" tags="" position="1225,1475" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="121" name="Safe" tags="" position="100,1600" size="100,100">WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
-[[Getting Out!-&gt;Safe2]]</tw-passagedata><tw-passagedata pid="122" name="Safe2" tags="" position="225,1600" size="100,100">I have the key...
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="131" name="LeaveT" tags="" position="100,1725" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="132" name="Safe" tags="" position="225,1725" size="100,100">WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
+[[Getting Out!-&gt;Safe2]]</tw-passagedata><tw-passagedata pid="133" name="Safe2" tags="" position="350,1725" size="100,100">I have the key...
 I need the code...
-What&#39;s the code??</tw-passagedata><tw-passagedata pid="123" name="StoryInit" tags="" position="350,1600" size="100,100">Welcome to the Game!
+What&#39;s the code??
+[[11221984-&gt; Safe3]]
+[[63782011-&gt; Nope]]</tw-passagedata><tw-passagedata pid="134" name="Safe3" tags="" position="475,1725" size="100,100">*You hear the safe creak open*
+*Quickly, you grab the phone and*
+[[call 911-&gt; End]]</tw-passagedata><tw-passagedata pid="135" name="End" tags="" position="600,1725" size="100,100">Help is on the way. You&#39;re going to be okay.</tw-passagedata><tw-passagedata pid="136" name="Nope" tags="" position="725,1725" size="100,100">YOU DUMB BITCH! YOU&#39;RE DEAD!</tw-passagedata><tw-passagedata pid="137" name="StoryInit" tags="" position="850,1725" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
