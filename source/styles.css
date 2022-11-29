@@ -89,7 +89,55 @@ body.tutorial{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 60% 65%;
-	background-size: 95%;
+	background-size: 100%;
+}
+
+body.tutorialsofa{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
+}
+
+body.tutorialmirror{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
+}
+
+body.tutorialshelf{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
+}
+
+body.tutorialfire{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
+}
+
+body.tutoriallamp{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
+}
+
+body.tutorialplant{
+	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 75% 65%;
+	background-size: 150%;
 }
 
 .intercomtext2{
@@ -117,10 +165,19 @@ body.tutorial{
 	right: 100px;
 }
 
+.tutorialbox{
+	position: fixed;
+	border: 2px solid black;
+	background-color: rgb(77, 74, 74);
+	width: 250px;
+	height: 80px;
+	right: 200px;
+}
+
 .intercombox3{
 	position: fixed;
 	border: 2px solid black;
-	background-color: red;
+	background-color: rgb(77, 74, 74);
 	width: 650px;
 	height: 100px;
 	right: 100px;
@@ -129,7 +186,8 @@ body.tutorial{
 .intercomtext3{
 	position: fixed;
 	color: white;
-	right: 115px;
+	right: 105px;
+	top:325px;
 
 }
 
@@ -160,6 +218,18 @@ body.tutorial{
 	right: 20px;
 }
 
+.boxtut{
+	position: fixed;
+	z-index:0;
+	width: 150px;
+	height: 190px;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+	top: 550px;
+	right: 20px;
+}
+
 .box7{
 	position: fixed;
 	z-index:0;
@@ -177,7 +247,7 @@ body.tutorial{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:325px;
+	top:315px;
 }
 
 .text5{

@@ -1,10 +1,10 @@
 :: Living Room Tutorial[tutorial]
-
+<div class="tutorialbox"></div>
 Welcome to the Tutorial! Take a look around, see what you can't find!
 And if you need any help, reach out to me, that's what I'm here for. 
 <<set $inventory to []>>
 [[Thank You-> Enter Room]]
-
+</div>
 
 :: Enter Room[tutorial]
 <div class="intercombox"></div>
@@ -21,8 +21,8 @@ And if you need any help, reach out to me, that's what I'm here for.
 [[Plant-> PlantT]]
 </div>
 
-:: SofaT[tutorial]
-<div class="box2"></div>
+:: SofaT[tutorialsofa]
+<div class="boxtut"></div>
 <div class="text1">
 <<if not $inventory.includes("coin")>>
 Looks like a nice place to sit down and relax.
@@ -31,7 +31,7 @@ Looks like a nice place to sit down and relax.
 [[Look around-> Enter Room]]
 </div>
 
-:: SofaT2
+:: SofaT2[tutorialsofa]
 <div class="box7"></div>
 <div class="text6">
 Why are there always things between the cushions?
@@ -43,7 +43,7 @@ Why are there always things between the cushions?
 <</if>>
 </div>
 
-:: coinT
+:: coinT[tutorialsofa]
 <div class="box1"></div>
 <div class="text1">
 <<run $inventory.push("coin")>>
@@ -52,7 +52,7 @@ I'll take the coin.
 </div>
 
 
-:: MirrorT
+:: MirrorT[tutorialmirror]
 <div class="box1"></div>
 <div class="text1">
 I...don't really feel like looking 
@@ -63,7 +63,7 @@ at myself right now...
 [[If I may--> Mirror2T]]
 </div>
 
-:: Mirror2T
+:: Mirror2T[tutorialmirror]
 <div class="intercombox2"></div>
 <div class="intercomtext3">
 I think you look wonderful. 
@@ -71,7 +71,7 @@ But I won't pressure you if you're uncomftable.
 </div>
 [[Thank You-> Enter Room]]
 
-:: ShelvesT
+:: ShelvesT[tutorialshelf]
 <div class="box1"></div>
 <div class="text1">
 <<if $inventory.includes("coin")>>\
@@ -81,16 +81,16 @@ But I won't pressure you if you're uncomftable.
 <</if>>
 </div>
 
-:: SecretT
+:: SecretT[tutorialshelf]
 *You place the coin on a shelf*
 You got a Key!
-<div class="box2"></div>
+<div class="boxtut"></div>
 <div class="text1">
 [[Leave->LeaveT]]
 </div>
 
-:: FireplaceT
-<div class="box2"></div>
+:: FireplaceT[tutorialfire]
+<div class="boxtut"></div>
 <div class="text1">
 I'm not warm or anything...
 I should focus on getting out.
@@ -108,23 +108,23 @@ escape this room.
 [[?-> Enter Room]]
 </div>
 
-:: LampT
-<div class="box2"></div>
+:: LampT[tutoriallamp]
+<div class="boxtut"></div>
 <div class="text1">
 This lamp looks like the one my 
 mom got me for my wedding gift.
 [[Go Back-> Enter Room]]
 </div>
 
-:: PlantT
-<div class="box2"></div>
+:: PlantT[tutorialplant]
+<div class="boxtut"></div>
 <div class="text1">
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-> Enter Room]]
 </div>
 
-:: LeaveT
+:: LeaveT[tutorial]
 [[Back to Main Room->Starting]]
 
 :: Safe
