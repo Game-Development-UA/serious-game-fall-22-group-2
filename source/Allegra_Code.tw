@@ -46,8 +46,10 @@ That's weird...They all seem to be pointing to the bookshelf.
 [[Keep Looking-> Living Room]]
 
 :: Shelf[livingroom]
+<<if $inventory.includes("hollowkey")>>
 Are you interested in the collection of my novels? I know its very impressive.
 [[Um...not really-> Living Room]]
+<</if>>
 <<if not $inventory.includes("hollowkey")>>
 Huh… There's a book that stands out more than the rest, but it seems a little obvious.
 [[Inspect Book -> Inspect Book]]
