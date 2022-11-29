@@ -77,8 +77,12 @@ But I won't pressure you if you're uncomftable.
 <div class="boxtut"></div>
 <div class="textt2">
 <<if $inventory.includes("coin")>>\
+
+
 [[>>>->SecretT]]
 <<else>>\
+
+
 [[Nothing Here...->Enter Room]]\
 <</if>>
 </div>
