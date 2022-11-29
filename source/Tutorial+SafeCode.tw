@@ -6,8 +6,8 @@ And if you need any help, reach out to me, that's what I'm here for.
 
 
 :: Enter Room[tutorial]
-<div class="intercombox"></div>\
-<div class="intercomtext2">\
+<div class="intercombox"></div>
+<div class="intercomtext2">
 [[Ask for a hint-> HintT]]
 </div>\
 <div class="box6"></div>
@@ -27,7 +27,7 @@ And if you need any help, reach out to me, that's what I'm here for.
 <<if not $inventory.includes("coin")>>
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> SofaT2]]
-<</if>>\
+<</if>>
 [[Look around-> Enter Room]]
 </div>
 
@@ -35,13 +35,12 @@ Looks like a nice place to sit down and relax.
 <div class="box7"></div>
 <div class="text6">
 Why are there always things between the cushions?
-
-<<if $inventory.includes("coin")>>\
+<<if $inventory.includes("coin")>>
 [[Go Back->SofaT]]
-<<else>>\
+<<else>>
 [[Pick up coin->coinT]]
 [[Go Back->SofaT]]
-<</if>>\
+<</if>>
 </div>
 
 :: coinT
@@ -59,17 +58,17 @@ I'll take the coin.
 I...don't really feel like looking 
 at myself right now...
 </div>
-<div class="intercombox"></div>\
-<div class="intercomtext">\
+<div class="intercombox"></div>
+<div class="intercomtext">
 [[If I may--> Mirror2T]]
-</div>\
+</div>
 
 :: Mirror2T
-<div class="intercombox2"></div>\
-<div class="intercomtext3">\
+<div class="intercombox2"></div>
+<div class="intercomtext3">
 I think you look wonderful. 
 But I won't pressure you if you're uncomftable. 
-</div>\
+</div>
 [[Thank You-> Enter Room]]
 
 :: ShelvesT
