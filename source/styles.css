@@ -42,11 +42,12 @@ Andrea's stuff,,, sorry its a mess ;-;
 	background-attachment: fixed;
 }
 .chest{
-	z-index: 5;
-	background-image: url(media/toy-chest.jpg);
-	background-attachment: fixed;
+	z-index: 3;
+	background-image: url(media/toychest.png);
+	background-size: 20%;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-attachment: fixed;
 }
 .underbed{
 	z-index: 2;
@@ -103,10 +104,10 @@ body.first{
 	background-position: center;
 }
 .jewel{
-	z-index: 3;
+	z-index: 4;
 	background-image: url(media/jewelrybox.png);
-	background-size: 50%;
-	background-position: 40% 140%;
+	background-size: 40%;
+	background-position: 40% 8%;
 	background-repeat: no-repeat;
 }
 
@@ -116,7 +117,7 @@ body.first{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:450px;
+	top:510px;
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
@@ -126,7 +127,7 @@ body.first{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:200px;
+	top:250px;
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
@@ -135,13 +136,6 @@ body.first{
 	background-image: url(media/picture.png);
 	background-size: 20%;
 	background-position: 40% 120%;
-	background-repeat: no-repeat;
-}
-.picture2{
-	z-index: 3;
-	background-image: url(media/picture.png);
-	background-size: 40%;
-	background-position: 40% 100%;
 	background-repeat: no-repeat;
 }
 /*
@@ -155,62 +149,13 @@ body.tutorial{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 60% 65%;
-	background-size: 110%;
-}
-
-body.tutorialsofa{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 75% 65%;
-	background-size: 150%;
-}
-
-body.tutorialmirror{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: -25% 5%;
-	background-size: 150%;
-}
-
-body.tutorialshelf{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 45% 45%;
-	background-size: 170%;
-}
-
-body.tutorialfire{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: -25% 85%;
-	background-size: 150%;
-}
-
-body.tutoriallamp{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 75% 45%;
-	background-size: 175%;
-}
-
-body.tutorialplant{
-	background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-bf05d1f8768ebea7bc62c1745f2b0b5c.jpg?resize=1&w=1920);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 45% 45%;
-	background-size: 175%;
+	background-size: 95%;
 }
 
 .intercomtext2{
 	position: fixed;
 	color: white;
 	right: 200px;
-	height: 100
 
 }
 
@@ -227,33 +172,15 @@ body.tutorialplant{
 	position: fixed;
 	border: 2px solid black;
 	background-color: rgb(77, 74, 74);
-	width: 270px;
-	height: 95px;
-	right: 100px;
-}
-
-.intercomboxhint{
-	position: fixed;
-	border: 2px solid black;
-	background-color: rgb(77, 74, 74);
-	width: 350px;
+	width: 250px;
 	height: 80px;
 	right: 100px;
-}
-
-.tutorialbox{
-	position: fixed;
-	border: 2px solid black;
-	background-color: rgb(77, 74, 74);
-	width: 350px;
-	height: 80px;
-	left: 200px;
 }
 
 .intercombox3{
 	position: fixed;
 	border: 2px solid black;
-	background-color: rgb(77, 74, 74);
+	background-color: red;
 	width: 650px;
 	height: 100px;
 	right: 100px;
@@ -262,16 +189,7 @@ body.tutorialplant{
 .intercomtext3{
 	position: fixed;
 	color: white;
-	right: 105px;
-	top: 25px;
-
-}
-
-.intercomtexthint{
-	position: fixed;
-	color: white;
 	right: 115px;
-	top: 50px;
 
 }
 
@@ -280,13 +198,6 @@ body.tutorialplant{
 	color: white;
 	right: 130px;
 
-}
-
-.intercomtext{
-	position: fixed;
-	color: white;
-	right: 180px;
-	top: 405px;
 }
 
 .text6{
@@ -300,25 +211,13 @@ body.tutorialplant{
 .box6{
 	position: fixed;
 	z-index:0;
-	width: 350px;
+	width: 250px;
 	height: 190px;
 	border: 2px solid black;
 	background: white;
 	position: relative;
 	top: 550px;
-	right: 120px;
-}
-
-.boxtut{
-	position: fixed;
-	z-index:0;
-	width: 370px;
-	height: 170px;
-	border: 2px solid black;
-	background: white;
-	position: relative;
-	top: 550px;
-	right: 15px;
+	right: 20px;
 }
 
 .box7{
@@ -338,15 +237,7 @@ body.tutorialplant{
 	z-index: 1;
 	color: black;
 	position:relative;
-	top:315px;
-}
-
-.textt2{
-	position: fixed;
-	z-index: 1;
-	color: black;
-	position:relative;
-	top: 290px;
+	top:325px;
 }
 
 .text5{

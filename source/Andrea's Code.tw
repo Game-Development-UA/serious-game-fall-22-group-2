@@ -34,8 +34,8 @@ Inspect further?
 [[Yes->YesYellow]]
 </div>
 
-:: YesYellow[first, jewel]
-<div class="text1">\
+:: YesYellow[jewel, first]
+<div class="text2">\
 You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
 He made you feel so special that day, putting his arms around you, opening doors for you. 
 He proposed to you with this ring that night, a 24-karrot pure gold ring with an oval diamond gem, 
@@ -64,7 +64,7 @@ Take a look?
 [[Look at the picture->Look at picture]]
 </div>
 
-:: Look at picture[first]
+:: Look at picture[first, picture]
 <div class="text1">\
 It seems like a happy couple on a hiking trip, smiling at the camera. 
 They look pretty happy as far as you can tell. 
@@ -100,14 +100,14 @@ You got a Blue Key
 <<run $inventory.push("blue key")>>\
 </div>
 
-:: Under Bed[underbed]
+:: Under Bed[underbed, chest]
 <div class="text1">\
 You take a peek under the bed and find a toy chest. Pull it out from under the bed?
 
 [[Pull it out->Pull it out]]
 </div>
 
-:: Pull it out[underbed]
+:: Pull it out[underbed, chest]
 <div class="text1">\
 It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
@@ -187,8 +187,8 @@ What will you do?
 [[Go to Bedside Table->GotoSafe2]]
 </div>
 
-:: Give up
-<div class="text1">
+:: Give up[first]
+<div class="text1">\
 You are starting to feel like this is hopeless. Maybe it wasn't as bad
 as you thought it was. Maybe you <em>were</em> being crazy.
 You feel something shake in your hands and you jump. The stuffed bear you were
@@ -199,76 +199,76 @@ You can't give up yet.
 </div>
 
 :: GotoSafe2[first]
-<div class="text1">
+<div class="text1">\
 What will you do?
 [[Look in Drawer->Tool1]]
 [[Push Table Aside->GotoSafe3]]
 </div>
 
 :: Tool1[first]
-<div class="text1">
+<div class="text1">\
 You look inside the drawer of the bedside table.
-<<if not $inventory.includes("fork")>>
+<<if not $inventory.includes("fork")>>\
 You find a couple things--a bottle of pills, a broken pencil, a couple of coins, and a fork.
 [[Grab Fork->Equip Fork]]
-<</if>>
+<</if>>\
 [[Go Back->GotoSafe2]]
 </div>
 
 :: Equip Fork[first, intercom]
-<div class="text1">
+<div class="text1">\
 You equip the fork.
 YOU REALLY THINK THAT'LL COME IN HANDY? YEESH.
-<<run $inventory.push("fork")>>
+<<run $inventory.push("fork")>>\
 [[>>>->GotoSafe2]]
 </div>
 
 :: GotoSafe3[first, intercom]
-<div class="text1">
+<div class="text1">\
 You push the small table aside.
 DONT BREAK ANYTHING
 You are extra careful not to drop anything.
 You see an outline of a small door hidden in the wall. There might be a way to prop
 it open with a tool of somekind.
-<<if $inventory.includes("fork")>>
+<<if $inventory.includes("fork")>>\
 [[Use Fork->PryItOpen]]
-<</if>>
+<</if>>\
 [[Go Back->GotoSafe2]]
 </div>
 
-:: PryItOpen
-<div class="text1">
+:: PryItOpen[first, intercom]
+<div class="text1">\
 You try and pry the door open with the fork.
 [[Apply More Force->MoreForce]]
 </div>
 
-:: MoreForce
-<div class="text1">
+:: MoreForce[first, intercom]
+<mark>HAHAHA YOU CAN'T EVEN OPEN A GODDAMN DOOR.</mark>\
+<div class="text1">\
 You apply more force and fall back a bit.
-HAHAHA YOU CAN'T EVEN OPEN A GODDAMN DOOR.
 HOW DO YOU THINK YOU'RE GONNA GET OUT OF HERE?
 [[Try Again->PryItOpen2]]
 </div>
 
-:: PryItOpen2
-<div class="text1">
+:: PryItOpen2[first, intercom]
+<div class="text1">\
 You try again, this time griping the fork a little tighter.
 You finally pull the door open, bringing out a couple pieces 
 of the wall with it.
 [[Take a peek->LookSafe]]
 </div>
 
-:: LookSafe
-<div class="text1">
+:: LookSafe[first, intercom]
+<mark>WHAT DO YOU THINK THE COMBINATION IS?</mark>
+<div class="text1">\
 Inside, there is about a gray 2 foot x 2 foot metal safe.
 It has an 8-number combination.
-WHAT DO YOU THINK IT IS SWEETHEART?
 [[Go Back->GoBackFinal]]
 </div>
 
-:: GoBackFinal
-<mark>AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.</mark>
-<div class="text1">
+:: GoBackFinal[first, intercom]
+<mark>AWW HIT A DEAD END? LET'S SEE IF YOU CAN FIGURE OUT WHAT THAT COMBINATION IS.</mark>\
+<div class="text1">\
 [[Go Back to Living Room->Living Room2]]
 [[Get in bed->Lay]]
 [[Search through messy clothes->Clothes]]
@@ -276,18 +276,18 @@ WHAT DO YOU THINK IT IS SWEETHEART?
 </div>
 
 :: Living Room2[livingroom]
-<div class="text1">
+<div class="text1">\
 You are in the living Room again.
 [[Couch-> Couch]]
 [[Display Case-> Display Case]]
 [[Go to Bedroom->Bedroom2]]
-<<if $inventory.includes("kitchen key")>>
+<<if $inventory.includes("kitchen key")>>\
 [[Go to Kitchen -> Kitchen]]
-<</if>>
+<</if>>\
 </div>
 
 :: Couch[livingroom]
-<div class="text1">
+<div class="text1">\
 You go over to the black leather couch.
 What will you do?
 [[Look between the seats->Couch2]]
@@ -295,28 +295,26 @@ What will you do?
 </div>
 
 :: SitCouch1
-<div class="text1">
+<div class="text1">\
 You sit on the couch. You start to feel sleepy, you should
 go back and escape before that could happen, it could end badly.
 [[Go Back->Couch]]
 </div>
 
 :: Couch2
-<div class="text1">
+<div class="text1">\
 You stick your hand and start searching between the seats. You feel something hard and pull
 it out. It's a remote. 
 [[Enter favorite channel->turn on tv]]
 
 :: turn on tv
-<div class="text1">
+<div class="text1">\
 You enter his favorite channel, 63782011
-
-Draft
 [[Watch tv->Watch tv]]
 </div>
 
 :: Watch tv
-<div class="text1">
+<div class="text1">\
 You sit down on the couch as you start hearing the screams and cheer or the people on
 the tv. The sports channel. You hate it--it's loud, annoying, it's always the same, 
 and it triggers your fight or flight. You'd rather change the channel but then the announcer
@@ -325,20 +323,20 @@ starts saying something out of the ordinary.
 </div>
 
 :: Watch tv2
-<div class="text1">
+<div class="text1">\
 <em>We're tuning live from the deepest parts of your subconscious, you are watching 
 NFJ football. 
-Wanna get out of this place? Too bad!! You're here forever- ever-ever-ever...</em>
+Wanna get out of this place? Too bad!! You're here forever- ever-ever-ever...</em>\
 You quickly turn the tv off. You don't like this. 
 
-<<if $inventory.includes("bear")>>
-[[Don't Panic->Don't Panic]]\
+<<if $inventory.includes("bear")>>\
+[[Don't Panic->Don't Panic]]
 <</if>>
 [[Go Back->Living Room2]]
 </div>
 
 :: Don't Panic
-<div class="text1">
+<div class="text1">\
 You feel the bear shaking in your hands.
 You hold on to the teddy bear gently, petting its furr and holding it close. 
 
@@ -347,7 +345,7 @@ It'll all be alright.
 </div>
 
 :: Don't Panic2
-<div class="text1">
+<div class="text1">\
 You take a deep breath and try and think of a way out of this living room. 
 You know the kitchen is locked. What do you do?
 <<if $inventory.includes("kitchen key")>>\
@@ -360,7 +358,7 @@ You know the kitchen is locked. What do you do?
 </div>
 
 :: kitchenlocked
-<div class="text1">
+<div class="text1">\
 You try and open the door but it's locked. I always thought it was stupid that
 the kitchen had a door and lock, until I used it a couple of times.
 
@@ -370,16 +368,16 @@ The key must be around here somewhere.
 </div>
 
 :: Display Case
-<div class="text1">
+<div class="text1">\
 You go over to the glass display case next to the TV. There are a lot of different 
 nick-nacks from travels, memories, and achievments. Just as any family should have up
 for display.
 Huh.. What's the key to the kitchen doing in here?
-<<run $inventory.push("kitchen key")>>
+<<run $inventory.push("kitchen key")>>\
 [[Grab key->Kitchen Key]]
 </div>
 
 :: Kitchen Key
-<div class="text1">
+<div class="text1">\
 You equipped the kitchen key.
 </div>
