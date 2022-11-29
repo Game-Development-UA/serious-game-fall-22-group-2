@@ -20,12 +20,12 @@ Hello Player! Thank you for joining our Escape Room! Im really glad youre here t
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
+<<set $inventory to []>>
 
 :: Have Not
 That's quite alright! We all have to start somewhere, right? I kid I kid, just go 
 to our lovely tutorial room to get a feel for things.
 [[Go to Tutorial-> Living Room Tutorial]]
-<<set $inventory to []>>
 
 :: Living Room[livingroom]
 Let's see what we've got here...
