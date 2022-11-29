@@ -240,8 +240,9 @@ There’s not much silverware… Maybe take a fork just in case?
 :: ForkK[kitchen]
 <div class="boxtut"></div>
 <div class="textt2">
-<<run $inventory.push("ForkK")>>
+
 Just in case I need to pry something open…
+
 
 [[Look at some pots and pans-> Pots1]]
 </div>
@@ -296,3 +297,4 @@ mmmm one old truck.. not even worth anything at this point. At least it still go
 Lots of bills here... wow someone sustained a lot of injuries recently... a black eye... broken ribs? What happened? Wait! Theres a birthday here! 1984! 
 Thats a combination... 11221984
 
+[[Go to bathroom-> Bathroom]]
