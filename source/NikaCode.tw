@@ -66,12 +66,13 @@ I like it when you listen to me
 [[Go Back->Go Back5]]
 
 :: Calendar[cal]
-
+<div class="text1">
 You go through the months on the calendar, Nothing strikes as important aside from a date circled on November 22… with a birthday cake doodled on top. 
 
 1122… Thats half a code! Got to find the birth year…
 <<run $inventory.push("safecode1")>>
 [[Go Back->Go Back5]]
+</div>
 
 :: Go Back5[kitchen]
 <div class = "text1">
