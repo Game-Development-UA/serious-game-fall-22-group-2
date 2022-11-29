@@ -6,11 +6,12 @@ And if you need any help, reach out to me, that's what I'm here for.
 
 
 :: Enter Room[tutorial]
-<div class="box1"></div>
 <div class="intercombox"></div>\
+<div class="intercomtext2">\
 [[Ask for a hint-> HintT]]
 </div>\
-<div class="text1">
+<div class="box6"></div>
+<div class="text5">
 <<set $inventory to []>>
 [[Sofa-> SofaT]]
 [[Mirror-> MirrorT]]
@@ -23,23 +24,19 @@ And if you need any help, reach out to me, that's what I'm here for.
 :: SofaT[tutorial]
 <div class="box2"></div>
 <div class="text1">
+<<if not $inventory.includes("coin")>>
 Looks like a nice place to sit down and relax.
 [[Look between the cushions-> SofaT2]]
-</div>
+<</if>>\
 [[Look around-> Enter Room]]
+</div>
 
 :: SofaT2
-<div class="box2"></div>
-<div class="text1">
+<div class="box7"></div>
+<div class="text6">
 Why are there always things between the cushions?
-<<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
-<</if>>
-</div>
-<<if not $inventory.includes("remote")>>
-[[Pick up remote->remoteT]]
-<</if>>
-[[Go Back->SofaT2]]
+[[Go Back->SofaT]]
 </div>
 
 :: coinT
@@ -47,39 +44,33 @@ Why are there always things between the cushions?
 <div class="text1">
 <<run $inventory.push("coin")>>
 I'll take the coin.
-[[Go Back-> SofaT2]]
+[[Look at the Sofa-> SofaT]]
 </div>
-[[Look at the Sofa-> SofaT2]]
 
-:: remoteT
-<div class="box1"></div>
-<div class="text1">
-<<run $inventory.push("remote")>>
-I'll take the remote.
-[[Go Back-> SofaT2]]
-</div>
-[[Look at the Sofa-> SofaT2]]
 
 :: MirrorT
 <div class="box1"></div>
 <div class="text1">
-I...don't really feel like looking at myself right now...
+I...don't really feel like looking 
+at myself right now...
 </div>
 <div class="intercombox"></div>\
+<div class="intercomtext">\
 [[If I may--> Mirror2T]]
-</div>
+</div>\
 
 :: Mirror2T
-<div class="intercombox"></div>\
+<div class="intercombox2"></div>\
+<div class="intercomtext3">\
 I think you look wonderful. 
 But I won't pressure you if you're uncomftable. 
-</div>
+</div>\
 [[Thank You-> Enter Room]]
 
 :: ShelvesT
 <div class="box1"></div>
 <div class="text1">
-<<if not $inventory.includes("coin")>>\
+<<if $inventory.includes("coin")>>\
 [[>>>->SecretT]]
 <<else>>\
 [[Nothing Here...->Enter Room]]\
@@ -89,7 +80,6 @@ But I won't pressure you if you're uncomftable.
 :: SecretT
 *You place the coin on a shelf*
 You got a Key!
-<<run $inventory.push("coin")>>
 <div class="box2"></div>
 <div class="text1">
 [[Leave->LeaveT]]
@@ -103,13 +93,13 @@ I should focus on getting out.
 [[Go Back-> Enter Room]]
 </div>
 
-:: HintT
-<div class="box1"></div>
+:: HintT[tutorial]
 <div class="intercombox"></div>\
+<div class="intercomtext3">\
 You need a hint? You have to pay to 
 escape this room.
 </div>\
-<div class="box2"></div>
+<div class="box1"></div>
 <div class="text1">
 [[?-> Enter Room]]
 </div>
@@ -126,7 +116,7 @@ mom got me for my wedding gift.
 <div class="box2"></div>
 <div class="text1">
 It looks like it needs to be 
-watered...poot thing.
+watered...poor thing.
 [[Go Back-> Enter Room]]
 </div>
 
@@ -138,5 +128,6 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 [[Getting Out!->Safe2]]
 
 :: Safe2
+I have the key...
 I need the code...
 What's the code??

@@ -1,11 +1,12 @@
 :: Bathroom[bathroom]
-<div class="box2"></div>
-<div class="text1">
-You've entered the Bathroom.
+<div class="intercombox3"></div>\
+<div class="intercomtext4">\
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
-
+<div class="box2"></div>
+<div class="text1">
+You've entered the Bathroom.
 [[Ignore-> MockB]]
 [[Shut Up!-> RageB]]
 </div>
@@ -42,15 +43,43 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 [[Mirror-> MirrorB]]
 [[Shower-> ShowerB]]
 [[Toilet-> ToiletB]]
+[[Wall Hangings-> Wall HangingsB]]
 </div>
 
 :: ToiletB
+<<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
-[[Look Around-> What You See]]
+<</if>>
+<<if not $inventory.includes("memoryB")>>
+There's something here...
+[[Look Closer-> Toilet2B]]
+<</if>>
+[[Look Around-> What You SeeB]]
+
+:: Toilet2B
+* You lift off the top of the toilet *
+Dangling from a chain in the toilet is a key!
+<<run $inventory.push("SafeKey")>>
+[[Run to the safe-> Safe]]
 
 :: ShowerB
+<<if not $inventory.includes("memoryB")>>
 Now isn't the time for a shower...
 [[Look Around-> What You SeeB]]
+<</if>>
+<<if $inventory.includes("memoryB")>>
+[[Look at the shower curtain-> CurtainB]]
+[[Look Around-> What You SeeB]]
+<</if>>
+
+:: CurtainB
+* You quietly take off the shower curtain rungs*
+* You hear something clink...* 
+There's three keys in here! Yes!
+<<run $inventory.push("largekey")>>
+<<run $inventory.push("HiddenBedKey")>>
+<<run $inventory.push("YourMedKey")>>
+[[Go back-> What You See]]
 
 :: CabinetB
 There's four cabinets... a large one to my left, 
@@ -62,8 +91,17 @@ and three small ones on my right.
 [[Look Around-> What You SeeB]]
 
 :: Left CabinetB
+<<if not $inventory.includes("largekey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
+<</if>>
+<<if $inventory.includes("largekey")>>
+[[Unlock-> Left Cabinet2B]]
+<</if>>
+
+:: Left Cabinet2B
+...There's nothing in here...
+[[Go back-> CabinetB]]
 
 :: Upper Right CabinetB
 My personal items... at least he let me have my own toothbrush...
@@ -83,18 +121,36 @@ I can hear something rattling. There has to be something. But where?
 [[Listen again-> Middle Right CabinetB3]]
 
 :: Middle Right CabinetB3
+<<if not $inventory.includes("HiddenBedKey")>>
 No there's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-> CabinetB2]]
+<</if>>
+<<if $inventory.includes("HiddenBedKey")>>
+The cabinet has a fake floor!
+*You find a tiny hole in the floor* 
+[[Unlock?-> Middle Right CabinetB4]]
+<</if>>
+[[Look at the cabinets-> CabinetB]]
 
 :: Middle Right CabinetB4
-There's definantly something in here. I think this might be a false bottom on this 
-cabinet. But how do I lift it up? I need something thin...
-[[Look at the cabinets-> CabinetB2]]
+There's a key in here!
+<<run $inventory.push("Medkey")>>
+[[Look around-> CabinetB]]
+
 
 :: Lower Right CabinetB
+<<if not $inventory.includes("YourMedKey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
+<</if>>
+<<if $inventory.includes("YourMedKey")>>
+[[Unlock the cabinet-> Lower Right CabinetB2]]
+<</if>>
+
+:: Lower Right CabinetB2
+<<run $inventory.push("YourRecords")>>
+I found my medical records!
+[[Look around-> CabinetB]]
 
 :: MirrorB
 It's me. Gosh, even now I still can't make myself look. 
@@ -108,7 +164,7 @@ I guess I can make myself look again. Just to prove I can.
 
 :: What's That2B
 Wait, no that's not quite right. There's something...off about this mirror. 
-[[It's all in my head. I should look somewhere else.-> What You See]]
+[[It's all in my head. I should look somewhere else.-> What You SeeB]]
 [[Look closer.-> What's That3B]]
 
 :: What's That3B
@@ -116,9 +172,17 @@ This isn't a solid mirror. Maybe if I just...
 [[Press your finger into the mirror.-> What's That4B]]
 
 :: What's That4B
+<<if not $inventory.includes("Medkey")>>
 The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
 to open it...
+[[Go back-> What You SeeB]]
+<</if>>
+<<if $inventory.includes("Medkey")>>
+I think I have the key for this Medicine Cabinet...
+[[Go back-> What You SeeB]]
+[[Try to open it-> MedicineB]]
+<</if>>
 
 :: Wall HangingsB
 These were always so pretty...
@@ -132,14 +196,8 @@ I wonder...
 
 :: First Wall2B
 Oh my god...medical records.
-[[Take Them-> First Wall 3B]]
-[[Leave Them-> First Wall3B]]
-
-:: First Wall 3B
-I'm gonna need these when I get out.
-
-:: First Wall3B
-If I need them, I'll come back. I need to focus.
+<<run $inventory.push("childMedRecords")>>
+[[Look around more-> Wall HangingsB]]
 
 :: Second WallB
 I wonder...
@@ -176,11 +234,53 @@ You need to learn that actions have consequences!
 [[Stay Quiet-> Memory5B]]
 
 :: Memory5B
+* You hear the door handle shaking*
+* It sounds just like you feel* 
+Unlock this door!
+[[...-> Memory6B]]
 
+:: Memory6B
+* The door handle is ripped off *
+* You'll have to buy a new one later * 
+* The door flies open *
+[[Shit-> Memory7B]]
 
-:: Locked MedicineB
-I need a key...
+:: Memory7B
+I can't hear what he's saying-
+[[I'm on the floor-> Memory8B]]
 
+:: Memory8B
+I can feel the blood from where my head hit the shower.
+I can't focus. I'm going to pass out. 
+He stands over me, before huffing and moving. 
+[[Watch him-> Memory9B]]
 
-:: EscapeB
-[[Escape-> Safe]]
+:: Memory9B
+He unscrews the shower curtain...
+I can kinda hear something clank before he screws it 
+back on. 
+I hear the toilet bowl open...he keeps something there...
+[[...-> Memory10B]]
+
+:: Memory10B
+Don't make the same mistake again you useless bitch. 
+Next time I won't be as nice.
+[[Snap Back-> Memory11B]]
+
+:: Memory11B
+I gasp, coming back to the present time. 
+I can't move...breathe I need to breate...
+[[Get grounded-> Memory12B]]
+
+:: Memory12B
+It takes me a second but...I think I can press forward.
+I should look at the everything again...
+<<run $inventory.push("memoryB")>>
+[[Look around with new eyes-> What You SeeB]]
+
+:: MedicineB
+* You open the cabinet *
+Inside is some medicine. 
+This might be useful when you get out of here!
+<<run $inventory.push("Medicine")>>
+[[Go back-> What You SeeB]]
