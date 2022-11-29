@@ -1,9 +1,5 @@
 :: Bedroom[first, intercom]
-<div class="box1"></div>
-<div class="intercombox"></div>\
-<div class="intercomtext">\
-Finally made it in, I see.
-</div>\
+<mark>Finally made it in, I see.</mark>
 <div class = "text1">
 You enter the Bedroom
 <<set $inventory to []>>
@@ -11,8 +7,7 @@ You enter the Bedroom
 [[Maybe you don't want to -> Bedroom2]]
 </div>
 
-:: Bedroom2[first]
-<div class="box1"></div>
+:: Bedroom2[first, intercom]
  <div class="text1">
 What will you do?
 [[Get in bed->Lay]]
@@ -22,7 +17,6 @@ What will you do?
  </div>
 
 :: InspectShelf[first]
-<div class="box2"></div>
 <div class="text1">
 You take a peek on the shelf and see your jewelry box. 
 Look inside?
@@ -31,8 +25,7 @@ Look inside?
  </div>
 
 :: LookBox
-<div class="box3"></div>
-<div class="text2">
+<div class="text1">
 You take a look inside the jewelry box. You instantly notice a ring.
 
 It’s your favorite ring.
@@ -42,8 +35,7 @@ Inspect further?
 </div>
 
 :: YesYellow
-<div class="box4"></div>
-<div class="text3">
+<div class="text1">
 You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
 He made you feel so special that day, putting his arms around you, opening doors for you. 
 He proposed to you with this ring that night, a 24-karrot pure gold ring with an oval diamond gem, 
@@ -57,7 +49,6 @@ You take another look at the jewelry box and find a yellow key.
 </div>
 
 :: YellowKey
-<div class="box1"></div>
 <div class="text1">
 <<run $inventory.push("yellow key")>>
 You equipped the key.
@@ -65,7 +56,6 @@ You equipped the key.
 </div>
 
 :: Lay[lay]
-<div class="box2"></div>
 <div class="text1">
 You get on your side of the bed and you turn to the bedside table. 
 There’s a framed picture sitting on it. 
@@ -74,8 +64,8 @@ Take a look?
 [[Look at the picture->Look at picture]]
 </div>
 
-:: Look at picture
-<div class="box2"></div>
+:: Look at picture[lay]
+<img src="media/picture.png">
 <div class="text1">
 It seems like a happy couple on a hiking trip, smiling at the camera. 
 They look pretty happy as far as you can tell. 
@@ -121,7 +111,7 @@ You take a peek under the bed and find a toy chest. Pull it out from under the b
 
 :: Pull it out
 
-It seems to be a colorful children’s toy chest, one that’s meant for storing toys and gadgets. 
+It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
 Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
 
