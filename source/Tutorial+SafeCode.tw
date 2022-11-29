@@ -150,7 +150,7 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 </div>
 
 :: Safe2[safe]
-<div class="text6">
+<div class="textsafe">
 I have the key...
 I need the code...
 What's the code??
@@ -160,7 +160,7 @@ What's the code??
 </div>
 
 :: Safe3[safe]
-<div class="text6">
+<div class="textsafe">
 -You hear the safe creak open-
 -Quickly, you grab the phone and-
 [[call 911-> End]]

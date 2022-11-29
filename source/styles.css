@@ -266,6 +266,14 @@ body.tutorialplant{
 	top:310px;
 }
 
+.textsafe{
+	position: fixed;
+	z-index: 1;
+	color: white;
+	position:relative;
+	top:310px;
+}
+
 .safetext{
 	background-color: white;
 	padding: 5px 10px 5px 10px;
