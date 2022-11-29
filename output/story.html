@@ -578,7 +578,6 @@ It&#39;s locked...
 &lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
 The key goes in but its not turning. This doesnt seem right. 
 Maybe I should try the ottoman?
-[[Keep Looking-&gt; Living Room]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
 Okay, lets try the bobby pin.
@@ -586,7 +585,7 @@ Okay, lets try the bobby pin.
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Bedroom Door2" tags="livingroom" position="225,225" size="100,100">It worked!
 [[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="13" name="Ottoman" tags="livingroom" position="350,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
-[[Inspect Clothes -&gt; Inspect]]
+[[Inspect Clothes -&gt; Inspect Clothes]]
 &lt;&lt;/if&gt;&gt;
 [[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="14" name="Inspect Clothes" tags="livingroom" position="475,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
 &lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;

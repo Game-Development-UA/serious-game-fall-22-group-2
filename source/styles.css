@@ -52,6 +52,43 @@ body.livingroom{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+body.livingroomcouch{
+	z-index: 2;
+	background-image: url(media/living-room.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 70% 85%;
+	background-size: 130%;
+}
+
+body.livingroompic{
+	z-index: 2;
+	background-image: url(media/living-room.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 70% 55%;
+	background-size: 130%;
+}
+
+body.livingroombook{
+	z-index: 2;
+	background-image: url(media/living-room.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 85%;
+	background-size: 130%;
+}
+
+body.livingroomdoor{
+	z-index: 2;
+	background-image: url(media/living-room.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 80% 50%;
+	background-size: 130%;
+}
+
 body.kitchen{
 	z-index: 2;
 	background-image: url(media/kitchen.jpg);
