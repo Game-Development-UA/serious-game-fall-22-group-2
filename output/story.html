@@ -541,11 +541,9 @@ config.history.controls = false;
 [[Go to Bedroom-&gt;Bedroom]]
 [[Go to Tutorial-&gt; Living Room Tutorial]]
 [[Go to Kitchen-&gt;Kitchen]]
-[[Go to Kitchen-&gt;kitchen]]
 [[Go to bathroom-&gt; Bathroom]]
 [[Go to safe-&gt; Safe]]
 [[Go to living room-&gt; Living Room]]
-[[Go to living room2-&gt; Living Room2]]
 /* DELETE THIS BEFORE TURNING IN*/</tw-passagedata><tw-passagedata pid="2" name="Intercom" tags="" position="225,100" size="100,100">Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
 
 [[Yes -&gt; Have]]
@@ -556,23 +554,41 @@ to our lovely tutorial room to get a feel for things.
 [[Go to Tutorial-&gt; Living Room Tutorial]]
 &lt;&lt;set $inventory to []&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Living Room" tags="livingroom" position="600,100" size="100,100">Let&#39;s see what we&#39;ve got here...
 [[Go to Couch Cushions -&gt; Couch]]
-[[ Go to Bookshelf -&gt; Shelf]]
+[[Go to Bookshelf -&gt; Shelf]]
 [[Go to Bedroom Door -&gt; Bedroom Door]]
 [[Go to Storage Ottoman -&gt; Ottoman]]</tw-passagedata><tw-passagedata pid="6" name="Couch" tags="livingroom" position="725,100" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
 You go over to the black leather couch.
 What will you do?
 [[Look between the seats-&gt;Couch2]]
 [[Sit-&gt;SitCouch1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Pictures" tags="" position="850,100" size="100,100">They all seem to be pointing to the bookshelf.</tw-passagedata><tw-passagedata pid="8" name="Shelf" tags="" position="975,100" size="100,100">Huh… There&#39;s a book that stands out more than the rest, but it seems a little obvious.
-
-[[Inspect Book -&gt; Inspect Book]]</tw-passagedata><tw-passagedata pid="9" name="Inspect Book" tags="" position="1100,100" size="100,100">Its hollow… a key fell out.</tw-passagedata><tw-passagedata pid="10" name="Bedroom Door" tags="" position="1225,100" size="100,100">The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?</tw-passagedata><tw-passagedata pid="11" name="Ottoman" tags="" position="100,225" size="100,100">Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
-
-[[Inspect Clothes -&gt; Inspect]]</tw-passagedata><tw-passagedata pid="12" name="ShelfIntercom" tags="" position="225,225" size="100,100">Are you interested in the collection of my novels? I know its very impressive.</tw-passagedata><tw-passagedata pid="13" name="Inspect Clothes" tags="" position="350,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
-
-[[ Go to Bedroom Door -&gt; Bedroom Door]]
-Okay, lets try the bobby pin. It worked!
- 
-[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="14" name="Bedroom" tags="first, intercom" position="475,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Pictures" tags="livingroom" position="850,100" size="100,100">That&#39;s weird...They all seem to be pointing to the bookshelf.
+[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="8" name="Shelf" tags="livingroom" position="975,100" size="100,100">Are you interested in the collection of my novels? I know its very impressive.
+[[Um...not really-&gt; Living Room]]
+&lt;&lt;if not $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
+Huh… There&#39;s a book that stands out more than the rest, but it seems a little obvious.
+[[Inspect Book -&gt; Inspect Book]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Inspect Book" tags="livingroom" position="1100,100" size="100,100">Its hollow… a key fell out.
+&lt;&lt;run $inventory.push(&quot;hollowkey&quot;)&gt;&gt;
+[[Go Back-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="10" name="Bedroom Door" tags="livingroom" position="1225,100" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+It&#39;s locked...
+[[Keep Looking-&gt; Living Room]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;
+The key goes in but its not turning. This doesnt seem right. 
+Maybe I should try the ottoman?
+[[Keep Looking-&gt; Living Room]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+Okay, lets try the bobby pin.
+[[...-&gt; Bedroom Door2]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Bedroom Door2" tags="livingroom" position="100,225" size="100,100">It worked!
+[[Go to Bedroom -&gt; Bedroom]]</tw-passagedata><tw-passagedata pid="12" name="Ottoman" tags="livingroom" position="225,225" size="100,100">&lt;&lt;if not $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;
+Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
+[[Inspect Clothes -&gt; Inspect]]
+&lt;&lt;/if&gt;&gt;
+[[Keep Looking-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="13" name="Inspect Clothes" tags="livingroom" position="350,225" size="100,100">Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+&lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;
+[[Go Back-&gt; Living Room]]</tw-passagedata><tw-passagedata pid="14" name="Bedroom" tags="first, intercom" position="475,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
 &lt;div class = &quot;text1&quot;&gt;\
 You enter the Bedroom
 &lt;&lt;set $inventory to []&gt;&gt;\

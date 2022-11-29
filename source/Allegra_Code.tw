@@ -29,14 +29,14 @@ to our lovely tutorial room to get a feel for things.
 
 :: Living Room[livingroom]
 Let's see what we've got here...
-[[Go to Couch Cushions -> Couch]]
+[[Go to Couch Cushions -> CouchLivingRoom]]
 [[Go to Bookshelf -> Shelf]]
 [[Go to Bedroom Door -> Bedroom Door]]
 [[Go to Storage Ottoman -> Ottoman]]
 
 
 
-:: Couch[livingroom]
+:: CouchLivingRoom[livingroom]
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
 [[Keep Looking-> Living Room]]
 [[Look at Framed Pictures -> Pictures]]
