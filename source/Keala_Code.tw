@@ -1,41 +1,53 @@
 :: Bathroom[bathroom]
 <div class="intercombox3"></div>\
 <div class="intercomtext4">\
-<<set $inventory to []>>
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
-<div class="box2"></div>
-<div class="text1">
+<div class="text1">\
 You've entered the Bathroom.
 [[Ignore-> MockB]]
 [[Shut Up!-> RageB]]
+<<set $inventory to []>>
 </div>
 
-:: MockB
+:: MockB[bathroom]
+<div class="intercombox3"></div>\
+<div class="intercomtext4">\
 I'm right aren't I? You know I always am. 
 [[Ignore-> FocusB]]
 [[Cry Break-> CryB]]
+</div>
 
-:: RageB
+:: RageB[bathroom]
+<div class="intercombox3"></div>\
+<div class="intercomtext4">\
 No, you shut up! You know as well as I do that your worthless and can't do 
 anything for yourself without me!
 [[Cry-> CryB]]
+</div>
 
-:: FocusB
+:: FocusB[bathroom]
+<div class="text1">\
 Try to tune him out. You came in here for a reason. Focus on getting what you need here.
 One step at a time.
 [[Look around-> First GlanceB]]
+</div>
 
-:: CryB
+:: CryB[bathroom]
+<div class="text1">\
 Sometimes, in the heat of things, it's okay to let yourself cry. Just remember to not 
 stay there for too long. 
 [[Deep Breath-> FocusB]]
+</div>
 
-:: First GlanceB
+:: First GlanceB[bathroom]
+<div class="intercombox3"></div>\
+<div class="intercomtext4">\
 Hey, what the hell do you think you're doing, snooping around? It's rude to go 
 searching through things that aren't yours. Oh wait, I'm all you have, isn't that right?
 [[Look Around->What You SeeB]]
+</div>
 
 :: What You SeeB[bathroom]
 <div class="box2"></div>
@@ -101,7 +113,7 @@ Locked...
 <</if>>
 
 :: Left Cabinet2B
-...There's nothing in here...
+...25112002...
 [[Go back-> CabinetB]]
 
 :: Upper Right CabinetB
