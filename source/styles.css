@@ -2,6 +2,9 @@
 /*
 Andrea's stuff,,, sorry its a mess ;-; 
 */
+.teddy{
+	position: fixed;
+}
 .redlock{
 	z-index: 5;
 	width: 5%;
