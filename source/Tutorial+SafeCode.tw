@@ -35,8 +35,13 @@ Looks like a nice place to sit down and relax.
 <div class="box7"></div>
 <div class="text6">
 Why are there always things between the cushions?
+
+<<if $inventory.includes("coin")>>\
+[[Go Back->SofaT]]
+<<else>>\
 [[Pick up coin->coinT]]
 [[Go Back->SofaT]]
+<</if>>\
 </div>
 
 :: coinT
