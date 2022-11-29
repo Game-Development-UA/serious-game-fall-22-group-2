@@ -367,6 +367,16 @@ body.tutorialplant{
 	position:relative;
 	top:310px;
 }
+
+.safetext{
+	position: fixed;
+	z-index: 1;
+	color: rgb(77, 74, 74);;
+	position:relative;
+	top:310px;
+}
+
+
 .box6{
 	position: fixed;
 	z-index:0;
@@ -463,6 +473,14 @@ body.bathroomwall{
 	background-position: -28% 65%;
 	background-size: 175%;
 }
+
+body.safe{
+	background-image: url(https://img-new.cgtrader.com/items/1965100/1f2748629a/safe-mit-pin-pad-3d-modell-3d-model-obj-mtl-3ds-fbx-stl-dae-x3d.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 body{
 	z-index: 1;
 	position: static;
@@ -926,16 +944,28 @@ to open it...
 I think I have the key for this Medicine Cabinet...
 [[Go back-&gt; What You SeeB]]
 [[Try to open it-&gt; MedicineB]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="Wall HangingsB" tags="bathroomwall" position="1100,975" size="100,100">These were always so pretty...
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="Wall HangingsB" tags="bathroomwall" position="1100,975" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+These were always so pretty...
 [[First Wall Hanging-&gt; First WallB]]
-[[Second Wall Hanging-&gt; Second WallB]]</tw-passagedata><tw-passagedata pid="80" name="First WallB" tags="bathroomwall" position="1225,975" size="100,100">I wonder...
+[[Second Wall Hanging-&gt; Second WallB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="First WallB" tags="bathroomwall" position="1225,975" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+I wonder...
 [[Remove Wall Hanging-&gt; First Wall2B]]
-[[Nevermind-&gt; Wall HangingsB]]</tw-passagedata><tw-passagedata pid="81" name="First Wall2B" tags="bathroomwall" position="100,1100" size="100,100">Oh my god...medical records.
+[[Nevermind-&gt; Wall HangingsB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="First Wall2B" tags="bathroomwall" position="100,1100" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+Oh my god...medical records.
 &lt;&lt;run $inventory.push(&quot;childMedRecords&quot;)&gt;&gt;
-[[Look around more-&gt; Wall HangingsB]]</tw-passagedata><tw-passagedata pid="82" name="Second WallB" tags="bathroomwall" position="225,1100" size="100,100">I wonder...
+[[Look around more-&gt; Wall HangingsB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="Second WallB" tags="bathroomwall" position="225,1100" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+I wonder...
 [[Remove Wall Hanging-&gt; Second Wall2B]]
-[[Nevermind-&gt; Wall HangingsB]]</tw-passagedata><tw-passagedata pid="83" name="Second Wall2B" tags="bathroomwall" position="350,1100" size="100,100">[[...-&gt; Second Wall3B]]</tw-passagedata><tw-passagedata pid="84" name="Second Wall3B" tags="bathroomwall" position="475,1100" size="100,100">Oh my god.
-[[There&#39;s a Camera-&gt; RememberB]]</tw-passagedata><tw-passagedata pid="85" name="RememberB" tags="bathroom" position="600,1100" size="100,100">I can&#39;t stop the memory from hitting me this time. 
+[[Nevermind-&gt; Wall HangingsB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="Second Wall2B" tags="bathroomwall" position="350,1100" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+[[...-&gt; Second Wall3B]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="84" name="Second Wall3B" tags="bathroomwall" position="475,1100" size="100,100">&lt;div class=&quot;text2&quot;&gt;
+Oh my god.
+[[There&#39;s a Camera-&gt; RememberB]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="85" name="RememberB" tags="bathroom" position="600,1100" size="100,100">I can&#39;t stop the memory from hitting me this time. 
 [[Remember-&gt; MemoryB]]</tw-passagedata><tw-passagedata pid="86" name="MemoryB" tags="bathroom" position="725,1100" size="100,100">It&#39;s dark. I&#39;m scared. He&#39;s
 [[coming.-&gt; Memory2B]]</tw-passagedata><tw-passagedata pid="87" name="Memory2B" tags="bathroom" position="850,1100" size="100,100">I messed up. His dinner was slightly cold since 
 I took it out of the oven too soon. I got scared. I
@@ -972,8 +1002,7 @@ This might be useful when you get out of here!
 [[Lets have a look around-&gt; Enter Kitchen1]]</tw-passagedata><tw-passagedata pid="100" name="Fridge1" tags="Kitchen" position="1225,1225" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
  &lt;div class=&quot;text1&quot;&gt;
 Lots of things on the Fridge
-[[Look at Magnets-&gt;Magnet]]
-[[Look Fridge1-&gt;Fridge1]]
+[[Look Fridge-&gt;Fridge1]]
 [[Look at Calendar-&gt;Calendar]]
 [[Look on Shelf-&gt;InspectShelf1]]
  &lt;/div&gt;</tw-passagedata><tw-passagedata pid="101" name="InspectShelf1" tags="Kitchen" position="100,1350" size="100,100">&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
@@ -1173,15 +1202,21 @@ mom got me for my wedding gift.
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="136" name="LeaveT" tags="tutorial" position="725,1725" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="137" name="Safe" tags="" position="850,1725" size="100,100">WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
-[[Getting Out!-&gt;Safe2]]</tw-passagedata><tw-passagedata pid="138" name="Safe2" tags="" position="975,1725" size="100,100">I have the key...
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="136" name="LeaveT" tags="tutorial" position="725,1725" size="100,100">[[Back to Main Room-&gt;Starting]]</tw-passagedata><tw-passagedata pid="137" name="Safe" tags="" position="850,1725" size="100,100">&lt;div class=&quot;safetext&quot;&gt;
+WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
+[[Getting Out!-&gt;Safe2]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="138" name="Safe2" tags="" position="975,1725" size="100,100">&lt;div class=&quot;text6&quot;&gt;
+I have the key...
 I need the code...
 What&#39;s the code??
 [[25112002-&gt; Nope]]
 [[11221984-&gt; Safe3]]
-[[63782011-&gt; Nope]]</tw-passagedata><tw-passagedata pid="139" name="Safe3" tags="" position="1100,1725" size="100,100">-You hear the safe creak open-
+[[63782011-&gt; Nope]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="139" name="Safe3" tags="" position="1100,1725" size="100,100">&lt;div class=&quot;text6&quot;&gt;
+-You hear the safe creak open-
 -Quickly, you grab the phone and-
-[[call 911-&gt; End]]</tw-passagedata><tw-passagedata pid="140" name="End" tags="" position="1225,1725" size="100,100">Help is on the way. You&#39;re going to be okay.</tw-passagedata><tw-passagedata pid="141" name="Nope" tags="" position="100,1850" size="100,100">YOU DUMB BITCH! YOU&#39;RE DEAD!</tw-passagedata><tw-passagedata pid="142" name="StoryInit" tags="" position="225,1850" size="100,100">Welcome to the Game!
+[[call 911-&gt; End]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="140" name="End" tags="" position="1225,1725" size="100,100">Help is on the way. You&#39;re going to be okay.</tw-passagedata><tw-passagedata pid="141" name="Nope" tags="" position="100,1850" size="100,100">YOU DUMB BITCH! YOU&#39;RE DEAD!</tw-passagedata><tw-passagedata pid="142" name="StoryInit" tags="" position="225,1850" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
