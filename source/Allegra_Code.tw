@@ -73,7 +73,6 @@ It's locked...
 <<if $inventory.includes("hollowkey")>>
 The key goes in but its not turning. This doesnt seem right. 
 Maybe I should try the ottoman?
-[[Keep Looking-> Living Room]]
 <</if>>
 <<if $inventory.includes("bobbypin")>>
 Okay, lets try the bobby pin.
@@ -87,7 +86,7 @@ It worked!
 :: Ottoman[livingroom]
 <<if not $inventory.includes("bobbypin")>>
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
-[[Inspect Clothes -> Inspect]]
+[[Inspect Clothes -> Inspect Clothes]]
 <</if>>
 [[Keep Looking-> Living Room]]
 
