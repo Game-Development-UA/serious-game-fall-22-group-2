@@ -59,7 +59,7 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 [[Wall Hangings-> Wall HangingsB]]
 </div>
 
-:: ToiletB
+:: ToiletB[bathroomtoilet]
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
 <</if>>
@@ -69,13 +69,13 @@ There's something here...
 <</if>>
 [[Look Around-> What You SeeB]]
 
-:: Toilet2B
+:: Toilet2B[bathroomtoilet]
 * You lift off the top of the toilet *
 Dangling from a chain in the toilet is a key!
 <<run $inventory.push("SafeKey")>>
 [[Run to the safe-> Safe]]
 
-:: ShowerB
+:: ShowerB[bathroomshower]
 <<if not $inventory.includes("memoryB")>>
 Now isn't the time for a shower...
 [[Look Around-> What You SeeB]]
@@ -85,7 +85,7 @@ Now isn't the time for a shower...
 [[Look Around-> What You SeeB]]
 <</if>>
 
-:: CurtainB
+:: CurtainB[bathroomshower]
 * You quietly take off the shower curtain rungs*
 * You hear something clink...* 
 There's three keys in here! Yes!
@@ -94,7 +94,7 @@ There's three keys in here! Yes!
 <<run $inventory.push("YourMedKey")>>
 [[Go back-> What You See]]
 
-:: CabinetB
+:: CabinetB[bathroomcab]
 There's four cabinets... a large one to my left, 
 and three small ones on my right.
 [[Left Cabinet-> Left CabinetB]]
@@ -103,7 +103,7 @@ and three small ones on my right.
 [[Lower Right Cabinet-> Lower Right CabinetB]]
 [[Look Around-> What You SeeB]]
 
-:: Left CabinetB
+:: Left CabinetB[bathroomcab]
 <<if not $inventory.includes("largekey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
@@ -112,28 +112,28 @@ Locked...
 [[Unlock-> Left Cabinet2B]]
 <</if>>
 
-:: Left Cabinet2B
+:: Left Cabinet2B[bathroomcab]
 ...25112002...
 [[Go back-> CabinetB]]
 
-:: Upper Right CabinetB
+:: Upper Right CabinetB[bathroomcab]
 My personal items... at least he let me have my own toothbrush...
 and a place to keep my pads. 
 [[Look at the cabinets-> CabinetB]]
 
-:: Middle Right CabinetB
+:: Middle Right CabinetB[bathroomcab]
 Nothing in here...
 Wait I...remember seeing him put something in here...
 [[Investigate-> Middle Right CabinetB2]]
 [[I must be mistaken-> CabinetB]]
 
-:: Middle Right CabinetB2
+:: Middle Right CabinetB2[bathroomcab]
 That's so weird I could've sworn... Wait when I close this cabinet, 
 I can hear something rattling. There has to be something. But where? 
 [[Give up for now-> CabinetB]]
 [[Listen again-> Middle Right CabinetB3]]
 
-:: Middle Right CabinetB3
+:: Middle Right CabinetB3[bathroomcab]
 <<if not $inventory.includes("HiddenBedKey")>>
 No there's definantly something in here. I think this might be a false bottom on this 
 cabinet. But how do I lift it up? I need something thin...
@@ -145,13 +145,13 @@ The cabinet has a fake floor!
 <</if>>
 [[Look at the cabinets-> CabinetB]]
 
-:: Middle Right CabinetB4
+:: Middle Right CabinetB4[bathroomcab]
 There's a key in here!
 <<run $inventory.push("Medkey")>>
 [[Look around-> CabinetB]]
 
 
-:: Lower Right CabinetB
+:: Lower Right CabinetB[bathroomcab]
 <<if not $inventory.includes("YourMedKey")>>
 Locked...
 [[Look at the cabinets-> CabinetB]]
@@ -160,31 +160,31 @@ Locked...
 [[Unlock the cabinet-> Lower Right CabinetB2]]
 <</if>>
 
-:: Lower Right CabinetB2
+:: Lower Right CabinetB2[bathroomcab]
 <<run $inventory.push("YourRecords")>>
 I found my medical records!
 [[Look around-> CabinetB]]
 
-:: MirrorB
+:: MirrorB[bathroommirror]
 It's me. Gosh, even now I still can't make myself look. 
 I don't like what I see. 
 [[Look Around-> What You SeeB]]
 [[Look Again-> What's ThatB]]
 
-:: What's ThatB
+:: What's ThatB[bathroommirror]
 I guess I can make myself look again. Just to prove I can. 
 [[...-> What's That2B]]
 
-:: What's That2B
+:: What's That2B[bathroommirror]
 Wait, no that's not quite right. There's something...off about this mirror. 
 [[It's all in my head. I should look somewhere else.-> What You SeeB]]
 [[Look closer.-> What's That3B]]
 
-:: What's That3B
+:: What's That3B[bathroommirror]
 This isn't a solid mirror. Maybe if I just...
 [[Press your finger into the mirror.-> What's That4B]]
 
-:: What's That4B
+:: What's That4B[bathroommirror]
 <<if not $inventory.includes("Medkey")>>
 The mirror gives way under my touch. It's one of those thin mirror sheets!
 Behind it is...the Medicine Cabinet! Wait, it's locked. There has to be some way 
@@ -197,101 +197,101 @@ I think I have the key for this Medicine Cabinet...
 [[Try to open it-> MedicineB]]
 <</if>>
 
-:: Wall HangingsB
+:: Wall HangingsB[bathroomwall]
 These were always so pretty...
 [[First Wall Hanging-> First WallB]]
 [[Second Wall Hanging-> Second WallB]]
 
-:: First WallB
+:: First WallB[bathroomwall]
 I wonder...
 [[Remove Wall Hanging-> First Wall2B]]
 [[Nevermind-> Wall HangingsB]]
 
-:: First Wall2B
+:: First Wall2B[bathroomwall]
 Oh my god...medical records.
 <<run $inventory.push("childMedRecords")>>
 [[Look around more-> Wall HangingsB]]
 
-:: Second WallB
+:: Second WallB[bathroomwall]
 I wonder...
 [[Remove Wall Hanging-> Second Wall2B]]
 [[Nevermind-> Wall HangingsB]]
 
-:: Second Wall2B
+:: Second Wall2B[bathroomwall]
 [[...-> Second Wall3B]]
 
-:: Second Wall3B
+:: Second Wall3B[bathroomwall]
 Oh my god.
 [[There's a Camera-> RememberB]]
 
-:: RememberB
+:: RememberB[bathroom]
 I can't stop the memory from hitting me this time. 
 [[Remember-> MemoryB]]
 
-:: MemoryB
+:: MemoryB[bathroom]
 It's dark. I'm scared. He's
 [[coming.-> Memory2B]]
 
-:: Memory2B
+:: Memory2B[bathroom]
 I messed up. His dinner was slightly cold since 
 I took it out of the oven too soon. I got scared. I
 [[hid.-> Memory3B]]
 
-:: Memory3B
+:: Memory3B[bathroom]
 Why did I hide? Oh...that's right. He was going to teach me 
 [[a lesson.-> Memory4B]]
 
-:: Memory4B
+:: Memory4B[bathroom]
 You fucking bitch! You think you can hide in a fucking bathroom!? 
 You need to learn that actions have consequences!
 [[Stay Quiet-> Memory5B]]
 
-:: Memory5B
+:: Memory5B[bathroom]
 * You hear the door handle shaking*
 * It sounds just like you feel* 
 Unlock this door!
 [[...-> Memory6B]]
 
-:: Memory6B
+:: Memory6B[bathroom]
 * The door handle is ripped off *
 * You'll have to buy a new one later * 
 * The door flies open *
 [[Shit-> Memory7B]]
 
-:: Memory7B
+:: Memory7B[bathroom]
 I can't hear what he's saying-
 [[I'm on the floor-> Memory8B]]
 
-:: Memory8B
+:: Memory8B[bathroom]
 I can feel the blood from where my head hit the shower.
 I can't focus. I'm going to pass out. 
 He stands over me, before huffing and moving. 
 [[Watch him-> Memory9B]]
 
-:: Memory9B
+:: Memory9B[bathroom]
 He unscrews the shower curtain...
 I can kinda hear something clank before he screws it 
 back on. 
 I hear the toilet bowl open...he keeps something there...
 [[...-> Memory10B]]
 
-:: Memory10B
+:: Memory10B[bathroom]
 Don't make the same mistake again you useless bitch. 
 Next time I won't be as nice.
 [[Snap Back-> Memory11B]]
 
-:: Memory11B
+:: Memory11B[bathroom]
 I gasp, coming back to the present time. 
 I can't move...breathe I need to breate...
 [[Get grounded-> Memory12B]]
 
-:: Memory12B
+:: Memory12B[bathroom]
 It takes me a second but...I think I can press forward.
 I should look at the everything again...
 <<run $inventory.push("memoryB")>>
 [[Look around with new eyes-> What You SeeB]]
 
-:: MedicineB
+:: MedicineB[bathroommirror]
 * You open the cabinet *
 Inside is some medicine. 
 This might be useful when you get out of here!
