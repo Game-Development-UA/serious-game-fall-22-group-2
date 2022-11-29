@@ -4,8 +4,8 @@
 You shouldn't have been able to make it this far. I mean, honestly, look at you. 
 You wouldn't have been able to make it this far without me. And how do you repay me?
 By ignoring me! You know that without me, you're nothing, right?
-<div class="box2"></div>
-<div class="text1">
+<div class="text1">\
+Sample text
 You've entered the Bathroom.
 [[Ignore-> MockB]]
 [[Shut Up!-> RageB]]
@@ -101,7 +101,7 @@ Locked...
 <</if>>
 
 :: Left Cabinet2B
-...There's nothing in here...
+...25112002...
 [[Go back-> CabinetB]]
 
 :: Upper Right CabinetB
