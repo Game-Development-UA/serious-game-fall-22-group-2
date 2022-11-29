@@ -13,7 +13,7 @@
 
 
 :: Intercom
-Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here today. As you can see, you are currently in the living room. Have you ever been in an escape room before?
+Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
 
 [[Yes -> Have]]
 
@@ -22,20 +22,26 @@ Hello Player 1. Thank you for joining our Escape Room! Im really glad youre here
 :: Have
 Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living Room]]
-[[Go to the Bedroom-> Bedroom]]
-[[Go to Couch Cushions -> Couch]]
 
 :: Have Not
 That's quite alright! We all have to start somewhere, right? I kid I kid, just go 
 to our lovely tutorial room to get a feel for things.
-
 [[Go to Tutorial-> Living Room Tutorial]]
+<<set $inventory to []>>
+
+:: Living Room[livingroom]
+Let's see what we've got here...
+[[Go to Couch Cushions -> Couch]]
+[[ Go to Bookshelf -> Shelf]]
+[[Go to Bedroom Door -> Bedroom Door]]
+[[Go to Storage Ottoman -> Ottoman]]
+
+
 
 :: Couch
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
 
 [[Look at Framed Pictures -> Pictures]]
-[[ Go to Bookshelf -> Shelf]]
 
 :: Pictures
 They all seem to be pointing to the bookshelf.
@@ -48,8 +54,7 @@ Huh… There's a book that stands out more than the rest, but it seems a little 
 :: Inspect Book
 Its hollow… a key fell out.
 
-[[Go to Bedroom Door -> Bedroom Door]]
-[[Go to Storage Ottoman -> Ottoman]]
+
 
 :: Bedroom Door
 The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?
@@ -57,11 +62,9 @@ The key goes in but its not turning. This doesnt seem right. Maybe I should try 
 :: Ottoman
 Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
 
-[[Go to Bookshelf -> Shelf]]
 [[Inspect Clothes -> Inspect]]
 
-:: Shelf
- :: Intercom
+:: ShelfIntercom
 Are you interested in the collection of my novels? I know its very impressive.
 
 :: Inspect Clothes
