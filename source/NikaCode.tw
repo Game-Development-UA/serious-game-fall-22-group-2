@@ -1,11 +1,7 @@
-:: Kitchen [first, intercom]
-<div class="box1"></div>
-<div class="intercombox5"></div>\
-<div class="intercomtext6">\
-Welcome to the kitchen! Theres plenty of nooks and crannys to look at in here. 
-</div>\
+:: Kitchen [kitchen]
+<mark>Welcome to the kitchen! Theres plenty of nooks and crannys to look at in here. </mark>
 <div class = "text1">
-I think you’ll find what you’re looking for if you look around
+I think you’ll find what you’re looking for if you look around.
 <<set $inventory to []>>
 [[Look on the Fridge -> Fridge1]]
 [[Look at the drawer ->Drawer1]]
