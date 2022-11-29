@@ -60,6 +60,7 @@ searching through things that aren't yours. Oh wait, I'm all you have, isn't tha
 </div>
 
 :: ToiletB[bathroomtoilet]
+<div class="text2">
 <<if not $inventory.includes("memoryB")>>
 I just cleaned the toilet yesterday. 
 <</if>>
@@ -68,12 +69,15 @@ There's something here...
 [[Look Closer-> Toilet2B]]
 <</if>>
 [[Look Around-> What You SeeB]]
+</div>
 
 :: Toilet2B[bathroomtoilet]
+<div class="text2">
 - You lift off the top of the toilet -
 Dangling from a chain in the toilet is a key!
 <<run $inventory.push("SafeKey")>>
 [[Run to the safe-> Safe]]
+</div>
 
 :: ShowerB[bathroomshower]
 <<if not $inventory.includes("memoryB")>>
