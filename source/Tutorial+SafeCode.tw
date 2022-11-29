@@ -131,3 +131,16 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 I have the key...
 I need the code...
 What's the code??
+[[11221984-> Safe3]]
+[[63782011-> Nope]]
+
+:: Safe3
+*You hear the safe creak open*
+*Quickly, you grab the phone and*
+[[call 911-> End]]
+
+:: End
+Help is on the way. You're going to be okay.
+
+:: Nope
+YOU DUMB BITCH! YOU'RE DEAD!
