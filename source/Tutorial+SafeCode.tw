@@ -36,9 +36,6 @@ Why are there always things between the cushions?
 <<if not $inventory.includes("coin")>>
 [[Pick up coin->coinT]]
 <</if>>\
-<<if not $inventory.includes("remote")>>
-[[Pick up remote->remoteT]]
-<</if>>\
 [[Go Back->SofaT]]
 </div>
 
@@ -50,14 +47,6 @@ I'll take the coin.
 [[Look at the Sofa-> SofaT]]
 </div>
 
-
-:: remoteT
-<div class="box1"></div>
-<div class="text1">
-<<run $inventory.push("remote")>>
-I'll take the remote.
-[[Look at the Sofa-> SofaT]]
-</div>
 
 :: MirrorT
 <div class="box1"></div>
