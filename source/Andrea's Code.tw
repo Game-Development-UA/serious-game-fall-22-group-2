@@ -64,8 +64,7 @@ Take a look?
 [[Look at the picture->Look at picture]]
 </div>
 
-:: Look at picture[lay]
-<img src="media/picture.png">
+:: Look at picture[lay,picture]
 <div class="text1">
 It seems like a happy couple on a hiking trip, smiling at the camera. 
 They look pretty happy as far as you can tell. 
@@ -74,8 +73,7 @@ The woman looks like she’s pregnant too.
 </div>
 
 :: Inspect
-<div class="box5"></div>
-<div class="text4">
+<div class="text1">
 You take a closer look at the photo.
 Our Grand Canyon trip, I remember that. We wanted to take a break from the stress of your work and I suggested a vacation. 
 I thought we were gonna have a relaxing time, we needed it especially with the baby on the way, and we did for a while. 
@@ -94,7 +92,6 @@ I remember having to hold in my tears as my feet felt like they were standing on
 
 :: Blue Key
 ENOUGH GOOFING AROUND. LET'S GET MOVING.
-<div class="box2"></div>
 <div class="text1">
 You grip the photo a little harder than one should. 
 You feel something that’s been taped to the back of the frame.
@@ -104,13 +101,14 @@ You got a Blue Key
 </div>
 
 :: Under Bed
-
+<div class="text1">
 You take a peek under the bed and find a toy chest. Pull it out from under the bed?
 
 [[Pull it out->Pull it out]]
+</div>
 
 :: Pull it out
-
+<div class="text1">
 It seems to be a dull children’s toy chest, one that’s meant for storing toys and gadgets. 
 It’s covered in dust, and seems like it was hardly used. 
 Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
@@ -120,9 +118,10 @@ You have $inventory.length keys
 [[Unlock Chest->UnlockChest]]
 <</if>>
 [[Go Back->Go Back1]]
+</div>
 
 :: Clothes
-
+<div class="text1">
 You look at the clothes on the floor and hesitate to go towards it.
 
 You look through them. Some blood spots.
@@ -131,11 +130,14 @@ You stick your hands in the pockets and find a Red Key.
 [[Grab It->Red Key]]
 <</if>>
 [[Go Back->Go Back1]]
+</div>
 
 :: Red Key
+<div class="text1">
 <<run $inventory.push("red key")>>
 You equipped the red key.
 [[Go Back->Go Back1]]
+</div>
 
 
 :: Go Back1[first]
