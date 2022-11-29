@@ -154,7 +154,7 @@ Welcome to the kitchen! Theres plenty of nooks and crannies to look here
  <div class="text1">\
 Lots of things on the Fridge
 [[Look at Magnets->Magnet]]
-[[Look in Fridge1->Fridge2]]
+[[Look in Fridge->Fridge2]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
@@ -233,21 +233,20 @@ Lots of junk in these drawers... silverware, pots & pans, mail... I think you sh
  <div class="text1">
 Lots of things on the Fridge
 [[Look at Rent->Rent1]]
-[[Look Car Payments->Car1]]
+[[Look at Car Payments->Car1]]
 [[Look at Medical Bills->Medb1]]
+[[Look Somewhere Else-> Go Back5]]
  </div>
 
 :: Rent1[kitchen]
  <div class="text1">
 $2000 to live in this place? Yikes. AT least its roomy
-[[Go to bathroom-> Bathroom]]
 [[Go Back->Mail3]]
 </div>
 
 :: Car1[kitchen]
  <div class="text1">
 mmmm one old truck.. not even worth anything at this point. At least it still goes from point A to point B
-[[Go to bathroom-> Bathroom]]
 [[Go Back->Mail3]]
 </div>
 
