@@ -32,7 +32,9 @@ Looks like a nice place to sit down and relax.
 :: SofaT2[tutorialsofa]
 <div class="boxtut"></div>
 <div class="textt2">
-Why are there always things between the cushions?
+
+Why are there always things between 
+the cushions?
 <<if $inventory.includes("coin")>>
 [[Go Back->SofaT]]
 <<else>>

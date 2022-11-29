@@ -324,13 +324,13 @@ body.tutorialplant{
 .boxtut{
 	position: fixed;
 	z-index:0;
-	width: 350px;
+	width: 370px;
 	height: 170px;
 	border: 2px solid black;
 	background: white;
 	position: relative;
 	top: 550px;
-	right: 20px;
+	right: 15px;
 }
 
 .box7{
@@ -936,13 +936,13 @@ Why are there always things between the cushions?
 [[Pick up coin-&gt;coinT]]
 [[Go Back-&gt;SofaT]]
 &lt;&lt;/if&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="122" name="coinT" tags="tutorialsofa" position="225,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="122" name="coinT" tags="tutorialsofa" position="225,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 &lt;&lt;run $inventory.push(&quot;coin&quot;)&gt;&gt;
 I&#39;ll take the coin.
 [[Look at the Sofa-&gt; SofaT]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="123" name="MirrorT" tags="tutorialmirror" position="350,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="123" name="MirrorT" tags="tutorialmirror" position="350,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 I...don&#39;t really feel like looking 
 at myself right now...
 &lt;/div&gt;
@@ -954,8 +954,8 @@ at myself right now...
 I think you look wonderful. 
 But I won&#39;t pressure you if you&#39;re uncomftable. 
 &lt;/div&gt;
-[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="125" name="ShelvesT" tags="tutorialshelf" position="600,1600" size="100,100">&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+[[Thank You-&gt; Enter Room]]</tw-passagedata><tw-passagedata pid="125" name="ShelvesT" tags="tutorialshelf" position="600,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 &lt;&lt;if $inventory.includes(&quot;coin&quot;)&gt;&gt;\
 [[&gt;&gt;&gt;-&gt;SecretT]]
 &lt;&lt;else&gt;&gt;\
@@ -964,10 +964,10 @@ But I won&#39;t pressure you if you&#39;re uncomftable.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="SecretT" tags="tutorialshelf" position="725,1600" size="100,100">*You place the coin on a shelf*
 You got a Key!
 &lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 [[Leave-&gt;LeaveT]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="127" name="FireplaceT" tags="tutorialfire" position="850,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 I&#39;m not warm or anything...
 I should focus on getting out.
 [[Go Back-&gt; Enter Room]]
@@ -976,16 +976,16 @@ I should focus on getting out.
 You need a hint? You have to pay to 
 escape this room.
 &lt;/div&gt;\
-&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 [[?-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="LampT" tags="tutoriallamp" position="1100,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 This lamp looks like the one my 
 mom got me for my wedding gift.
 [[Go Back-&gt; Enter Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="130" name="PlantT" tags="tutorialplant" position="1225,1600" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;text1&quot;&gt;
+&lt;div class=&quot;textt2&quot;&gt;
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-&gt; Enter Room]]
