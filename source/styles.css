@@ -96,6 +96,13 @@ body.kitchen{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+body.Kitchen{
+	z-index: 2;
+	background-image: url(media/kitchen.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 mark{
 	bottom: 40px;
 	background-color: red;

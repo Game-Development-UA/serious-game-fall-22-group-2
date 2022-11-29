@@ -1,3 +1,4 @@
+/* 
 :: Kitchen [kitchen]
 <mark>Welcome to the kitchen! Theres plenty of nooks and crannys to look at in here. </mark>
 <div class = "text1">
@@ -40,18 +41,19 @@ you remember sitting in the living room. There is a lot of yelling and shouting.
 
 [[Go Back->Go Back5]]
 </div>
-
+*/
 :: Fridge2
+<mark>Theres some food in here, Why don’t you make me something to eat while your at it?</mark>
 <div class="text1">
-Theres some food in here, Why don’t you make me something to eat while your at it?
-
 [[I’d like to focus->reject1]]
 [[I think a snack is a great Idea->accept1]]
 </div>
+
 :: reject1
 <div class="text1">
 Sure, whatever. Youre not that good at anything else really.
 </div>
+
 :: accept1
 <div class="text1">
 I like it when you listen to me
@@ -76,7 +78,7 @@ What will you do?
 :: Go Back6[first]
 <div class = "text1">
 Lets keep looking around shall we?
-[[Look on the Fridge -> Fridge1]]
+[[Look on the Fridge -> Fridge2]]
 [[Look at the drawer ->Drawer1]]
 </div>
 
@@ -144,18 +146,16 @@ Welcome to the kitchen! Theres plenty of nooks and crannies to look here
  <div class="text1">\
 Lots of things on the Fridge
 [[Look at Magnets->Magnet]]
-[[Look Fridge1->Fridge1]]
+[[Look in Fridge1->Fridge2]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
 
-:: Fridge1[Kitchen]
+:: Magnet[Kitchen]
+<mark>Some useless magnets...</mark>
  <div class="text1">\
-Lots of things on the Fridge
-[[Look Fridge->Fridge1]]
-[[Look at Calendar->Calendar]]
-[[Look on Shelf->InspectShelf1]]
- </div>
+[[Go Back->Fridge1]]
+</div>
 
 :: InspectShelf1[Kitchen]
 <div class="text1">\
