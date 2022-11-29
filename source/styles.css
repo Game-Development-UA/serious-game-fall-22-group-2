@@ -28,11 +28,8 @@ Andrea's stuff,,, sorry its a mess ;-;
 }
 .chest{
 	z-index: 3;
-	background-image: url(media/toychest.png);
-	background-size: 20%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	width: 50%;
+	position: fixed;
 }
 .underbed{
 	z-index: 2;
@@ -115,8 +112,8 @@ body.first{
 .picture{
 	z-index: 3;
 	background-image: url(media/picture.png);
-	background-size: 20%;
-	background-position: 40% 120%;
+	background-size: 40%;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 /*
