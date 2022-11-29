@@ -4,11 +4,9 @@
 [[Go to Bedroom->Bedroom]]
 [[Go to Tutorial-> Living Room Tutorial]]
 [[Go to Kitchen->Kitchen]]
-[[Go to Kitchen->kitchen]]
 [[Go to bathroom-> Bathroom]]
 [[Go to safe-> Safe]]
 [[Go to living room-> Living Room]]
-[[Go to living room2-> Living Room2]]
 /* DELETE THIS BEFORE TURNING IN*/
 
 
@@ -32,45 +30,63 @@ to our lovely tutorial room to get a feel for things.
 :: Living Room[livingroom]
 Let's see what we've got here...
 [[Go to Couch Cushions -> Couch]]
-[[ Go to Bookshelf -> Shelf]]
+[[Go to Bookshelf -> Shelf]]
 [[Go to Bedroom Door -> Bedroom Door]]
 [[Go to Storage Ottoman -> Ottoman]]
 
 
 
-:: Couch
+:: Couch[livingroom]
 This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
-
+[[Keep Looking-> Living Room]]
 [[Look at Framed Pictures -> Pictures]]
 
-:: Pictures
-They all seem to be pointing to the bookshelf.
+:: Pictures[livingroom]
+That's weird...They all seem to be pointing to the bookshelf.
+[[Keep Looking-> Living Room]]
 
-:: Shelf
-Huh… There's a book that stands out more than the rest, but it seems a little obvious.
-
-[[Inspect Book -> Inspect Book]]
-
-:: Inspect Book
-Its hollow… a key fell out.
-
-
-
-:: Bedroom Door
-The key goes in but its not turning. This doesnt seem right. Maybe I should try the ottoman?
-
-:: Ottoman
-Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
-
-[[Inspect Clothes -> Inspect]]
-
-:: ShelfIntercom
+:: Shelf[livingroom]
 Are you interested in the collection of my novels? I know its very impressive.
+[[Um...not really-> Living Room]]
+<<if not $inventory.includes("hollowkey")>>
+Huh… There's a book that stands out more than the rest, but it seems a little obvious.
+[[Inspect Book -> Inspect Book]]
+<</if>>
 
-:: Inspect Clothes
-Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+:: Inspect Book[livingroom]
+Its hollow… a key fell out.
+<<run $inventory.push("hollowkey")>>
+[[Go Back-> Living Room]]
 
-[[ Go to Bedroom Door -> Bedroom Door]]
-Okay, lets try the bobby pin. It worked!
- 
+
+:: Bedroom Door[livingroom]
+<<if not $inventory.includes("bobbypin")>>
+It's locked...
+[[Keep Looking-> Living Room]]
+<</if>>
+<<if $inventory.includes("hollowkey")>>
+The key goes in but its not turning. This doesnt seem right. 
+Maybe I should try the ottoman?
+[[Keep Looking-> Living Room]]
+<</if>>
+<<if $inventory.includes("bobbypin")>>
+Okay, lets try the bobby pin.
+[[...-> Bedroom Door2]]
+<</if>>
+
+:: Bedroom Door2[livingroom]
+It worked!
 [[Go to Bedroom -> Bedroom]]
+
+:: Ottoman[livingroom]
+<<if not $inventory.includes("bobbypin")>>
+Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
+[[Inspect Clothes -> Inspect]]
+<</if>>
+[[Keep Looking-> Living Room]]
+
+
+:: Inspect Clothes[livingroom]
+Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+<<run $inventory.push("bobbypin")>>
+[[Go Back-> Living Room]]
