@@ -11,8 +11,7 @@ I think you’ll find what you’re looking for if you look around.
 <div class="box1"></div>
  <div class="text1">
 Lots of things on the Fridge
-[[Look at Magnets->Magnet]]
-[[Look Fridge1->Fridge1]]
+[[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
@@ -74,8 +73,7 @@ You go through the months on the calendar, Nothing strikes as important aside fr
 <div class="box1"></div>
 <div class = "text1">
 What will you do?
-[[Look at Magnets->Magnet]]
-[[Look Fridge1->Fridge1]]
+[[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
 </div>
@@ -166,8 +164,7 @@ Lots of things on the Fridge
 <div class="box1"></div>
  <div class="text1">
 Lots of things on the Fridge
-[[Look at Magnets->Magnet]]
-[[Look Fridge1->Fridge1]]
+[[Look Fridge->Fridge1]]
 [[Look at Calendar->Calendar]]
 [[Look on Shelf->InspectShelf1]]
  </div>
