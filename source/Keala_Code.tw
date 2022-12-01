@@ -96,7 +96,7 @@ There's three keys in here! Yes!
 <<run $inventory.push("largekey")>>
 <<run $inventory.push("HiddenBedKey")>>
 <<run $inventory.push("YourMedKey")>>
-[[Go back-> What You See]]
+[[Go back-> What You SeeB]]
 
 :: CabinetB[bathroomcab]
 There's four cabinets... a large one to my left, 
