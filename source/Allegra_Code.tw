@@ -1,6 +1,7 @@
 :: Intercom[livingroom]
 <div class="text1">\
-Hello Player! Thank you for joining our Escape Room! Im really glad youre here today. Have you ever been in an escape room before?
+Hello There! Thank you for joining our Escape Room! I'm really glad you're here today. 
+Have you ever been in an escape room before?
 
 [[Yes -> Have]]
 
@@ -9,7 +10,7 @@ Hello Player! Thank you for joining our Escape Room! Im really glad youre here t
 
 :: Have[livingroom]
 <div class="text1">\
-Perfect! So you already know about the time limit and how each room acts as a puzzle! Right now, Id suggest heading into the other rooms. Well then, I won't keep you here any longer than needed! Best of luck!
+Perfect! So you already know about how each room acts as a puzzle! Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living RoomPre]]
 </div>
 
@@ -40,7 +41,7 @@ Let's see what we've got here...
 
 :: CouchLivingRoom[livingroomcouch]
 <div class="text1">\
-This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK! No key here.
+This couch is really filthy, I dont think they did a good job cleaning in between visits, YUCK!
 [[Keep Looking-> Living Room]]
 [[Look at Framed Pictures -> Pictures]]
 </div>
@@ -54,7 +55,7 @@ That's weird...They all seem to be pointing to the bookshelf.
 :: Shelf[livingroombook]
 <div class="text1">\
 <<if $inventory.includes("hollowkey")>>\
-Are you interested in the collection of my novels? I know its very impressive.
+Are you interested in my collection of novels? I know. It's very impressive.
 [[Um...not really-> Living Room]]
 <</if>>
 <<if not $inventory.includes("hollowkey")>>\
@@ -65,7 +66,7 @@ Huh… There's a book that stands out more than the rest, but it seems a little 
 
 :: Inspect Book[livingroombook]
 <div class="text1">\
-Its hollow… a key fell out.
+It's hollow… a key fell out.
 <<run $inventory.push("hollowkey")>>\
 [[Go Back-> Living Room]]
 </div>
@@ -78,11 +79,11 @@ It's locked...
 [[Keep Looking-> Living Room]]
 <</if>>
 <<if $inventory.includes("hollowkey")>>\
-The key goes in but its not turning. This doesnt seem right. 
+The key goes in but its not turning. This isn't seem right. 
 Maybe I should try the ottoman?
 <</if>>
 <<if $inventory.includes("bobbypin")>>\
-Okay, lets try the bobby pin.
+Okay, let's try the bobby pin.
 [[...-> Bedroom Door2]]
 <</if>>
 </div>
@@ -96,7 +97,8 @@ It worked!
 :: Ottoman[livingroomotto]
 <div class="text1">\
 <<if not $inventory.includes("bobbypin")>>\
-Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. How cute! 
+Nothing but toys and baby clothes… these tiny overalls remind me of a teddy bear I used to have. 
+How cute! 
 [[Inspect Clothes -> Inspect Clothes]]
 <</if>>
 [[Keep Looking-> Living Room]]
@@ -105,7 +107,7 @@ Nothing but toys and baby clothes… these tiny overalls remind me of a teddy be
 
 :: Inspect Clothes[livingroomotto]
 <div class="text1">\
-Theres a little bobby pin in the pocket of the overalls. Would this open the door?
+Theres a little bobby pin in the pocket of the overalls. What's this for?
 <<run $inventory.push("bobbypin")>>\
 [[Go Back-> Living Room]]
 </div>
