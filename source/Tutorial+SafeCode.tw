@@ -164,13 +164,13 @@ What's the code??
 :: Safe3[safe]
 <div class="textsafe">
 -You hear the safe creak open-
--Quickly, you grab the phone and-
-[[call 911-> End]]
+Quickly, you
+[[grab the phone.-> End]]
 </div>
 
 :: End[end]
 <div class="safee">
-Help is on the way. You're going to be okay.
+[[Call for help -> Cop1]] 
 </div>
 
 :: Nope
