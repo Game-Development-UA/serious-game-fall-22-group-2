@@ -16,3 +16,78 @@ What's the problem? Is there anyone else there with you?
 
 :: Hang Up
 
+<mark>That's it. Don't make this any harder than it needs to be. I'll make it up to you.</mark>
+
+<div class = "text1">\
+[[...->Hang Up2]]
+</div>
+
+:: Hang Up2
+
+<div class = "text1">\
+[[...->Hang Up3]]
+</div>
+
+:: Hang Up3
+
+<div class="text1">\
+Do you promise?
+</div>
+
+:: Hang Up4
+
+<mark>I Promise.</mark>
+<div class="text1">\
+[[...->Bad End]]
+</div>
+
+:: Bad End
+
+<div class="text1">\
+You tried to escape, but you didn't.
+You didn't have the strength to.
+Again.
+</div>
+
+BAD END
+
+:: Cop3
+
+<div class="text1">\
+I need to leave my house. I need your help in getting out of here. I'm [[trapped->Cop4]].
+</div>
+
+:: Cop4
+
+Is your husband home? Maybe he can help you.
+
+<div class="text1">\
+[[Not Him->Cop5]]
+<mark>[[Listen to him->Hang Up]]</mark>
+</div>
+
+:: Cop5
+
+Ok, well if you're in danger with your husband we will send some officers over. They
+should be able to sort out the situation.
+
+[[...->Cop6]]
+
+:: Cop6
+
+<div class="text1">\
+You hear sirens in the far distance. All you have to do is wait. 
+It's always what you've done best.
+[[...->Good End]]
+</div>
+
+:: Cop7
+
+<div class="text1">\
+You hear a loud <em>knock knock knock</em> on the front door.
+
+You made it out.
+</div>
+
+
+GOOD END

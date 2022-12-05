@@ -32,31 +32,31 @@ Looks like a nice place to sit down and relax.
 </div>
 
 :: SofaT2[tutorialsofa]
-<div class="boxtut"></div>
-<div class="textt2">
+<div class="boxtut"></div>\
+<div class="textt2">\
 
 Why are there always things between 
 the cushions?
-<<if $inventory.includes("coin")>>
+<<if $inventory.includes("coin")>>\
 [[Go Back->SofaT]]
-<<else>>
+<<else>>\
 [[Pick up coin->coinT]]
 [[Go Back->SofaT]]
-<</if>>
+<</if>>\
 </div>
 
 :: coinT[tutorialsofa]
-<div class="boxtut"></div>
-<div class="textt2">
-<<run $inventory.push("coin")>>
+<div class="boxtut"></div>\
+<div class="textt2">\
+<<run $inventory.push("coin")>>\
 I'll take the coin.
-[[Look at the Sofa-> SofaT]]
+[[Go Back-> SofaT]]
 </div>
 
 
 :: MirrorT[tutorialmirror]
-<div class="boxtut"></div>
-<div class="textt2">
+<div class="boxtut"></div>\
+<div class="textt2">\
 
 
 I...don't really feel like looking 
@@ -165,8 +165,8 @@ What's the code??
 :: Safe3[safe]
 <div class="textsafe">
 -You hear the safe creak open-
-Quickly, you
-[[grab the phone.-> End]]
+-Quickly, you grab the phone and-
+[[call 911-> Cop1]]
 </div>
 
 :: End[end]

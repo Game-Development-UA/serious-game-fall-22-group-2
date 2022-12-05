@@ -182,6 +182,18 @@ body.first{
 	padding: 5px 10px 5px 10px;
 	border: 2px solid black;
 }
+.text2{
+	background-color: white;
+	opacity: 50%;
+	position: fixed;
+	z-index: 1;
+	color: blue;
+	position:relative;
+	top: 100px;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid black;
+	text-align: center;
+}
 .picture{
 	z-index: 3;
 	background-image: url(media/picture.png);
