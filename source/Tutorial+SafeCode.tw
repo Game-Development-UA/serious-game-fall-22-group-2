@@ -156,11 +156,14 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 I have the key...
 I need the code...
 What's the code??
-<label for="Scode">F</label>
+<label for="Scode"></label>
 <input type="text" id="Scode" name="Scode" placeholder="Enter Code">
-[[25112002-> Nope]]
-[[11221984-> Safe3]]
-[[63782011-> Nope]]
+<input type="submit" value="Submit">
+<<if not Scode == ("11221984")>>
+[[-Click- -> Safe3]]
+<<else>>\
+[[...waiting. -> Nope]]
+<</if>>
 </div>
 
 :: Safe3[safe]
