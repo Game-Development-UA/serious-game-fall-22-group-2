@@ -159,7 +159,7 @@ What's the code??
 <label for="Scode"></label>
 <input type="text" id="Scode" name="Scode" placeholder="Enter Code">
 <input type="submit" value="Submit">
-<<if not Scode == ("11221984")>>
+<<if not $Scode == ("11221984")>>
 [[-Click- -> Safe3]]
 <<else>>\
 [[...waiting. -> Nope]]
