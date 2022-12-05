@@ -156,9 +156,11 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 I have the key...
 I need the code...
 What's the code??
+<form>
 <label for="Scode"></label>
 <input type="text" id="Scode" name="Scode" placeholder="Enter Code">
 <input type="submit" value="Submit">
+</form>
 <<if not $Scode == ("11221984")>>
 [[-Click- -> Safe3]]
 <<else>>\
