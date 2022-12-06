@@ -4,6 +4,7 @@
 You enter the Bedroom
 [[Go to Living Room again -> Living Room2]]
 [[Stay -> Bedroom2]]
+<<set $inventory to []>>
 </div>
 
 :: Bedroom2[first, intercom]
@@ -33,7 +34,7 @@ Inspect further?
 [[Yes->YesYellow]]
 </div>
 
-:: YesYellow[jewel, first]
+:: YesYellow[first]
 <div class="text2">\
 You remember when he proposed to you. He invited you to your favorite restaurant, and you both looked so nice. 
 He made you feel so special that day, putting his arms around you, opening doors for you. 
@@ -123,7 +124,7 @@ It’s covered in dust, and seems like it was hardly used.
 Outside, there is a lock with 3 different colored keyholes – blue, yellow, and red.
 
 You have $inventory.length keys
-<<if $inventory.length is 3>>\
+<<if $inventory.includesAll("red key", "blue key", "yellow key")>>
 [[Unlock Chest->UnlockChest]]
 <</if>>\
 [[Go Back->Go Back1]]

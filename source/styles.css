@@ -2,6 +2,42 @@
 /*
 Andrea's stuff,,, sorry its a mess ;-; 
 */
+.endingtxt1{
+	color: green;
+	text-align: right;
+	font-size: 300%;
+	position: relative;
+}
+.endingtxt2{
+	color: red;
+	text-align: right;
+	font-size: 300%;
+	position: relative;
+}
+.door{
+	position:absolute;
+	left: 500px;
+	top: -50px;
+	background-size: 30%;
+}
+.copback{
+	z-index: 2;
+	background-image: url(media/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.cop{
+	right: 525px;
+	background-color: rgb(90, 90, 255);
+	position: fixed;
+	z-index: 1;
+	color: rgb(24, 14, 62);
+	top: 20px;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid black;
+	text-align: center;
+}
 .teddy{
 	position: fixed;
 }
@@ -123,11 +159,12 @@ body.Kitchen{
 }
 mark{
 	bottom: 40px;
-	background-color: red;
-	color: black;
+	background-color: rgb(255, 82, 82);
+	color: white;
 	border: 3px solid red;
 	position: fixed;
 	bottom: 500px;
+	padding: 5px 5px 5px 5px;
 }
 .intercom{
 	z-index: 4;
