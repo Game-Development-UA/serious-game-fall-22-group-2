@@ -169,8 +169,8 @@ What's the code?? <<textbox "$Scode" "Enter Code" CheckCode autofocus>>
 
 :: Safe3[safe]
 <div class="textsafe">
--You hear the safe creak open-
--Quickly, you grab the phone and-
+-The safe creakes open-
+-Quickly, you grab the phone-
 [[call 911-> Cop1]]
 </div>
 
