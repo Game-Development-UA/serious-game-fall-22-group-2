@@ -35,6 +35,9 @@ Looks like a nice place to sit down and relax.
 <div class="boxtut"></div>\
 <div class="textt2">\
 
+
+
+
 Why are there always things between 
 the cushions?
 <<if $inventory.includes("coin")>>\
@@ -49,6 +52,9 @@ the cushions?
 <div class="boxtut"></div>\
 <div class="textt2">\
 <<run $inventory.push("coin")>>\
+
+
+
 I'll take the coin.
 [[Go Back-> SofaT]]
 </div>
@@ -57,6 +63,7 @@ I'll take the coin.
 :: MirrorT[tutorialmirror]
 <div class="boxtut"></div>\
 <div class="textt2">\
+
 
 
 I...don't really feel like looking 
