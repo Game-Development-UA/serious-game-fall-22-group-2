@@ -178,10 +178,5 @@ What's the code?? <<textbox "$Scode" "Enter Code" CheckCode autofocus>>
 [[call 911-> Cop1]]
 </div>
 
-:: End[end]
-<div class="safee">
-[[Call for help -> Cop1]] 
-</div>
-
 :: Nope
 <mark>YOU DUMB BITCH! YOU'RE DEAD!</mark>

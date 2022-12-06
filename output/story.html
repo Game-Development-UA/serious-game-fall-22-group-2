@@ -705,8 +705,7 @@ It&#39;s locked...
 [[Keep Looking-&gt; Living Room]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;hollowkey&quot;)&gt;&gt;\
-The key goes in but its not turning. This isn&#39;t seem right. 
-Maybe I should try the ottoman?
+The key goes in but it&#39;s not turning. This doesn&#39;t seem right. 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $inventory.includes(&quot;bobbypin&quot;)&gt;&gt;\
 Okay, let&#39;s try the bobby pin.
@@ -723,7 +722,7 @@ How cute!
 &lt;&lt;/if&gt;&gt;
 [[Keep Looking-&gt; Living Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Inspect Clothes" tags="livingroomotto" position="350,225" size="100,100">&lt;div class=&quot;text1&quot;&gt;\
-Theres a little bobby pin in the pocket of the overalls. What&#39;s this for?
+There&#39;s a little bobby pin in the pocket of the overalls. What&#39;s this for?
 &lt;&lt;run $inventory.push(&quot;bobbypin&quot;)&gt;&gt;\
 [[Go Back-&gt; Living Room]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Bedroom" tags="first, intercom" position="475,225" size="100,100">&lt;mark&gt;Finally made it in, I see.&lt;/mark&gt;
@@ -1414,7 +1413,7 @@ You got a Key!
 &lt;div class=&quot;textt2&quot;&gt;
 
 
-[[Leave Tutorial-&gt;LeaveT]]
+[[Leave Tutorial-&gt;Intercom]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="148" name="FireplaceT" tags="tutorialfire" position="975,1850" size="100,100">&lt;div class=&quot;boxtut&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;textt2&quot;&gt;
 
@@ -1446,26 +1445,26 @@ mom got me for my wedding gift.
 It looks like it needs to be 
 watered...poor thing.
 [[Go Back-&gt; Enter Room]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="152" name="LeaveT" tags="tutorial" position="225,1975" size="100,100">[[Back to Main Room-&gt;Intercom]]</tw-passagedata><tw-passagedata pid="153" name="Safe" tags="safe" position="350,1975" size="100,100">&lt;div class=&quot;safetext&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="152" name="Safe" tags="safe" position="225,1975" size="100,100">&lt;div class=&quot;safetext&quot;&gt;
 WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
 [[Getting Out!-&gt;Safe2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="154" name="Safe2" tags="safe" position="475,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="153" name="Safe2" tags="safe" position="350,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
 I have the key...
 I need the code...
 What&#39;s the code?? &lt;&lt;textbox &quot;$Scode&quot; &quot;Enter Code&quot; CheckCode autofocus&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="155" name="CheckCode" tags="safe" position="600,1975" size="100,100">&lt;&lt;if $Scode == &quot;11221984&quot;&gt;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="154" name="CheckCode" tags="safe" position="475,1975" size="100,100">&lt;&lt;if $Scode == &quot;11221984&quot;&gt;&gt;\
 
 [[-CLICK- -&gt; Safe3]]
 &lt;&lt;else&gt;&gt;\
 
 [[...waiting. -&gt; Nope]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="156" name="Safe3" tags="safe" position="725,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="155" name="Safe3" tags="safe" position="600,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
 -The safe creakes open-
 -Quickly, you grab the phone-
 [[call 911-&gt; Cop1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="157" name="End" tags="end" position="850,1975" size="100,100">&lt;div class=&quot;safee&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="156" name="End" tags="end" position="725,1975" size="100,100">&lt;div class=&quot;safee&quot;&gt;
 [[Call for help -&gt; Cop1]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="158" name="Nope" tags="" position="975,1975" size="100,100">&lt;mark&gt;YOU DUMB BITCH! YOU&#39;RE DEAD!&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="159" name="StoryInit" tags="" position="1100,1975" size="100,100">Welcome to the Game!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="157" name="Nope" tags="" position="850,1975" size="100,100">&lt;mark&gt;YOU DUMB BITCH! YOU&#39;RE DEAD!&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="158" name="StoryInit" tags="" position="975,1975" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
