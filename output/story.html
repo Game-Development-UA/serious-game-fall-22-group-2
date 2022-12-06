@@ -1445,29 +1445,19 @@ WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="154" name="Safe2" tags="safe" position="475,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
 I have the key...
 I need the code...
-What&#39;s the code??
-&lt;form method = &quot;POST&quot;&gt;
-&lt;label for=&quot;Scode&quot;&gt;&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;Scode&quot; name=&quot;Scode&quot; placeholder=&quot;Enter Code&quot;&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/form&gt;
-&lt;?php
-if (isset($_POST[&#39;Scode&#39;]{
-$userinput = $_POST[&#39;Scode&#39;];
-echo $userinput;}
-?&gt;
-&quot;11221984&quot;
+What&#39;s the code?? &lt;&lt;textbox &quot;$Scode&quot; &quot;12345678&quot; CheckCode autofocus&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="155" name="CheckCode" tags="safe" position="600,1975" size="100,100">&lt;&lt;if $Scode == &quot;11221984&quot;&gt;&gt;\
 [[-Click- -&gt; Safe3]]
 &lt;&lt;else&gt;&gt;\
 [[...waiting. -&gt; Nope]]
 &lt;&lt;/if&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="155" name="Safe3" tags="safe" position="600,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="156" name="Safe3" tags="safe" position="725,1975" size="100,100">&lt;div class=&quot;textsafe&quot;&gt;
 -You hear the safe creak open-
 -Quickly, you grab the phone and-
 [[call 911-&gt; Cop1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="156" name="End" tags="end" position="725,1975" size="100,100">&lt;div class=&quot;safee&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="157" name="End" tags="end" position="850,1975" size="100,100">&lt;div class=&quot;safee&quot;&gt;
 [[Call for help -&gt; Cop1]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="157" name="Nope" tags="" position="850,1975" size="100,100">&lt;mark&gt;YOU DUMB BITCH! YOU&#39;RE DEAD!&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="158" name="StoryInit" tags="" position="975,1975" size="100,100">Welcome to the Game!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="158" name="Nope" tags="" position="975,1975" size="100,100">&lt;mark&gt;YOU DUMB BITCH! YOU&#39;RE DEAD!&lt;/mark&gt;</tw-passagedata><tw-passagedata pid="159" name="StoryInit" tags="" position="1100,1975" size="100,100">Welcome to the Game!
 &lt;&lt;set $myVariable to 1&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

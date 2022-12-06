@@ -155,16 +155,17 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 <div class="textsafe">
 I have the key...
 I need the code...
-What's the code?? <<textbox "$Scode" "12345678" CheckCode autofocus>>
+What's the code?? <<textbox "$Scode" "Enter Code" CheckCode autofocus>>
 </div>
 
 :: CheckCode[safe]
 <<if $Scode == "11221984">>\
-[[-Click- -> Safe3]]
+
+[[-CLICK- -> Safe3]]
 <<else>>\
+
 [[...waiting. -> Nope]]
 <</if>>
-</div>
 
 :: Safe3[safe]
 <div class="textsafe">
