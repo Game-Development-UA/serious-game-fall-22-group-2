@@ -16,6 +16,7 @@ Have you ever been in an escape room before?
 </div>
 
 :: Have[livingroom]
+<<audio "GM" loop stop>>\
 <div class="text1">\
 Perfect! So you already know about how each room acts as a puzzle! Well then, I won't keep you here any longer than needed! Best of luck!
 [[Go to Living Room -> Living RoomPre]]
