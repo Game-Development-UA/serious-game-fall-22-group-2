@@ -78,7 +78,7 @@ at myself right now...
 <div class="intercombox2"></div>
 <div class="intercomtext3">
 I think you look wonderful. 
-But I won't pressure you if you're uncomftable. 
+But I won't pressure you if you're uncomfortable. 
 </div>
 [[Thank You-> Enter Room]]
 
@@ -150,7 +150,7 @@ watered...poor thing.
 </div>
 
 :: LeaveT[tutorial]
-[[Back to Main Room->Starting]]
+[[Back to Main Room->Intercom]]
 
 :: Safe[safe]
 <div class="safetext">
