@@ -35,6 +35,9 @@ Looks like a nice place to sit down and relax.
 <div class="boxtut"></div>\
 <div class="textt2">\
 
+
+
+
 Why are there always things between 
 the cushions?
 <<if $inventory.includes("coin")>>\
@@ -49,6 +52,9 @@ the cushions?
 <div class="boxtut"></div>\
 <div class="textt2">\
 <<run $inventory.push("coin")>>\
+
+
+
 I'll take the coin.
 [[Go Back-> SofaT]]
 </div>
@@ -57,6 +63,7 @@ I'll take the coin.
 :: MirrorT[tutorialmirror]
 <div class="boxtut"></div>\
 <div class="textt2">\
+
 
 
 I...don't really feel like looking 
@@ -71,7 +78,7 @@ at myself right now...
 <div class="intercombox2"></div>
 <div class="intercomtext3">
 I think you look wonderful. 
-But I won't pressure you if you're uncomftable. 
+But I won't pressure you if you're uncomfortable. 
 </div>
 [[Thank You-> Enter Room]]
 
@@ -96,7 +103,7 @@ You got a Key!
 <div class="textt2">
 
 
-[[Leave Tutorial->LeaveT]]
+[[Leave Tutorial->Intercom]]
 </div>
 
 :: FireplaceT[tutorialfire]
@@ -142,9 +149,6 @@ watered...poor thing.
 [[Go Back-> Enter Room]]
 </div>
 
-:: LeaveT[tutorial]
-[[Back to Main Room->Starting]]
-
 :: Safe[safe]
 <div class="safetext">
 WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
@@ -155,22 +159,23 @@ WHAT THE FUCK DO YOU THINK YOU'RE DOING!?
 <div class="textsafe">
 I have the key...
 I need the code...
-What's the code??
-[[25112002-> Nope]]
-[[11221984-> Safe3]]
-[[63782011-> Nope]]
+What's the code?? <<textbox "$Scode" "Enter Code" CheckCode autofocus>>
 </div>
+
+:: CheckCode[safe]
+<<if $Scode == "11221984">>\
+
+[[-CLICK- -> Safe3]]
+<<else>>\
+
+[[...waiting. -> Nope]]
+<</if>>
 
 :: Safe3[safe]
 <div class="textsafe">
--You hear the safe creak open-
--Quickly, you grab the phone and-
+-The safe creakes open-
+-Quickly, you grab the phone-
 [[call 911-> Cop1]]
-</div>
-
-:: End[end]
-<div class="safee">
-[[Call for help -> Cop1]] 
 </div>
 
 :: Nope
