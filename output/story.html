@@ -1446,12 +1446,17 @@ WHAT THE FUCK DO YOU THINK YOU&#39;RE DOING!?
 I have the key...
 I need the code...
 What&#39;s the code??
-&lt;form&gt;
+&lt;form method = &quot;POST&quot;&gt;
 &lt;label for=&quot;Scode&quot;&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; id=&quot;Scode&quot; name=&quot;Scode&quot; placeholder=&quot;Enter Code&quot;&gt;
 &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 &lt;/form&gt;
-&lt;&lt;if not $Scode == (&quot;11221984&quot;)&gt;&gt;
+&lt;?php
+if (isset($_POST[&#39;Scode&#39;]{
+$userinput = $_POST[&#39;Scode&#39;];
+echo $userinput;}
+?&gt;
+&quot;11221984&quot;
 [[-Click- -&gt; Safe3]]
 &lt;&lt;else&gt;&gt;\
 [[...waiting. -&gt; Nope]]
