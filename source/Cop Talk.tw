@@ -1,4 +1,5 @@
 :: Cop1[copback]
+<<audio "GM" loop stop>>\
 <div class="cop">\
 Hello, 911, what is your emergency?
 </div>\
