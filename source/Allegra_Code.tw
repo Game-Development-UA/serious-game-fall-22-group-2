@@ -2,6 +2,9 @@
 <div class="text1">\
 <<cacheaudio "GM" "media/game_music.mp3">>\
 <<audio "GM" loop play>>\
+[[Where am I? -> Intercom2]]
+
+:: Intercom2[livingroom]
 Hello There! Thank you for joining our Escape Room! I'm really glad you're here today. 
 Have you ever been in an escape room before?
 
