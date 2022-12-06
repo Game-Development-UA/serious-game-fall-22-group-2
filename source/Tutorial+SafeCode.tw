@@ -175,8 +175,10 @@ What's the code?? <<textbox "$Scode" "Enter Code" CheckCode autofocus>>
 <div class="textsafe">
 -The safe creakes open-
 -Quickly, you grab the phone-
+<<playlist stop>>\
 [[call 911-> Cop1]]
 </div>
 
 :: Nope
+<<playlist stop>>\
 <mark>YOU DUMB BITCH! YOU'RE DEAD!</mark>
