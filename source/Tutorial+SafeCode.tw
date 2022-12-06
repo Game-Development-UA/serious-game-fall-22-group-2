@@ -103,7 +103,7 @@ You got a Key!
 <div class="textt2">
 
 
-[[Leave Tutorial->LeaveT]]
+[[Leave Tutorial->Intercom]]
 </div>
 
 :: FireplaceT[tutorialfire]
@@ -148,9 +148,6 @@ It looks like it needs to be
 watered...poor thing.
 [[Go Back-> Enter Room]]
 </div>
-
-:: LeaveT[tutorial]
-[[Back to Main Room->Intercom]]
 
 :: Safe[safe]
 <div class="safetext">

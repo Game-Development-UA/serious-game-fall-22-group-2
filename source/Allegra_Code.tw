@@ -83,8 +83,7 @@ It's locked...
 [[Keep Looking-> Living Room]]
 <</if>>
 <<if $inventory.includes("hollowkey")>>\
-The key goes in but its not turning. This isn't seem right. 
-Maybe I should try the ottoman?
+The key goes in but it's not turning. This doesn't seem right. 
 <</if>>
 <<if $inventory.includes("bobbypin")>>\
 Okay, let's try the bobby pin.
@@ -111,7 +110,7 @@ How cute!
 
 :: Inspect Clothes[livingroomotto]
 <div class="text1">\
-Theres a little bobby pin in the pocket of the overalls. What's this for?
+There's a little bobby pin in the pocket of the overalls. What's this for?
 <<run $inventory.push("bobbypin")>>\
 [[Go Back-> Living Room]]
 </div>
